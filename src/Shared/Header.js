@@ -11,7 +11,7 @@ const Header = () => {
             <li><Link to='/'>Home</Link></li>
             <li tabindex="0"><Link to='/about' class="justify-between">About</Link>
             </li>
-            <li><Link to='#'>Blog</Link></li>
+            <li><Link to='/blogs'>Blog</Link></li>
         </>
 
     return (
