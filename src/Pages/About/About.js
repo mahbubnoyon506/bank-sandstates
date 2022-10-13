@@ -87,7 +87,7 @@ const About = () => {
                 <div>
                     <div><img src={secImage} alt="" /></div>
                 </div>
-                <div className='my-auto'>
+                <div className='my-auto p-5'>
                     <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Welcome To Our Company</p>
                     <h2 className='text-5xl font-bold py-5 leading-normal'>Build Your Business With Right Way</h2>
                     <p className='text-[#74777C]'>
@@ -127,7 +127,7 @@ const About = () => {
                     {
                         members.map((member, index) =>
                             <div key={index} className='text-center'>
-                                <img src={member1} alt="" />
+                                <img className='mx-auto' src={member1} alt="" />
                                 <button className='btn btn-link rounded-t-full text-primary mt-[-50px] bg-base-100 hover:bg-base-100'><AddIcon /></button>
                                 <h2 className='text-2xl text-bold hover:text-primary'>{member.name}</h2>
                                 <p className='text-primary'>{member.designation}</p>
@@ -137,7 +137,7 @@ const About = () => {
                 </div>
             </div>
             <div>
-                <div className='md:grid grid-cols-2 gap-10 bg-base-100 py-10'>
+                <div className='md:grid grid-cols-2 gap-10 bg-base-100 py-10 p-5'>
                     <div className='my-auto'>
                         <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Why Choose Us</p>
                         <h2 className='text-5xl font-bold py-5 leading-normal'>Get Every Answer</h2>
