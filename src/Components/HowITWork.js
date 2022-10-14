@@ -13,6 +13,7 @@ import AssistantIcon from '@mui/icons-material/Assistant';
 import FlagCircleIcon from '@mui/icons-material/FlagCircle';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
+import CarouselMangement from './CarouselMangement';
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -338,55 +339,11 @@ const HowITWork = () => {
                         </div>
                     </div>
                 </div>
-                {/* Whay choose us starts end */}
-
+                {/* Whay choose us end */}
             </div>
             {/* Portfolio starts */}
             <div class="portfolioSection01">
-                <div class="md:flex items-center owl-carousel">
-                    <div class="folioItem01">
-                        <img src="https://i.ibb.co/BCXZY2C/img01.jpg" alt="" />
-                        <div class="folioContent">
-                            <a class="cat" href="folio1.html">
-                                Consultancy
-                            </a>
-                            <h3>
-                                <a href="single-folio.html">Business Managment</a>
-                            </h3>
-                        </div>
-                        {/* <a class="fm" href="single-folio.html">
-              <i class="twi-eye2"></i>View Details
-            </a> */}
-                    </div>
-                    <div class="folioItem01">
-                        <img src="https://i.ibb.co/xqM8w1n/img02.jpg" alt="" />
-                        <div class="folioContent">
-                            <a class="cat" href="folio1.html">
-                                Consultancy
-                            </a>
-                            <h3>
-                                <a href="single-folio.html">Finance Managment</a>
-                            </h3>
-                        </div>
-                        {/* <a class="fm" href="single-folio.html">
-              <i class="twi-eye2"></i>View Details
-            </a> */}
-                    </div>
-                    <div class="folioItem01">
-                        <img src="https://i.ibb.co/Qp004bP/img03.jpg" alt="" />
-                        <div class="folioContent">
-                            <a class="cat" href="folio1.html">
-                                Consultancy
-                            </a>
-                            <h3>
-                                <a href="single-folio.html">Business Managment</a>
-                            </h3>
-                        </div>
-                        {/* <a class="fm" href="single-folio.html">
-              <i class="twi-eye2"></i>View Details
-            </a> */}
-                    </div>
-                </div>
+                <CarouselMangement/>
             </div>
             {/* Portfolio ends */}
             {/* Team section starts */}
