@@ -6,7 +6,13 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-
+import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import AssistantIcon from '@mui/icons-material/Assistant';
+import FlagCircleIcon from '@mui/icons-material/FlagCircle';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -532,7 +538,7 @@ const HowITWork = () => {
                         <div class="sm:pl-20 md:pl-0 sm:mt-5 md:pt-0">
                             <div class="icon_box_04">
                                 <div class="ib_box">
-                                    <i class="twi-comments-alt-dollar"></i>
+                                    <PermPhoneMsgIcon />
                                 </div>
                                 <p>Have any Questions?</p>
                                 <h3>2569 25 21589</h3>
@@ -567,7 +573,7 @@ const HowITWork = () => {
                                 <div class="icon_box_05">
                                     <div class="ib_box">
                                         <div class="pin1"></div>
-                                        <i class="icon-local_1"></i>
+                                        <AssignmentIcon />
                                         <div class="pin2"></div>
                                     </div>
                                     <h3>Improvement</h3>
@@ -581,7 +587,7 @@ const HowITWork = () => {
                                 <div class="icon_box_05">
                                     <div class="ib_box">
                                         <div class="pin1"></div>
-                                        <i class="icon-local_3"></i>
+                                        <TipsAndUpdatesIcon />
                                         <div class="pin2"></div>
                                     </div>
                                     <h3>Idea Generate</h3>
@@ -595,7 +601,7 @@ const HowITWork = () => {
                                 <div class="icon_box_05">
                                     <div class="ib_box">
                                         <div class="pin1"></div>
-                                        <i class="icon-XjxC7N01"></i>
+                                        <AssistantIcon />
                                         <div class="pin2"></div>
                                     </div>
                                     <h3>Consultancy</h3>
@@ -609,7 +615,7 @@ const HowITWork = () => {
                                 <div class="icon_box_05">
                                     <div class="ib_box">
                                         <div class="pin1"></div>
-                                        <i class="icon-local_11"></i>
+                                        <FlagCircleIcon />
                                         <div class="pin2"></div>
                                     </div>
                                     <h3>Success Business</h3>
@@ -628,14 +634,14 @@ const HowITWork = () => {
             {/* Feedback section starts */}
             <section class="testimonialSection01">
                 <div class="">
-                    <div  class="testimonial-sec mx-20">
+                    <div class="testimonial-sec mx-20">
                         <div class="">
                             <div class="cta">
                                 <div class="md:flex justify-between items-center">
                                     <div class="">
                                         <div class="icon_box_06">
                                             <div class="ib_box">
-                                                <i class="icon-local_7"></i>
+                                              <HandshakeIcon/>
                                             </div>
                                             <h3>Small / Growing Business!</h3>
                                             <p>
@@ -652,7 +658,7 @@ const HowITWork = () => {
                                     <div class=" text-right">
                                         <div class="icon_box_06">
                                             <div class="ib_box">
-                                                <i class="icons-target"></i>
+                                               <CrisisAlertIcon/> 
                                             </div>
                                             <h3>Enterprise Level Organization</h3>
                                             <p>
@@ -725,7 +731,7 @@ const HowITWork = () => {
                 </div>
             </section>
             {/* Feedback section endss */}
-             {/* Blog section starts */}
+            {/* Blog section starts */}
             <section class="blogSectiont01">
                 <div class="md:px-20">
                     <div class="md:grid grid-cols-3 gap-5">
