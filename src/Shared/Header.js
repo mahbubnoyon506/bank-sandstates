@@ -9,9 +9,9 @@ const Header = () => {
     const mainmenu =
         <>
             <li><Link to='/'>Home</Link></li>
-            <li tabindex="0"><Link to='/about' class="justify-between">About</Link>
-            </li>
+            <li tabindex="0"><Link to='/about' class="justify-between">About</Link></li>
             <li><Link to='/blogs'>Blog</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
         </>
 
     return (
