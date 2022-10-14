@@ -151,8 +151,8 @@
 
 .fact_01 h2 {
     color: #ed1b24;
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 5vw;
+    line-height: 5vh;
     font-weight: 600;
     margin: 0 0 8px;
 }
@@ -481,13 +481,13 @@
     padding: 120px 0;
 }
 
-.folioSlider01 {
+/* .folioSlider01 {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     background: rgba(0, 0, 0, .55);
-}
+} */
 
 .folioItem01 img {
     width: 100%;
@@ -1190,4 +1190,9 @@ a {
 .bmeta span a {
     color: #74777c;
     font-weight: 500;
+}
+@media only screen and (max-width: 768px){
+    .testimonial-sec{
+        display: none;
+    }
 }

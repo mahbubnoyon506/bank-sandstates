@@ -48,10 +48,10 @@ const Agency = () => {
                     <h2 className='text-5xl font-bold leading-normal pb-10'>We Make Your <br /> Agency <span className='text-primary'>Full <br /> Bright</span> </h2>
                     <p className='text-[#74777C] pr-10'>This Cheat Sheet offers tips and advice to help you get the essentials right. here's a list of the most important tasks of business accounting and their meaning.</p>
                 </div>
-                <div className='md:grid grid-cols-2 gap-3'>
+                <div className='md:grid grid-cols-2 gap-3 '>
                     {
                         services.slice(0, 2).map((service, index) =>
-                            <div key={index} className='sm:mb-2'>
+                            <div key={index} className='sm:mb-2 sm:flex justify-center'>
                                 <Card sx={{ maxWidth: 345, padding: 5 }}>
                                     <CardActionArea>
                                         <AcUnitIcon className='text-primary text-center' />
@@ -74,7 +74,7 @@ const Agency = () => {
             <div className='md:grid grid-cols-4 gap-5 py-10'>
                 {
                     services.slice(1, 5).map((service, index) =>
-                        <div className=''>
+                        <div className='sm:flex justify-center'>
                             <Card sx={{ maxWidth: 345, padding: 5 }}>
                                 <CardActionArea>
                                     <AcUnitIcon className='text-primary text-center' />
