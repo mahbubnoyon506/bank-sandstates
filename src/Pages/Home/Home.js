@@ -1,5 +1,6 @@
 import React from 'react';
 import Agency from '../../Components/Agency';
+import BacktoTop from '../../Components/BacktoTop/BacktoTop';
 import Banner from '../../Components/Banner';
 import HowITWork from '../../Components/HowITWork';
 import QualityHome from '../../Components/QualityHome';
@@ -13,6 +14,7 @@ const home = () => {
             <Agency/>
             <QualityHome/>
             <HowITWork/>
+           
         </div>
     );
 };

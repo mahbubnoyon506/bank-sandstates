@@ -5,6 +5,7 @@ import Footer from './Shared/Footer';
 import About from './Pages/About/About';
 import Blog from './Pages/Blogs/Blog';
 import Contact from './Pages/Contact/Contact';
+import BacktoTop from './Components/BacktoTop/BacktoTop';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
          <Route path="/contact" element={<Contact/>}/>
        </Routes>
        <Footer/>
+       <BacktoTop/>
     </div>
   );
 }
