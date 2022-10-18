@@ -1210,9 +1210,9 @@ a {
         display: none;
     } */
     .secTitle {
-        font-size: 30px;
+        font-size: 35px;
         line-height: 48px;
-        font-weight: 600;
+        font-weight: 500;
     }
     .funfactArea{
         position: relative;
@@ -1240,8 +1240,7 @@ a {
         padding: 50px 10px;
     }
     .secTitle{
-        font-size: 30px !important;
- 
+        font-size: 40px !important;
     }
     .orcta{
         transform: rotate(90deg)
