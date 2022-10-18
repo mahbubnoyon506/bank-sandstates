@@ -62,15 +62,15 @@ const HowITWork = () => {
         <div>
             <div className="processSection01">
                 <div className="">
-                    <div className="row">
-                        <div className="col-lg-12 text-center">
+                    <div className="">
+                        <div className="text-center">
                             <div className="subTitle">
                                 <span className="bleft"></span>
                                 Process
                                 <span className="bright"></span>
                             </div>
 
-                            <h2 className="secTitle">
+                            <h2 className="secTitle ">
                                 How We <span>Works</span>
                             </h2>
                         </div>
@@ -79,7 +79,7 @@ const HowITWork = () => {
                     <div className="md:grid grid-cols-4">
                         <div className=" text-center">
                             <div className="icon_box_03">
-                                <div className="ib_box">
+                                <div className="ib_box hover:bg-primary">
                                     <i className="icon-local_1 ">
                                         <img
 
@@ -104,7 +104,7 @@ const HowITWork = () => {
                         </div>
                         <div className=" text-center">
                             <div className="icon_box_03">
-                                <div className="ib_box">
+                                <div className="ib_box hover:bg-primary">
                                     <i className="icon-local_1">
                                         <img
                                             src="https://www.kindpng.com/picc/m/211-2112492_an-enter-icon-is-a-rectangle-shape-and.png"
@@ -128,7 +128,7 @@ const HowITWork = () => {
                         </div>
                         <div className=" text-center">
                             <div className="icon_box_03">
-                                <div className="ib_box">
+                                <div className="ib_box hover:bg-primary">
                                     <i className="icon-local_1">
                                         <img
                                             src="https://cdn-icons-png.flaticon.com/512/5234/5234091.png"
@@ -152,7 +152,7 @@ const HowITWork = () => {
                         </div>
                         <div className=" text-center">
                             <div className="icon_box_03">
-                                <div className="ib_box">
+                                <div className="ib_box hover:bg-primary">
                                     <i className="icon-local_1">
                                         <img
                                             src="https://cdn-icons-png.flaticon.com/512/4406/4406358.png"
@@ -188,7 +188,7 @@ const HowITWork = () => {
                             <br /> we like best principle
                         </p>
                     </div>
-                    <div className="fact_01">
+                    <div className="fact_01 py-5 lg:py-0">
                         <h2>
                             138<i style={{ fontStyle: "normal" }}>+</i>
                         </h2>
@@ -210,44 +210,41 @@ const HowITWork = () => {
 
                 {/* Whay choose us starts */}
                 <div className="">
-                    <div className="md:grid grid-cols-2 gap-5 md:px-20">
+                    <div className="lg:grid grid-cols-2 gap-5 md:px-20">
                         <div className="">
                             <div className="appointment_form">
                                 <p>Do it right now!</p>
-                                <h3>Make an Appointment</h3>
-                                <form action="#" className="" id="contact_form">
-                                    <div className='md:grid grid-cols-2 gap-5'>
+                                <h3 className=''>Make an Appointment</h3>
+                                <form action="#" className="w-full" id="contact_form">
+                                    <div className='md:grid grid-cols-2 gap-3'>
                                         <div class="input-field">
-                                            <i class="twi-user2"></i>
                                             <input
-                                                class="required"
+                                                className="required w-full"
                                                 type="text"
                                                 name="con_name"
                                                 placeholder="Your Name"
                                             />
                                         </div>
-                                        <div class="input-field">
-                                            <i class="twi-envelope2"></i>
+                                        <div className="input-field w-full">
                                             <input
-                                                class="required"
+                                                className="required"
                                                 type="email"
                                                 name="con_email"
                                                 placeholder="Email Address"
                                             />
                                         </div>
                                     </div>
-                                    <div className='md:grid grid-cols-2 gap-5'>
-
+                                    <div className='md:grid grid-cols-2 gap-3'>
                                         <div class="input-field">
                                             <i class="twi-map-marker-alt2"></i>
                                             <input
-                                                className="required"
+                                                className="required w-full"
                                                 type="text"
                                                 name="con_location"
                                                 placeholder="Your Location"
                                             />
                                         </div>
-                                        <div class="input-field">
+                                        <div class="input-field w-full">
                                             <select class="required" name="con_subject">
                                                 <option selected="selected">Subjects</option>
                                                 <option>Finance Consultant</option>
@@ -258,15 +255,14 @@ const HowITWork = () => {
                                         </div>
                                     </div>
                                     <div class="input-field ">
-                                        <i class="twi-comment-lines2"></i>
                                         <textarea
-                                            class="required textarea"
+                                            className="required textarea w-full"
                                             name="con_message"
                                             placeholder="Describe Your Plan"
                                         ></textarea>
                                     </div>
                                     <div class="input-field ">
-                                        <button type="submit" class="qu_btn">
+                                        <button type="submit" class="qu_btn w-full">
                                             Get A Quote
                                         </button>
                                         <div class="con_message"></div>
@@ -275,14 +271,14 @@ const HowITWork = () => {
                             </div>
                         </div>
 
-                        <div class="pdAcc">
+                        <div class="pdAcc pt-10">
                             <div class="subTitle">
                                 <span class="bleft"></span>Why Choose Us
                             </div>
                             <h2 class="secTitle">
                                 Get Every <span>Answer</span>
                             </h2>
-                            <div>
+                            <div className='pr-5'>
                                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                         <Typography>Best Sources of Help and Advice for Your Business</Typography>
@@ -360,7 +356,7 @@ const HowITWork = () => {
                             </h2>
                         </div>
                     </div>
-                    <div class="md:grid grid-cols-4 gap-5 px-20">
+                    <div class="md:grid grid-cols-4 gap-5 md:px-20 p-5 pr-0">
                         <div class="">
                             <div class="team_01 text-center">
                                 <div class="tm_thumb">
@@ -481,9 +477,9 @@ const HowITWork = () => {
                     <div class="md:grid grid-cols-3 gap-10 py-10">
                         <div class="col-span-2">
                             <div class="support">
-                                <div class="spIcon">
+                                <div class="spIcon flex items-center mb-2">
                                     <i class="twi-phone"></i>
-                                    <img src="https://i.ibb.co/vXgYBS6/phn1.jpg" alt="" />
+                                    <img className='md:ml-[-20px]' src="https://i.ibb.co/vXgYBS6/phn1.jpg" alt="" />
                                 </div>
                                 <p>
                                     We are one of the highest graded company in United State. For
@@ -492,7 +488,7 @@ const HowITWork = () => {
                                 </p>
                             </div>
                         </div>
-                        <div class="sm:pl-20 md:pl-0 sm:mt-5 md:pt-0">
+                        <div class="sm:pl-10 md:pl-0 sm:mt-5 md:pt-0">
                             <div class="icon_box_04">
                                 <div class="ib_box">
                                     <PermPhoneMsgIcon />
@@ -507,7 +503,7 @@ const HowITWork = () => {
             {/* Team section ends */}
             {/* Feature section starts */}
             <section class="chooseSection ">
-                <div class="md:grid grid-cols-2 gap-5 md:px-20 sm:px-5">
+                <div class="md:grid grid-cols-2 gap-5 md:px-20 px-5">
                     <div class="">
                         <div class="subTitle">
                             <span class="bleft"></span>Why Choose Us
@@ -520,7 +516,7 @@ const HowITWork = () => {
                             cheques during the course of a year to pay for a wide variety of
                             items including local business taxes,
                         </p>
-                        <a href="javascript:void(0);" className="qu_btn">
+                        <a href="javascript:void(0);" className="qu_btn mb-10 md:mb-3">
                             View All
                         </a>
                     </div>
@@ -591,7 +587,7 @@ const HowITWork = () => {
             {/* Feedback section starts */}
             <section class="testimonialSection01">
                 <div class="">
-                    <div class="testimonial-sec mx-20">
+                    <div class="testimonial-sec mx-0 md:mx-20">
                         <div class="">
                             <div class="cta">
                                 <div class="md:flex justify-between items-center">
@@ -607,7 +603,7 @@ const HowITWork = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="text-center">
+                                    <div class="text-center px-10 py-5 md:py-0">
                                         <div class="orcta">
                                             <p>or</p>
                                         </div>
@@ -639,9 +635,9 @@ const HowITWork = () => {
                             </h2>
                         </div>
                     </div>
-                    <div class="md:px-20">
+                    <div class="lg:px-20 ">
                         <div
-                            className="md:grid grid-cols-3 testimonialslider01 owl-carousel "
+                            className="lg:grid grid-cols-3 testimonialslider01"
                             style={{ gap: "1.5rem" }}
                         >
                             <div class="testiItem01">
@@ -691,7 +687,7 @@ const HowITWork = () => {
             {/* Blog section starts */}
             <section class="blogSectiont01">
                 <div class="md:px-20">
-                    <div class="md:grid grid-cols-3 gap-5">
+                    <div class="lg:grid grid-cols-3 gap-5">
                         <div class="col-span-2 noPaddingRight">
                             <div class="md:grid grid-cols-2 gap-5">
                                 <div class="">

@@ -29,7 +29,7 @@ const QualityHome = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] sm:mt-5'>
+                    <div className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] mt-5 mb-[-50px]'>
                         <h4 className='text-6xl font-extrabold'>35+</h4>
                         <p className='text-2xl font-semibold'>Years Of <br /> Experience</p>
                     </div>
