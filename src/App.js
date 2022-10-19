@@ -11,15 +11,15 @@ import BacktoTop from './Components/BacktoTop/BacktoTop';
 function App() {
   return (
     <div>
-      <Header/>
-       <Routes>
-         <Route path="/" element={<Home/>}/>
-         <Route path="/about" element={<About/>}/>
-         <Route path="/blogs" element={<Blog/>}/>
-         <Route path="/contact" element={<Contact/>}/>
-       </Routes>
-       <Footer/>
-       <BacktoTop/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+      <BacktoTop />
     </div>
   );
 }

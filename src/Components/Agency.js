@@ -60,7 +60,28 @@ const Agency = () => {
                         {
                             services.slice(0, 2).map((service, index) =>
                                 <div key={index} className='sm:mb-2 sm:flex justify-center '>
-                                    <Card sx={{ maxWidth: 345, padding: 5 }} >
+                                    <Card className='relative bg-no-repeat bg-center mt-5  hover:bg-[#202124]  mx-auto hover:z-20 hover:text-white'
+                                        sx={{ maxWidth: 345, padding: 5 }}
+                                    >
+                                        <div className='absolute inset-0 opacity-40 '
+                                            style={{ backgroundImage: `url(${CardBG})`, backgroundPosition: 'center', backgroundSize: 'cover', zIndex: "-10" }}
+                                        ></div>
+
+                                        <CardActionArea>
+                                            <AcUnitIcon className='text-primary text-center' />
+                                            <CardContent>
+                                                <Typography className='hover:text-red-600' gutterBottom variant="h5" component="div">
+                                                    {service.title}
+                                                </Typography>
+                                                <Typography variant="body2" color="text-gray">
+                                                    {service.description}
+                                                </Typography>
+                                            </CardContent>
+                                            <button className='text-lg text-primary'>Read More <ArrowForwardIcon /></button>
+                                        </CardActionArea>
+                                    </Card>
+
+                                    {/* <Card sx={{ maxWidth: 345, padding: 5 }} >
                                         <CardActionArea>
                                             <AcUnitIcon className='text-primary text-center' />
                                             <CardContent>
@@ -73,7 +94,7 @@ const Agency = () => {
                                             </CardContent>
                                             <button className='text-lg text-primary'>Read More <ArrowForwardIcon /></button>
                                         </CardActionArea>
-                                    </Card>
+                                    </Card> */}
                                 </div>
                             )
                         }
