@@ -150,6 +150,45 @@ body {
   display: none;
 }
 
+@media only screen and (max-width:497px) {
+
+
+  .swiper-button-prev {
+    background-size: 20% auto;
+  }
+
+  .swiper-button-next {
+    background-size: 20% auto;
+  }
+
+  .swiper-button-prev {
+    width: 15px;
+    padding: 25px;
+  }
+
+  .swiper-button-next {
+    width: 15px;
+    padding: 25px;
+  }
+
+
+
+
+  .swiper-button-next {
+    background-size: 20% auto;
+  }
+
+  .swiper-button-next {
+    width: 15px;
+    padding: 25px;
+  }
+
+
+
+
+}
+
+
 
 .swiper-button-next:hover {
   background-color: red;

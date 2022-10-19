@@ -14,7 +14,6 @@ const home = () => {
             <Agency />
             <QualityHome />
             <HowITWork />
-
         </div>
     );
 };

@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='p-20'>
                 <footer className='md:flex justify-between '>
                     <div>
-                        <p className='text-4xl text-base-100 font-bold'>Sign up for latest news and <br /> insights from Quera.</p>
+                        <p className='text-2xl lg:text-4xl text-base-100 font-bold mb-3'>Sign up for latest news and <br /> insights from <span className='text-primary'>Quera.</span></p>
                     </div>
                     <div className='md:flex'>
                         <input type="text" placeholder="Type here" class="input w-full max-w-xs rounded-full p-5" />
@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                 </footer>
             </div>
-            <footer class="footer px-20 py-4 bg-black text-base-content">
+            <footer class="footer px-20 py-4 bg-black text-white">
                 <div class="items-center grid-flow-col">
                     <p>© {date} Quera. All Rights Reserved.</p>
                 </div>
