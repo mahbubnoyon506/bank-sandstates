@@ -60,6 +60,11 @@ const HowITWork = () => {
     };
     return (
         <div>
+
+            {/* *************** */}
+            {/* How We Works */}
+            {/* ***************** */}
+
             <div className="processSection01">
                 <div className="">
                     <div className="">
@@ -177,6 +182,12 @@ const HowITWork = () => {
                     </div>
                 </div>
             </div>
+
+            {/* *************** */}
+            {/*  testmonial*/}
+            {/* ***************** */}
+
+
             <div className="appoinmentSection01">
                 <div className="funfactArea">
                     <div className="fact_01">
@@ -210,16 +221,16 @@ const HowITWork = () => {
 
                 {/* Whay choose us starts */}
                 <div className="">
-                    <div className="lg:grid grid-cols-2 gap-5 md:px-20">
+                    <div className="lg:grid grid-cols-2 gap-x-5 md:px-10">
                         <div className="">
                             <div className="appointment_form">
                                 <p>Do it right now!</p>
-                                <h3 className=''>Make an Appointment</h3>
+                                <h3 className='mt-5'>Make an Appointment</h3>
                                 <form action="#" className="w-full" id="contact_form">
                                     <div className='md:grid grid-cols-2 gap-3'>
                                         <div class="input-field">
                                             <input
-                                                className="required w-full"
+                                                className="required w-sm"
                                                 type="text"
                                                 name="con_name"
                                                 placeholder="Your Name"
@@ -256,13 +267,13 @@ const HowITWork = () => {
                                     </div>
                                     <div class="input-field ">
                                         <textarea
-                                            className="required textarea w-full"
+                                            className="required textarea w-sm"
                                             name="con_message"
                                             placeholder="Describe Your Plan"
                                         ></textarea>
                                     </div>
                                     <div class="input-field ">
-                                        <button type="submit" class="qu_btn w-full">
+                                        <button type="submit" class="qu_btn w-sm text-center">
                                             Get A Quote
                                         </button>
                                         <div class="con_message"></div>
@@ -271,20 +282,21 @@ const HowITWork = () => {
                             </div>
                         </div>
 
-                        <div class="pdAcc pt-10">
+                        <div class="w-full pt-10">
                             <div class="subTitle">
                                 <span class="bleft"></span>Why Choose Us
                             </div>
-                            <h2 class="secTitle">
+                            <h2 class="secTitle px-2 text-sm md:text-2xl lg:text-4xl">
                                 Get Every <span>Answer</span>
                             </h2>
-                            <div className='pr-5'>
+
+                            <div className='p-2 w-full '>
                                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                         <Typography>Best Sources of Help and Advice for Your Business</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
-                                        <Typography>
+                                        <Typography >
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                             malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                             sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -332,16 +344,23 @@ const HowITWork = () => {
                                     </AccordionDetails>
                                 </Accordion>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
                 {/* Whay choose us end */}
             </div>
+
+
             {/* Portfolio starts */}
             <div class="portfolioSection01">
-                <CarouselMangement/>
+                <CarouselMangement />
             </div>
             {/* Portfolio ends */}
+
+
+
             {/* Team section starts */}
             <section class="teamSection01">
                 <div class="">
@@ -502,6 +521,8 @@ const HowITWork = () => {
             </section>
             {/* Team section ends */}
             {/* Feature section starts */}
+
+
             <section class="chooseSection ">
                 <div class="md:grid grid-cols-2 gap-5 md:px-20 px-5">
                     <div class="">
@@ -582,9 +603,12 @@ const HowITWork = () => {
                     </div>
                 </div>
             </section>
+
+
             {/* Feature section ends */}
 
             {/* Feedback section starts */}
+
             <section class="testimonialSection01">
                 <div class="">
                     <div class="testimonial-sec mx-0 md:mx-20">
@@ -594,7 +618,7 @@ const HowITWork = () => {
                                     <div class="">
                                         <div class="icon_box_06">
                                             <div class="ib_box">
-                                              <HandshakeIcon/>
+                                                <HandshakeIcon />
                                             </div>
                                             <h3>Small / Growing Business!</h3>
                                             <p>
@@ -611,7 +635,7 @@ const HowITWork = () => {
                                     <div class=" text-right">
                                         <div class="icon_box_06">
                                             <div class="ib_box">
-                                               <CrisisAlertIcon/> 
+                                                <CrisisAlertIcon />
                                             </div>
                                             <h3>Enterprise Level Organization</h3>
                                             <p>
@@ -683,8 +707,10 @@ const HowITWork = () => {
                     </div>
                 </div>
             </section>
+
             {/* Feedback section endss */}
             {/* Blog section starts */}
+
             <section class="blogSectiont01">
                 <div class="md:px-20">
                     <div class="lg:grid grid-cols-3 gap-5">
@@ -763,6 +789,7 @@ const HowITWork = () => {
                     </div>
                 </div>
             </section>
+
         </div>
     );
 };

@@ -6,20 +6,20 @@ const Footer = () => {
     const date = new Date().getFullYear()
     return (
         <div style={{ backgroundImage: `url(${background})` }}>
-            <div className='p-20'>
-                <footer className='md:flex justify-between '>
+            <div className=' p-2 md:p-10 lg:p-20'>x
+                <footer className='md:flex justify-between w-full'>
                     <div>
-                        <p className='text-2xl lg:text-4xl text-base-100 font-bold mb-3'>Sign up for latest news and <br /> insights from <span className='text-primary'>Quera.</span></p>
+                        <p className='text-lg mt-4 lg:text-4xl text-base-100 font-bold mb-3'>Sign up for latest news and <br /> insights from <span className='text-primary'>Quera.</span></p>
                     </div>
                     <div className='md:flex'>
-                        <input type="text" placeholder="Type here" class="input w-full max-w-xs rounded-full p-5" />
-                        <div className='md:ml-[-50px] md:mt-0 sm:mt-2'>
+                        <input type="text" placeholder="Type here" class="input w-sm max-w-xs rounded-full " />
+                        <div className='md:ml-[-50px] md:mt-0 mt-2'>
                             <input className='btn btn-primary rounded-full' type="submit" value="Subscribe" />
                         </div>
                     </div>
                 </footer>
                 <div className='py-20'><hr /></div>
-                <footer class="footer text-base-100">
+                <footer class="footer px-5 text-base-100">
                     <div>
                         <span class="footer-title">Services</span>
                         <a class="link link-hover">Branding</a>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                 </footer>
             </div>
-            <footer class="footer px-20 py-4 bg-black text-white">
+            <footer class="footer w-full px-10 py-4 bg-black text-white">
                 <div class="items-center grid-flow-col">
                     <p>© {date} Quera. All Rights Reserved.</p>
                 </div>
