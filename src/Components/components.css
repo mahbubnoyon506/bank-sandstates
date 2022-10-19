@@ -150,7 +150,14 @@ body {
   display: none;
 }
 
-@media only screen and (max-width:497px) {
+@media only screen and (max-width:576px) {
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
 
   .swiper-button-prev {
     background-size: 10% auto;
