@@ -9,7 +9,9 @@
     font-size: 18px;
     line-height: .9;
     color: #ed1b24;
-    margin: 0 0 24px;
+    /* margin: 0 0 24px; */
+    margin-top: 24px;
+    padding: 10px;
 }
 
 .subTitle span {
@@ -32,7 +34,7 @@
     font-family: poppins, sans-serif;
     font-weight: 700;
     line-height: 65px;
-    margin: 0 0 63px;
+    margin: 0 0 20px;
 }
 
 .secTitle span {
@@ -174,7 +176,7 @@
     padding: 74px 75px 80px;
 }
 
-.appointment_form>p {
+.appointment_form>h2 {
     color: #ed1b24;
     font-size: 14px;
     margin: 0 0 3px;
@@ -316,7 +318,7 @@
 
 .input-field .nice-select:after {
     content: "\f043";
-    font-family: themewar!important;
+    font-family: themewar !important;
     border: none;
     left: 32px;
     top: 3px;
@@ -530,7 +532,7 @@
 
 .tm_thumb {
     position: relative;
-    margin: 0 0 33px;
+    margin: 40px 0 10px;
 }
 
 .tm_social {
@@ -582,9 +584,10 @@
     color: #ed1b24;
 }
 
+/* 
 .mt38 {
     margin-top: 38px;
-}
+} */
 
 .support {
     position: relative;
@@ -657,7 +660,7 @@
 
 [class^=twi-],
 [class*=" twi-"] {
-    font-family: themewar!important;
+    font-family: themewar !important;
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -693,7 +696,7 @@
 }
 
 .chooseSection .secTitle {
-    font-size: 55px;
+    /* font-size: 55px; */
     margin-bottom: 21px;
 }
 
@@ -828,7 +831,7 @@ a {
 
 [class^=icon-],
 [class*=" icon-"] {
-    font-family: icomoon!important;
+    font-family: icomoon !important;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -950,7 +953,7 @@ a {
 
 [class^=icon-],
 [class*=" icon-"] {
-    font-family: icomoon!important;
+    font-family: icomoon !important;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -1186,22 +1189,26 @@ a {
     color: #74777c;
     font-weight: 500;
 }
-@media only screen and (max-width: 1024px){
+
+@media only screen and (max-width: 1024px) {
     .appointment_form {
         position: relative;
         padding: 74px 10px;
-    } 
+    }
+
     .input-field {
         position: relative;
         padding-left: 0px;
         padding-right: 0px;
     }
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
     .processSection01 {
         position: relative;
         padding: 50px 0px;
     }
+
     /* .testimonial-sec{
         display: none;
     } */
@@ -1210,38 +1217,47 @@ a {
         line-height: 48px;
         font-weight: 500;
     }
-    .funfactArea{
+
+    .funfactArea {
         position: relative;
         display: block;
     }
+
     .fact_01 h2 {
         font-size: 70px;
         line-height: 70px;
 
     }
-    .fact_01 p{
+
+    .fact_01 p {
         text-align: center;
     }
+
     .input-field {
         position: relative;
         padding-left: 0px;
         padding-right: 0px;
     }
+
     .appointment_form {
         position: relative;
         padding: 74px 10px;
     }
+
     .chooseSection {
         position: relative;
         padding: 50px 10px;
     }
-    .secTitle{
-        font-size: 40px !important;
+
+    .secTitle {
+        font-size: 30px;
     }
-    .orcta{
+
+    .orcta {
         transform: rotate(90deg)
     }
-    .orcta p{
-        transform: rotate(-90deg)  
+
+    .orcta p {
+        transform: rotate(-90deg)
     }
 }

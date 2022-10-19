@@ -14,6 +14,12 @@ const home = () => {
             <Agency/>
             <QualityHome/>
             <HowITWork/>
+            {/* <Banner />
+            <SupportiveBrands />
+            <Agency />
+            <QualityHome />
+            <HowITWork /> */}
+
         </div>
     );
 };

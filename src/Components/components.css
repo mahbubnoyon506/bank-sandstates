@@ -150,6 +150,56 @@ body {
   display: none;
 }
 
+@media only screen and (max-width:497px) {
+
+  .swiper-button-prev {
+    background-size: 10% auto;
+  }
+
+  .swiper-button-next {
+    background-size: 20% auto;
+  }
+
+  .swiper-button-prev {
+    width: 10px;
+    padding: 15px;
+  }
+
+  .swiper-button-next {
+    width: 10px;
+    padding: 15px;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+  .swiper-button-prev {
+    background-size: 35% auto;
+  }
+
+  .swiper-button-next {
+    background-size: 35% auto;
+  }
+
+  .swiper-button-prev {
+    width: 20px;
+    padding: 30px;
+  }
+
+  .swiper-button-next {
+    width: 20px;
+    padding: 30px;
+  }
+
+
+}
+
+
+
 
 .swiper-button-next:hover {
   background-color: red;
