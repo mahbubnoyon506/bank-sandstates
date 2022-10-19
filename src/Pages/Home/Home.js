@@ -14,6 +14,16 @@ const home = () => {
             <Agency/>
             <QualityHome/>
             <HowITWork/>
+            {/* <Banner />
+            <SupportiveBrands />
+            <Agency />
+            <QualityHome />
+<<<<<<< HEAD
+            <HowITWork /> */}
+
+=======
+            <HowITWork />
+>>>>>>> 8a2cd34211b54cee37a779750ccdc9b2edd82e72
         </div>
     );
 };

@@ -50,13 +50,13 @@ export default function CarouselMangement() {
         }}
         loop={true}
         modules={[FreeMode]}
-        className="mySwiper"
+        className="mySwiper grid grid-cols-1 lg:grid-cols-3"
       >
         {
           data.map((d, index) =>
-              <SwiperSlide>
-                <img src={d.image} alt="" />
-              </SwiperSlide>
+            <SwiperSlide>
+              <img src={d.image} alt="" />
+            </SwiperSlide>
           )
         }
       </Swiper>
