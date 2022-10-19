@@ -10,35 +10,35 @@ import "swiper/css/pagination";
 import "./components.css";
 
 // import required modules
-import { FreeMode} from "swiper";
+import { FreeMode } from "swiper";
 
 export default function CarouselMangement() {
-    const data = [
-        {
-            'image' : 'https://i.ibb.co/BCXZY2C/img01.jpg',
-            'service' : 'Finance Managment'
-        },
-        {
-            'image' : 'https://i.ibb.co/xqM8w1n/img02.jpg',
-            'service' : 'Business Managment'
-        },
-        {
-            'image' : 'https://i.ibb.co/Qp004bP/img03.jpg',
-            'service' : 'Finance Managment'
-        },
-        {
-            'image' : 'https://i.ibb.co/BCXZY2C/img01.jpg',
-            'service' : 'Business Managment'
-        },
-        {
-            'image' : 'https://i.ibb.co/xqM8w1n/img02.jpg',
-            'service' : 'Finance Managment'
-        },
-        {
-            'image' : 'https://i.ibb.co/Qp004bP/img03.jpg',
-            'service' : 'Business Managment'
-        },
-    ]
+  const data = [
+    {
+      'image': 'https://i.ibb.co/BCXZY2C/img01.jpg',
+      'service': 'Finance Managment'
+    },
+    {
+      'image': 'https://i.ibb.co/xqM8w1n/img02.jpg',
+      'service': 'Business Managment'
+    },
+    {
+      'image': 'https://i.ibb.co/Qp004bP/img03.jpg',
+      'service': 'Finance Managment'
+    },
+    {
+      'image': 'https://i.ibb.co/BCXZY2C/img01.jpg',
+      'service': 'Business Managment'
+    },
+    {
+      'image': 'https://i.ibb.co/xqM8w1n/img02.jpg',
+      'service': 'Finance Managment'
+    },
+    {
+      'image': 'https://i.ibb.co/Qp004bP/img03.jpg',
+      'service': 'Business Managment'
+    },
+  ]
   return (
     <>
       <Swiper
@@ -53,14 +53,12 @@ export default function CarouselMangement() {
         className="mySwiper"
       >
         {
-            data.map((d, index) => 
-            <SwiperSlide>
+          data.map((d, index) =>
+              <SwiperSlide>
                 <img src={d.image} alt="" />
-                
-            </SwiperSlide>
-            )
+              </SwiperSlide>
+          )
         }
-
       </Swiper>
     </>
   );

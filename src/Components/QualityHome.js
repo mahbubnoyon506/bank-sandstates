@@ -9,7 +9,7 @@ const QualityHome = () => {
         <div className='md:flex flex-row items-center pt-20 p-5 pb-0' style={{ backgroundImage: `url(${qualityBg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
             <div className='basis-1/2 md:pl-20 z-10'>
                 <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Timely Service Delivery & Incident Resolutions!!</p>
-                <h2 className='text-5xl font-bold py-5 leading-normal'>We Provided Some Of The <span className='text-primary'>Good Quality To You</span> </h2>
+                <h2 className='text-3xl md:text-5xl font-bold py-5 leading-normal'>We Provided Some Of The <span className='text-primary'>Good Quality To You</span> </h2>
                 <p className='text-[#74777C]'>
                     The argument in favor of using filler text goes something like this: If you use real content in the design process, anytime you reach a review point you'll end up reviewing and negotiating the content itself and not the design.</p>
                 <div className='md:flex justify-between items-center pb-20'>
@@ -29,7 +29,7 @@ const QualityHome = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] sm:mt-5'>
+                    <div className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] mt-5 mb-[-50px]'>
                         <h4 className='text-6xl font-extrabold'>35+</h4>
                         <p className='text-2xl font-semibold'>Years Of <br /> Experience</p>
                     </div>

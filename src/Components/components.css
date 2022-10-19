@@ -152,7 +152,6 @@ body {
 
 @media only screen and (max-width:497px) {
 
-
   .swiper-button-prev {
     background-size: 20% auto;
   }
@@ -171,22 +170,37 @@ body {
     padding: 25px;
   }
 
-
-
-
   .swiper-button-next {
     background-size: 20% auto;
   }
 
-  .swiper-button-next {
-    width: 15px;
-    padding: 25px;
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+  .swiper-button-prev {
+    background-size: 35% auto;
   }
 
+  .swiper-button-next {
+    background-size: 35% auto;
+  }
 
+  .swiper-button-prev {
+    width: 20px;
+    padding: 30px;
+  }
+
+  .swiper-button-next {
+    width: 20px;
+    padding: 30px;
+  }
 
 
 }
+
 
 
 
