@@ -6,6 +6,7 @@ import video from '../../assets/images/video.jpg'
 import member1 from '../../assets/images/1.jpg';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import AddIcon from '@mui/icons-material/Add';
+import CountUp from 'react-countup';
 
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -82,14 +83,14 @@ const About = () => {
 
 
     return (
-        <div className='md:p-20 bg-base-100'>
-            <div className='md:grid grid-cols-2 gap-10 '>
+        <div className='p-5 md:p-10 lg:p-20 bg-base-100'>
+            <div className='lg:grid grid-cols-2 gap-10 '>
                 <div>
                     <div><img src={secImage} alt="" /></div>
                 </div>
                 <div className='my-auto p-5'>
                     <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Welcome To Our Company</p>
-                    <h2 className='text-5xl font-bold py-5 leading-normal'>Build Your Business With Right Way</h2>
+                    <h2 className='text-3xl lg:text-5xl font-bold py-5 leading-normal'>Build Your Business With Right Way</h2>
                     <p className='text-[#74777C]'>
                         Accounting departments are usually responsible for keeping track of all purchase orders that have been placed for stock (products to be sold by the business) and all other assets and services.</p>
                     <div className='flex items-center py-5'>
@@ -101,19 +102,19 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className='md:grid grid-cols-2 gap-5 py-20'>
+            <div className='lg:grid grid-cols-2 gap-5 py-20'>
                 <div>
-                    <div><img src={video} alt="" /></div>
+                    <div><img className='w-full' src={video} alt="" /></div>
                 </div>
-                <div className='grid grid-cols-2 gap-5'>
-                    <div className='shadow-lg p-10'>
+                <div className='md:grid grid-cols-2 gap-5 md:mt-10 lg:mt-0'>
+                    <div className='shadow-lg p-10 my-5 md:my-0 '>
                         <p className='font-bold text-xl'>Projects With 100% Satisfaction</p>
-                        <h3 className='text-6xl font-extrabold text-primary py-5'>2.5k</h3>
+                        <h3 className='flex text-6xl font-extrabold text-primary py-5'> <CountUp end={2.5} duration={1} decimals={1} /> k</h3>
                         <p className='text-[#74777C]'>A typical business holds many different...</p>
                     </div>
                     <div className='shadow-lg p-10'>
                         <p className='font-bold text-xl'>Projects With 100% Satisfaction</p>
-                        <h3 className='text-6xl font-extrabold text-primary py-5'>2.5k</h3>
+                        <h3 className='flex text-6xl font-extrabold text-primary py-5'> <CountUp end={2.5} duration={1} decimals={1} /> k</h3>
                         <p className='text-[#74777C]'>A typical business holds many different...</p>
                     </div>
                 </div>
@@ -121,13 +122,13 @@ const About = () => {
             <div>
                 <div>
                     <p className='text-primary font-medium text-xl text-center'> <HorizontalRuleIcon />Our Members<HorizontalRuleIcon /></p>
-                    <h2 className='text-6xl font-extrabold py-5 leading-normal text-center'>Expert <span className='text-primary'>Team</span> </h2>
+                    <h2 className='text-3xl lg:text-6xl font-extrabold py-5 leading-normal text-center'>Expert <span className='text-primary'>Team</span> </h2>
                 </div>
-                <div className='md:grid grid-cols-4 gap-5 py-10 '>
+                <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 '>
                     {
                         members.map((member, index) =>
                             <div key={index} className='text-center'>
-                                <img className='mx-auto' src={member1} alt="" />
+                                <img className='w-full' src={member1} alt="" />
                                 <button className='btn btn-link rounded-t-full text-primary mt-[-50px] bg-base-100 hover:bg-base-100'><AddIcon /></button>
                                 <h2 className='text-2xl text-bold hover:text-primary'>{member.name}</h2>
                                 <p className='text-primary'>{member.designation}</p>
@@ -137,10 +138,10 @@ const About = () => {
                 </div>
             </div>
             <div>
-                <div className='md:grid grid-cols-2 gap-10 bg-base-100 py-10 p-5'>
-                    <div className='my-auto'>
+                <div className='lg:grid grid-cols-2 gap-10 bg-base-100 py-10 p-5'>
+                    <div className='my-auto mb-10 lg:mb-0'>
                         <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Why Choose Us</p>
-                        <h2 className='text-5xl font-bold py-5 leading-normal'>Get Every Answer</h2>
+                        <h2 className='text-3xl lg:text-5xl font-bold py-5 leading-normal'>Get Every Answer</h2>
                         <div>
                             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
