@@ -6,7 +6,7 @@ import HowITWork from '../../Components/HowITWork';
 import QualityHome from '../../Components/QualityHome';
 import SupportiveBrands from '../../Components/SupportiveBrands';
 
-const home = () => {
+const Home = () => {
     return (
         <div>
             <Banner/>
@@ -18,4 +18,4 @@ const home = () => {
     );
 };
 
-export default home;
+export default Home;

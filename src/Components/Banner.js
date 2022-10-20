@@ -60,14 +60,14 @@ const Banner = () => {
                     <img className="w-full  mix-blend-multiply bg-base-200  h-full opacity-95 " src={item.image} alt="" />
                   </div>
 
-                  <div className=" absolute backdrop-blur-[3px] px-2 md:px-20 lg:px-24 w-full flex justify-center items-center h-full justify-items-start text-start  text-white z-10 top-0 left-0 ">
+                  <div className=" absolute backdrop-blur-[3px] px-2 md:px-24 lg:px-24 w-full flex justify-center items-center h-full justify-items-start text-start  text-white z-10 top-0 left-0 ">
                     <div className="align-middle	">
-                      <h2 className="text-2xl lg:text-8xl lg:w-3/4 align-middle  md:text-left lg:text-left text-center font-bold ">{item.title}</h2>
+                      <h2 className="text-2xl lg:text-8xl md:text-5xl lg:w-3/4 align-middle  md:text-left lg:text-left text-center font-bold ">{item.title}</h2>
                       <p className="text-sm lg:text-md my-5 lg:w-3/4 font-semibold md:text-left lg:text-left text-center">{item.description}</p>
                       <div className="flex justify-start">
 
 
-                        <a href="#_" class="relative inline-block text-sm lg:text-lg group mx-auto">
+                        <a href="#_" class="relative inline-block text-sm lg:text-lg group mx-auto md:m-0 lg:m-0">
                           <span class="relative z-10 block px-5 py-3 md:py-3 lg:py-4 overflow-hidden font-medium leading-tight text-red-800 transition-colors duration-300 ease-out  rounded-full group-hover:text-white">
                             <span class="absolute inset-0 w-full h-full px-7 py-3 md:py-3 lg:py-4 rounded-full bg-primary"></span>
                             <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>

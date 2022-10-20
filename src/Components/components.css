@@ -159,24 +159,6 @@ body {
     display: none;
   }
 
-  .swiper-button-prev {
-    background-size: 10% auto;
-  }
-
-  .swiper-button-next {
-    background-size: 20% auto;
-  }
-
-  .swiper-button-prev {
-    width: 10px;
-    padding: 15px;
-  }
-
-  .swiper-button-next {
-    width: 10px;
-    padding: 15px;
-  }
-
 
 }
 

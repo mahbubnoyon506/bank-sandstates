@@ -6,18 +6,21 @@ import About from './Pages/About/About';
 import Blog from './Pages/Blogs/Blog';
 import Contact from './Pages/Contact/Contact';
 import BacktoTop from './Components/BacktoTop/BacktoTop';
+import Navbar from './Shared/Navbar';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
   return (
     <div>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blogs" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Navbar />
+      <div className='mt-16'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
       <Footer />
       <BacktoTop />
     </div>
