@@ -12,15 +12,14 @@ import Navbar from './Shared/Navbar';
 function App() {
   return (
     <div>
+      {/* <Header /> */}
       <Navbar />
-      <div className='mt-16'>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blogs" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+      <Routes className="mt-5">
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
       <BacktoTop />
     </div>
