@@ -389,6 +389,7 @@ const HowITWork = () => {
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
+                                        className='mx-auto'
                                         src="https://i.ibb.co/hR8XcJf/manager01.jpg"
                                         // style={{ width: "93%" }}
                                         alt=""
@@ -418,6 +419,7 @@ const HowITWork = () => {
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
+                                        className='mx-auto'
                                         src="https://i.ibb.co/QnkWNTK/manager02.jpg"
                                         // style={{ width: "93%" }}
                                         alt=""
@@ -447,6 +449,7 @@ const HowITWork = () => {
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
+                                        className='mx-auto'
                                         src="https://i.ibb.co/47tQQQn/manager03.jpg"
                                         // style={{ width: "93%" }}
                                         alt=""
@@ -476,6 +479,7 @@ const HowITWork = () => {
                             <div class="team_01 text-center">
                                 <div class="tm_thumb">
                                     <img
+                                        className='mx-auto'
                                         src="https://i.ibb.co/1QVtsL7/manager04.jpg"
                                         // style={{ width: "93%" }}
                                         alt=""
@@ -733,12 +737,12 @@ const HowITWork = () => {
                                         <div class="blogContent">
                                             <div class="bmeta">
                                                 <span>
-                                                <FolderIcon className="mr-2"/>
+                                                    <FolderIcon className="mr-2" />
                                                     <a href="blog1.html">Develop</a>
                                                 </span>
                                                 |
                                                 <span>
-                                                <PersonIcon className="mr-2"/>
+                                                    <PersonIcon className="mr-2" />
                                                     <a href="blog1.html">David Smith</a>
                                                 </span>
                                             </div>
@@ -758,14 +762,14 @@ const HowITWork = () => {
                                         <div class="blogContent">
                                             <div class="bmeta">
                                                 <span >
-                                                    
-                                                    <FolderIcon className="mr-2"/>
+
+                                                    <FolderIcon className="mr-2" />
                                                     <a href="blog1.html">Marketing</a>
                                                 </span>
                                                 |
                                                 <span >
-                                                    
-                                                   <PersonIcon className="mr-2"/>
+
+                                                    <PersonIcon className="mr-2" />
                                                     <a href="blog1.html">David Smith</a>
                                                 </span>
                                             </div>
