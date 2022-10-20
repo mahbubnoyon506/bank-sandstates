@@ -285,7 +285,6 @@ const HowITWork = () => {
                                             <button type="submit" class="qu_btn mx-auto w-sm text-center">Get A Quote </button>
                                         </div>
 
-
                                         <div class="con_message"></div>
                                     </div>
                                 </form>
@@ -733,12 +732,12 @@ const HowITWork = () => {
                                         <div class="blogContent">
                                             <div class="bmeta">
                                                 <span>
-                                                <FolderIcon className="mr-2"/>
+                                                    <FolderIcon className="mr-2" />
                                                     <a href="blog1.html">Develop</a>
                                                 </span>
                                                 |
                                                 <span>
-                                                <PersonIcon className="mr-2"/>
+                                                    <PersonIcon className="mr-2" />
                                                     <a href="blog1.html">David Smith</a>
                                                 </span>
                                             </div>
@@ -758,14 +757,14 @@ const HowITWork = () => {
                                         <div class="blogContent">
                                             <div class="bmeta">
                                                 <span >
-                                                    
-                                                    <FolderIcon className="mr-2"/>
+
+                                                    <FolderIcon className="mr-2" />
                                                     <a href="blog1.html">Marketing</a>
                                                 </span>
                                                 |
                                                 <span >
-                                                    
-                                                   <PersonIcon className="mr-2"/>
+
+                                                    <PersonIcon className="mr-2" />
                                                     <a href="blog1.html">David Smith</a>
                                                 </span>
                                             </div>

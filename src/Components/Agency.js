@@ -56,7 +56,7 @@ const Agency = () => {
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center mt-5'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2   mt-5'>
                         {
                             services.slice(0, 2).map((service, index) =>
                                 <div key={index} className='sm:mb-2 sm:flex justify-center '>
@@ -112,7 +112,7 @@ const Agency = () => {
                                             <p>  {service.description}</p>
 
                                         </div>
-                                        <Link to='/about'  className='text-lg text-primary pt-7 font-semibold'>Read More <ArrowForwardIcon /></Link>
+                                        <Link to='/about' className='text-lg text-primary pt-7 font-semibold'>Read More <ArrowForwardIcon /></Link>
                                     </div>
                                 </Card>
                             </div>

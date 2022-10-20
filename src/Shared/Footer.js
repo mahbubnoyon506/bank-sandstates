@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className='md:flex'>
                         <input type="text" placeholder="Type here" class="input  max-w-xs -full " />
                         <div className='md:ml-[-50px] md:mt-0 mt-2'>
-                            <input className='btn btn-primary -full -py-2' type="submit" value="Subscribe" />
+                            <input className='btn btn-primary bg-gradient-to-r from-[rgba(237,28,35,0.98)] to-[#ed541ce6]  -full -py-2' type="submit" value="Subscribe" />
                         </div>
                     </div>
                 </footer>

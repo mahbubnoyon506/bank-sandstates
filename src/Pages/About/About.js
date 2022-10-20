@@ -7,7 +7,7 @@ import member1 from '../../assets/images/1.jpg';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import AddIcon from '@mui/icons-material/Add';
 import CountUp from 'react-countup';
-import {FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -62,40 +62,40 @@ const About = () => {
 
     const members = [
         {
-            'id' : '1',
+            'id': '1',
             'name': 'Georgie Haynes',
             'designation': 'Business Expert',
             'image': '',
-            'facebook' : 'https://www.facebook.com/',
-            'twitter' : 'https://twitter.com/',
-            'linkedin' : 'https://linkedin.com/'
+            'facebook': 'https://www.facebook.com/',
+            'twitter': 'https://twitter.com/',
+            'linkedin': 'https://linkedin.com/'
         },
         {
-            'id' : '2',
+            'id': '2',
             'name': 'Lara Maleon',
             'designation': 'Managment',
             'image': '',
-            'facebook' : 'https://www.facebook.com/',
-            'twitter' : 'https://twitter.com/',
-            'linkedin' : 'https://linkedin.com/'
+            'facebook': 'https://www.facebook.com/',
+            'twitter': 'https://twitter.com/',
+            'linkedin': 'https://linkedin.com/'
         },
         {
-            'id' : '3',
+            'id': '3',
             'name': 'Adam Delaua',
             'designation': 'Founder',
             'image': '',
-            'facebook' : 'https://www.facebook.com/',
-            'twitter' : 'https://twitter.com/',
-            'linkedin' : 'https://linkedin.com/'
+            'facebook': 'https://www.facebook.com/',
+            'twitter': 'https://twitter.com/',
+            'linkedin': 'https://linkedin.com/'
         },
         {
-            'id' : '4',
+            'id': '4',
             'name': 'Jizz Merkel',
             'designation': 'Consultant',
             'image': '',
-            'facebook' : 'https://www.facebook.com/',
-            'twitter' : 'https://twitter.com/',
-            'linkedin' : 'https://linkedin.com/'
+            'facebook': 'https://www.facebook.com/',
+            'twitter': 'https://twitter.com/',
+            'linkedin': 'https://linkedin.com/'
         },
     ]
 
@@ -149,14 +149,14 @@ const About = () => {
                                 <img className='w-full' src={member1} alt="" />
                                 <div className='w-[100px] h-[100px] bg-slate-500 flex items-center justify-center mx-auto mt-[-100px]'>
 
-                                {
-                                   show &&  
-                                   <div className='flex justify-center items-center'>
-                                      <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href={member.facebook}> <FaFacebookF/> </a>
-                                      <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href={member.linkedin}> <FaLinkedinIn/> </a>
-                                      <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href={member.twitter}> <FaTwitter/> </a>
-                                   </div>
-                                }
+                                    {
+                                        show &&
+                                        <div className='flex justify-center items-center'>
+                                            <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href={member.facebook}> <FaFacebookF /> </a>
+                                            <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href={member.linkedin}> <FaLinkedinIn /> </a>
+                                            <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href={member.twitter}> <FaTwitter /> </a>
+                                        </div>
+                                    }
                                 </div>
                                 <button onClick={() => setShow(!show)} className='btn btn-link rounded-t-full text-primary mt-[-50px] bg-base-100 hover:bg-base-100'><AddIcon /></button>
                                 <h2 className='text-2xl text-bold hover:text-primary'>{member.name}</h2>
