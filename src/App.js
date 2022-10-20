@@ -12,6 +12,7 @@ import Navbar from './Shared/Navbar';
 function App() {
   return (
     <div>
+      {/* <Header /> */}
       <Navbar />
       <Routes className="mt-5">
         <Route path="/" element={<Home />} />

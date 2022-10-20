@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='shadow-md z-50  w-full fixed    top-0 left-0'>
+            <div className='shadow-md z-50 w-full fixed top-0 left-0'>
                 <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
                     {/* <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins]  text-gray-800'> */}
                     <div>
@@ -33,14 +33,14 @@ const Navbar = () => {
                         {
                             Links.map((link) => (
                                 <li key={link.name} className='md:ml-8 text-xl md:my-0 mt-7 mb-5 '>
-                                    <a href={link.link} className='text-gray-900 hover:text-red-600 font font-semibold duration-500'>{link.name}</a>
+                                    <a href={link.link} className='text-sm text-gray-900 hover:text-red-600 font-semibold duration-500'>{link.name}</a>
                                 </li>
                             ))
                         }
                         {/* <Button>
                             Get Started
                         </Button> */}
-                        <div class="  grid-cols-1 md:grid-cols-2 inline-grid">
+                        <div class="grid-cols-1 md:grid-cols-2 inline-grid">
                             <span className='text-left md:text-center mb-3 lg:mb-0  hover:text-red-600 cursor-pointer'><SearchIcon /></span>
                             <Link to='#' class="btn btn-sm btn-primary rounded-full ">Contact Us</Link>
                         </div>

@@ -8,12 +8,12 @@ import SupportiveBrands from '../../Components/SupportiveBrands';
 
 const Home = () => {
     return (
-        <div className=''>
-            <Banner />
-            <SupportiveBrands />
-            <Agency />
-            <QualityHome />
-            <HowITWork />
+        <div>
+            <Banner/>
+            <SupportiveBrands/>
+            <Agency/>
+            <QualityHome/>
+            <HowITWork/>
         </div>
     );
 };
