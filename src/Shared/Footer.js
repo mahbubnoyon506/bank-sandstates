@@ -75,17 +75,17 @@ const Footer = () => {
 
                     </div>
                     <div>
-                        <h3 class="mt-7 mb-5 text-xl text-white font-semibold capitalize ">Post Gallery</h3>
+                        <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Post Gallery</h3>
                         <div className='flex flex-cols-2 gap-4'>
-                            <div>
+                            <div className=''>
 
-                                <img className='w-16 h-14 ' src={image_1} alt="" />
+                                <img className='w-16 h-14 mb-2' src={image_1} alt="" />
                                 <img className='w-16 h-14 ' src={image_1} alt="" />
 
                             </div>
                             <div>
 
-                                <img className='w-16 h-14 ' src={image_1} alt="" />
+                                <img className='w-16 h-14 mb-2' src={image_1} alt="" />
                                 <img className='w-16 h-14 ' src={image_1} alt="" />
                             </div>
                         </div>

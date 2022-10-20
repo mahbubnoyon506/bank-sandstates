@@ -14,12 +14,14 @@ function App() {
     <div>
       {/* <Header /> */}
       <Navbar />
-      <Routes className="mt-5">
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blogs" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className='mt-16'>
+        <Routes className="mt-5">
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
       <Footer />
       <BacktoTop />
     </div>
