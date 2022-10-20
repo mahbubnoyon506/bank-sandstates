@@ -35,7 +35,6 @@ const Banner = () => {
   return (
     <div className="mx-auto md:mb-0 sm:mb-2">
       <Swiper
-        spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
