@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import secImage from '../../assets/images/sec-1.png'
 import support from '../../assets/images/1.png'
 import discuss from '../../assets/images/3.png'
 import video from '../../assets/images/video.jpg'
-import member1 from '../../assets/images/1.jpg';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
-import AddIcon from '@mui/icons-material/Add';
 import CountUp from 'react-countup';
-import {FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+
 
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -15,6 +13,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import Members from './Members';
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -54,7 +53,6 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const About = () => {
     const [expanded, setExpanded] = React.useState('panel1');
-    const [show, setShow] = useState(false);
 
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
@@ -145,23 +143,7 @@ const About = () => {
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 '>
                     {
                         members.map((member, index) =>
-                            <div key={index} className='text-center'>
-                                <img className='w-full' src={member1} alt="" />
-                                <div className='w-[100px] h-[100px] bg-slate-500 flex items-center justify-center mx-auto mt-[-100px]'>
-
-                                {
-                                   show &&  
-                                   <div className='flex justify-center items-center'>
-                                      <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href={member.facebook}> <FaFacebookF/> </a>
-                                      <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href={member.linkedin}> <FaLinkedinIn/> </a>
-                                      <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href={member.twitter}> <FaTwitter/> </a>
-                                   </div>
-                                }
-                                </div>
-                                <button onClick={() => setShow(!show)} className='btn btn-link rounded-t-full text-primary mt-[-50px] bg-base-100 hover:bg-base-100'><AddIcon /></button>
-                                <h2 className='text-2xl text-bold hover:text-primary'>{member.name}</h2>
-                                <p className='text-primary'>{member.designation}</p>
-                            </div>
+                           <Members key={index} member={member} index={index}></Members>
                         )
                     }
                 </div>
