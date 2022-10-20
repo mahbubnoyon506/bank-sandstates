@@ -49,8 +49,8 @@ const Agency = () => {
 
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
 
-                    <div className='bg-auto w-50  ' style={{ backgroundImage: `url(${AgencySubBG})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}>
-                        <div className='px-7 py-10 sm:mb-2' >
+                    <div className='bg-auto w-50  ' style={{ backgroundImage: `url(${AgencySubBG})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', zIndex: "1", }}>
+                        <div className='px-7 py-10 sm:mb-2 z-20' >
                             <h2 className='text-3xl md:text-3xl lg:text-5xl  font-bold leading-normal pb-10'>We Make Your <br /> Agency <span className='text-primary'>Full <br /> Bright</span> </h2>
                             <p className=' pr-10'>This Cheat Sheet offers tips and advice to help you get the essentials right. here's a list of the most important tasks of business accounting and their meaning.</p>
                         </div>

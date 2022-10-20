@@ -193,7 +193,7 @@ const HowITWork = () => {
                 <div className="funfactArea">
                     <div className="fact_01">
                         <h2 className=''>
-                        <CountUp end={2.5} duration={1} decimals={1} /><i style={{ fontStyle: "normal" }}>k</i>
+                            <CountUp end={2.5} duration={1} decimals={1} /><i style={{ fontStyle: "normal" }}>k</i>
                         </h2>
                         <p>
                             Power of choices when nothing what
@@ -202,7 +202,7 @@ const HowITWork = () => {
                     </div>
                     <div className="fact_01 py-5 lg:py-0">
                         <h2>
-                        <CountUp end={138} duration={3} /><i style={{ fontStyle: "normal" }}>+</i>
+                            <CountUp end={138} duration={3} /><i style={{ fontStyle: "normal" }}>+</i>
                         </h2>
                         <p>
                             Power of choices when nothing what
@@ -211,7 +211,7 @@ const HowITWork = () => {
                     </div>
                     <div className="fact_01">
                         <h2>
-                        <CountUp end={9.8} duration={3} /><i style={{ fontStyle: "normal" }}>%</i>
+                            <CountUp end={9.8} duration={3} /><i style={{ fontStyle: "normal" }}>%</i>
                         </h2>
                         <p>
                             Power of choices when nothing what
@@ -283,15 +283,14 @@ const HowITWork = () => {
                             </div>
                         </div>
 
-                        <div class="w-full pt-10">
+                        <div class="pdAcc pt-10">
                             <div class="subTitle">
                                 <span class="bleft"></span>Why Choose Us
                             </div>
                             <h2 class="secTitle px-2 text-sm md:text-2xl lg:text-4xl">
                                 Get Every <span>Answer</span>
                             </h2>
-
-                            <div className='p-2 w-full '>
+                            <div className='p-2'>
                                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                         <Typography>Best Sources of Help and Advice for Your Business</Typography>

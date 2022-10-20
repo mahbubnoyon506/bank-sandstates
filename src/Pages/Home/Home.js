@@ -6,7 +6,7 @@ import HowITWork from '../../Components/HowITWork';
 import QualityHome from '../../Components/QualityHome';
 import SupportiveBrands from '../../Components/SupportiveBrands';
 
-const home = () => {
+const Home = () => {
     return (
         <div>
             <Banner/>
@@ -14,18 +14,8 @@ const home = () => {
             <Agency/>
             <QualityHome/>
             <HowITWork/>
-            {/* <Banner />
-            <SupportiveBrands />
-            <Agency />
-            <QualityHome />
-<<<<<<< HEAD
-            <HowITWork /> */}
-
-=======
-            <HowITWork />
->>>>>>> 8a2cd34211b54cee37a779750ccdc9b2edd82e72
         </div>
     );
 };
 
-export default home;
+export default Home;
