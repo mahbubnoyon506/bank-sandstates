@@ -41,7 +41,7 @@ const Navbar = () => {
                             Get Started
                         </Button> */}
                         <div class="grid-cols-1 md:grid-cols-2 inline-grid">
-                            <span className='text-left md:text-center mb-3 lg:mb-0  hover:text-red-600 cursor-pointer'><SearchIcon /></span>
+                            <span className='text-left md:text-center mb-3 lg:mb-0 my-auto hover:text-red-600 cursor-pointer'><SearchIcon /></span>
                             <Link to='#' class="btn btn-sm btn-primary rounded-full ">Contact Us</Link>
                         </div>
                     </ul>

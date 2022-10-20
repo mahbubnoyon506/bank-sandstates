@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
 
 const SupportiveBrands = () => {
 
@@ -30,7 +31,7 @@ const SupportiveBrands = () => {
                     </Marquee>
                 </div>
                 <div className='basis-1/4'>
-                    <button className='w-full btn bg-base-100 rounded-full text-primary border-0'>Join With Us</button>
+                    <Link to='/contact' className='w-full btn bg-base-100 rounded-full text-primary border-0 hover:text-white'>Join With Us</Link>
                 </div>
             </div>
         </div>
