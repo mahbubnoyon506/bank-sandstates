@@ -6,8 +6,8 @@ const Footer = () => {
     const date = new Date().getFullYear()
     return (
         <div style={{ backgroundImage: `url(${background})` }}>
-            <div className=' p-2 md:p-10 lg:p-20'>x
-                <footer className='md:flex justify-between w-full'>
+            <div className=' p-2 md:p-10 lg:p-20'>
+                <footer className='md:flex justify-between items-center w-full'>
                     <div>
                         <p className='text-lg mt-4 lg:text-4xl text-base-100 font-bold mb-3'>Sign up for latest news and <br /> insights from <span className='text-primary'>Quera.</span></p>
                     </div>
@@ -28,7 +28,7 @@ const Footer = () => {
                         <a class="link link-hover">Advertisement</a>
                     </div>
                     <div>
-                        <span class="footer-title">Company</span>
+                        <span class="footer-title">Useful Links</span>
                         <a class="link link-hover">About us</a>
                         <a class="link link-hover">Contact</a>
                         <a class="link link-hover">Jobs</a>

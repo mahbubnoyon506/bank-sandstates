@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./howitwork.css";
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -15,6 +15,9 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import CarouselMangement from './CarouselMangement';
 import CountUp from 'react-countup';
+import FolderIcon from '@mui/icons-material/Folder';
+import PersonIcon from '@mui/icons-material/Person';
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -55,6 +58,10 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const HowITWork = () => {
     const [expanded, setExpanded] = React.useState('panel1');
+    const [show, setShow] = useState(false);
+    const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
 
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
@@ -192,7 +199,7 @@ const HowITWork = () => {
             <div className="appoinmentSection01">
                 <div className="funfactArea">
                     <div className="fact_01">
-                        <h2 className=''>
+                        <h2 className='md:text-center lg:text-left'>
                             <CountUp end={2.5} duration={1} decimals={1} /><i style={{ fontStyle: "normal" }}>k</i>
                         </h2>
                         <p>
@@ -200,8 +207,8 @@ const HowITWork = () => {
                             <br /> we like best principle
                         </p>
                     </div>
-                    <div className="fact_01 py-5 lg:py-0">
-                        <h2>
+                    <div className="fact_01 py-10 lg:py-0">
+                        <h2 className='md:text-center lg:text-left'>
                             <CountUp end={138} duration={3} /><i style={{ fontStyle: "normal" }}>+</i>
                         </h2>
                         <p>
@@ -210,7 +217,7 @@ const HowITWork = () => {
                         </p>
                     </div>
                     <div className="fact_01">
-                        <h2>
+                        <h2 className='md:text-center lg:text-left'>
                             <CountUp end={9.8} duration={3} /><i style={{ fontStyle: "normal" }}>%</i>
                         </h2>
                         <p>
@@ -381,23 +388,23 @@ const HowITWork = () => {
                                 <div class="tm_thumb">
                                     <img
                                         src="https://i.ibb.co/hR8XcJf/manager01.jpg"
-                                        style={{ width: "93%" }}
+                                        // style={{ width: "93%" }}
                                         alt=""
                                     />
-                                    <div class="tm_social">
-                                        <a href="https://www.facebook.com/">
-                                            <i class="twi-facebook-f"></i>
-                                        </a>
-                                        <a href="https://linkedin.com/">
-                                            <i class="twi-linkedin-in"></i>
-                                        </a>
-                                        <a href="https://twitter.com/">
-                                            <i class="twi-twitter"></i>
-                                        </a>
+                                    <div className='w-[100px] h-[100px] bg-slate-500 flex items-center justify-center mx-auto mt-[-100px]'>
+
+                                        {
+                                            show &&
+                                            <div className='flex justify-center items-center mt-[-20px]'>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href=""> <FaTwitter /> </a>
+                                            </div>
+                                        }
                                     </div>
-                                    <a class="tmsToggle" href="javascript:void(0);">
-                                        +
-                                    </a>
+                                    <div className='flex justify-center items-center'>
+                                        <button onClick={() => setShow(!show)} class="tmsToggle" href="">+</button>
+                                    </div>
                                 </div>
                                 <h3>
                                     <a href="single-team.html">Georgie Haynes</a>
@@ -410,23 +417,23 @@ const HowITWork = () => {
                                 <div class="tm_thumb">
                                     <img
                                         src="https://i.ibb.co/QnkWNTK/manager02.jpg"
-                                        style={{ width: "93%" }}
+                                        // style={{ width: "93%" }}
                                         alt=""
                                     />
-                                    <div class="tm_social">
-                                        <a href="https://www.facebook.com/">
-                                            <i class="twi-facebook-f"></i>
-                                        </a>
-                                        <a href="https://linkedin.com/">
-                                            <i class="twi-linkedin-in"></i>
-                                        </a>
-                                        <a href="https://twitter.com/">
-                                            <i class="twi-twitter"></i>
-                                        </a>
+                                    <div className='w-[100px] h-[100px] bg-slate-500 flex items-center justify-center mx-auto mt-[-100px]'>
+
+                                        {
+                                            show2 &&
+                                            <div className='flex justify-center items-center mt-[-20px]'>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href=""> <FaTwitter /> </a>
+                                            </div>
+                                        }
                                     </div>
-                                    <a class="tmsToggle" href="javascript:void(0);">
-                                        +
-                                    </a>
+                                    <div className='flex justify-center items-center'>
+                                        <button onClick={() => setShow2(!show2)} class="tmsToggle" href="">+</button>
+                                    </div>
                                 </div>
                                 <h3>
                                     <a href="single-team.html">Lara Maleon</a>
@@ -439,23 +446,23 @@ const HowITWork = () => {
                                 <div class="tm_thumb">
                                     <img
                                         src="https://i.ibb.co/47tQQQn/manager03.jpg"
-                                        style={{ width: "93%" }}
+                                        // style={{ width: "93%" }}
                                         alt=""
                                     />
-                                    <div class="tm_social">
-                                        <a href="https://www.facebook.com/">
-                                            <i class="twi-facebook-f"></i>
-                                        </a>
-                                        <a href="https://linkedin.com/">
-                                            <i class="twi-linkedin-in"></i>
-                                        </a>
-                                        <a href="https://twitter.com/">
-                                            <i class="twi-twitter"></i>
-                                        </a>
+                                    <div className='w-[100px] h-[100px] bg-slate-500 flex items-center justify-center mx-auto mt-[-100px]'>
+
+                                        {
+                                            show3 &&
+                                            <div className='flex justify-center items-center mt-[-20px]'>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href=""> <FaTwitter /> </a>
+                                            </div>
+                                        }
                                     </div>
-                                    <a class="tmsToggle" href="javascript:void(0);">
-                                        +
-                                    </a>
+                                    <div className='flex justify-center items-center'>
+                                        <button onClick={() => setShow3(!show3)} class="tmsToggle" href="">+</button>
+                                    </div>
                                 </div>
                                 <h3>
                                     <a href="single-team.html">Adam Delaua</a>
@@ -468,23 +475,23 @@ const HowITWork = () => {
                                 <div class="tm_thumb">
                                     <img
                                         src="https://i.ibb.co/1QVtsL7/manager04.jpg"
-                                        style={{ width: "93%" }}
+                                        // style={{ width: "93%" }}
                                         alt=""
                                     />
-                                    <div class="tm_social">
-                                        <a href="https://www.facebook.com/">
-                                            <i class="twi-facebook-f"></i>
-                                        </a>
-                                        <a href="https://linkedin.com/">
-                                            <i class="twi-linkedin-in"></i>
-                                        </a>
-                                        <a href="https://twitter.com/">
-                                            <i class="twi-twitter"></i>
-                                        </a>
+                                    <div className='w-[100px] h-[100px] bg-slate-500 flex items-center justify-center mx-auto mt-[-100px]'>
+
+                                        {
+                                            show4 &&
+                                            <div className='flex justify-center items-center mt-[-20px]'>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>
+                                                <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href=""> <FaTwitter /> </a>
+                                            </div>
+                                        }
                                     </div>
-                                    <a class="tmsToggle" href="javascript:void(0);">
-                                        +
-                                    </a>
+                                    <div className='flex justify-center items-center'>
+                                        <button onClick={() => setShow4(!show4)} class="tmsToggle" href="">+</button>
+                                    </div>
                                 </div>
                                 <h3>
                                     <a href="single-team.html">Jizz Merkel</a>
@@ -537,9 +544,9 @@ const HowITWork = () => {
                             cheques during the course of a year to pay for a wide variety of
                             items including local business taxes,
                         </p>
-                        <a href="javascript:void(0);" className="qu_btn mb-10 md:mb-3">
+                        <button href="" className="btn rounded-full bg-white text-primary mb-10 md:mb-3 hover:bg-primary hover:text-white">
                             View All
-                        </a>
+                        </button>
                     </div>
                     <div class="">
                         <div class="md:grid grid-cols-2 gap-5 py-5">
@@ -724,12 +731,12 @@ const HowITWork = () => {
                                         <div class="blogContent">
                                             <div class="bmeta">
                                                 <span>
-                                                    <i class="twi-folder2"></i>
+                                                <FolderIcon className="mr-2"/>
                                                     <a href="blog1.html">Develop</a>
                                                 </span>
                                                 |
                                                 <span>
-                                                    <i class="twi-user2"></i>
+                                                <PersonIcon className="mr-2"/>
                                                     <a href="blog1.html">David Smith</a>
                                                 </span>
                                             </div>
@@ -748,13 +755,15 @@ const HowITWork = () => {
                                         </div>
                                         <div class="blogContent">
                                             <div class="bmeta">
-                                                <span>
-                                                    <i class="twi-folder2"></i>
+                                                <span >
+                                                    
+                                                    <FolderIcon className="mr-2"/>
                                                     <a href="blog1.html">Marketing</a>
                                                 </span>
                                                 |
-                                                <span>
-                                                    <i class="twi-user2"></i>
+                                                <span >
+                                                    
+                                                   <PersonIcon className="mr-2"/>
                                                     <a href="blog1.html">David Smith</a>
                                                 </span>
                                             </div>

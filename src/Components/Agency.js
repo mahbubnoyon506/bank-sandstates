@@ -77,24 +77,9 @@ const Agency = () => {
                                                     {service.description}
                                                 </Typography>
                                             </CardContent>
-                                            <button className='text-lg text-primary'>Read More <ArrowForwardIcon /></button>
+                                            <Link to='/about' className='text-lg text-primary'>Read More <ArrowForwardIcon /></Link>
                                         </CardActionArea>
                                     </Card>
-
-                                    {/* <Card sx={{ maxWidth: 345, padding: 5 }} >
-                                        <CardActionArea>
-                                            <AcUnitIcon className='text-primary text-center' />
-                                            <CardContent>
-                                                <Typography gutterBottom variant="h5" component="div">
-                                                    {service.title}
-                                                </Typography>
-                                                <Typography variant="body2" color="text.secondary">
-                                                    {service.description}
-                                                </Typography>
-                                            </CardContent>
-                                            <button className='text-lg text-primary'>Read More <ArrowForwardIcon /></button>
-                                        </CardActionArea>
-                                    </Card> */}
                                 </div>
                             )
                         }
@@ -127,7 +112,7 @@ const Agency = () => {
                                                 {service.description}
                                             </Typography>
                                         </CardContent>
-                                        <button className='text-lg text-primary'>Read More <ArrowForwardIcon /></button>
+                                        <Link to='/about' className='text-lg text-primary'>Read More <ArrowForwardIcon /></Link>
                                     </CardActionArea>
                                 </Card>
                             </div>
