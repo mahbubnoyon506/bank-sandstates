@@ -52,7 +52,9 @@ const Contact = () => {
                         </div>
                         <textarea class="w-full rounded-3xl p-5 shadow-md" placeholder="Write text here"></textarea>
                         <div className='flex my-3'><input type="checkbox" name="" id="" /><p className='ml-2 text-[#74777C]'>I Agree to get-e- mails about future conferences.</p></div>
-                        <input className='btn btn-primary rounded-full mb-5' type="submit" value="Submit Now" />
+                        <div className='text-center md:text-left'>
+                            <input className='btn btn-primary rounded-full mb-5 text-center' type="submit" value="Submit Now" />
+                        </div>
                     </form>
                 </div>
                 <div className='md:pt-[350px] pb-[50px] sm:pt-[550px]' style={{ backgroundImage: `url(${contactbg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>

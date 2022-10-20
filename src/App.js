@@ -12,9 +12,8 @@ import Navbar from './Shared/Navbar';
 function App() {
   return (
     <div>
-      {/* <Header /> */}
       <Navbar />
-      <Routes>
+      <Routes className="mt-5">
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blog />} />

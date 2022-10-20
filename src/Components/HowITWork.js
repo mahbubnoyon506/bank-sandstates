@@ -274,9 +274,11 @@ const HowITWork = () => {
                                         ></textarea>
                                     </div>
                                     <div class="input-field ">
-                                        <button type="submit" class="qu_btn w-sm text-center">
-                                            Get A Quote
-                                        </button>
+                                        <div className='text-center md:text-left'>
+                                            <button type="submit" class="qu_btn mx-auto w-sm text-center">Get A Quote </button>
+                                        </div>
+
+
                                         <div class="con_message"></div>
                                     </div>
                                 </form>
