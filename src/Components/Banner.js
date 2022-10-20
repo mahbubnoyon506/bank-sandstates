@@ -8,6 +8,8 @@ import "swiper/css/navigation";
 import "./components.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import slider1 from '../assets/images/slider1.jpg'
+import slider2 from '../assets/images/slider_2.jpg'
 
 
 
@@ -19,17 +21,17 @@ const Banner = () => {
     {
       'title': 'Take Advice out company',
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia hic est cupiditate necessitatibus incidunt, minima tempore doloribus! Ducimus, libero sapiente!",
-      "image": "https://i.ibb.co/d75pqB1/image2.jpg"
+      "image": `${slider1}`
     },
     {
       'title': 'Our vision our Achievment',
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia hic est cupiditate necessitatibus incidunt, minima tempore doloribus! Ducimus, libero sapiente!",
-      "image": "https://i.ibb.co/XJhhtz6/image3.jpg"
+      "image": `${slider2}`
     },
     {
       'title': 'Take Advice out company',
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia hic est cupiditate necessitatibus incidunt, minima tempore doloribus! Ducimus, libero sapiente!",
-      "image": "https://i.ibb.co/CWK0qkP/image1.jpg"
+      "image": `${slider1}`
     },
   ]
   return (
@@ -60,9 +62,9 @@ const Banner = () => {
                     <img className="w-full  mix-blend-multiply bg-base-200  h-full opacity-95 " src={item.image} alt="" />
                   </div>
 
-                  <div className=" absolute backdrop-blur-[3px] px-2 md:px-24 lg:px-24 w-full flex justify-center items-center h-full justify-items-start text-start  text-white z-10 top-0 left-0 ">
+                  <div className=" absolute backdrop-blur-[3px] px-2 md:px-24 lg:px-24 w-full -mt-10 flex justify-center items-center h-full justify-items-start text-start  text-white z-10 top-0 left-0 ">
                     <div className="align-middle	">
-                      <h2 className="text-2xl lg:text-8xl md:text-5xl lg:w-3/4 align-middle  md:text-left lg:text-left text-center font-bold ">{item.title}</h2>
+                      <h2 className="text-3xl lg:text-8xl md:text-5xl lg:w-3/4 align-middle  md:text-left lg:text-left text-center font-bold ">{item.title}</h2>
                       <p className="text-sm lg:text-md my-5 lg:w-3/4 font-semibold md:text-left lg:text-left text-center">{item.description}</p>
                       <div className="flex justify-start">
 
