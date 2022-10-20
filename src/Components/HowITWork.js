@@ -516,7 +516,7 @@ const HowITWork = () => {
                         </div>
                         <div class="sm:pl-10 md:pl-0 sm:mt-5 md:pt-0">
                             <div class="icon_box_04">
-                                <div class="ib_box">
+                                <div class="ib_box p-4 pt-0">
                                     <PermPhoneMsgIcon />
                                 </div>
                                 <p>Have any Questions?</p>
