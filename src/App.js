@@ -6,12 +6,14 @@ import About from './Pages/About/About';
 import Blog from './Pages/Blogs/Blog';
 import Contact from './Pages/Contact/Contact';
 import BacktoTop from './Components/BacktoTop/BacktoTop';
+import Navbar from './Shared/Navbar';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -3,6 +3,7 @@ import qualityBg from '../assets/images/qualitysec-bg.jpg'
 import person from '../assets/images/quality.png'
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import FlareIcon from '@mui/icons-material/Flare';
+import CountUp from 'react-countup';
 
 const QualityHome = () => {
     return (
@@ -30,7 +31,7 @@ const QualityHome = () => {
                         </div>
                     </div>
                     <div className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] mt-5 mb-[-50px]'>
-                        <h4 className='text-6xl font-extrabold'>35+</h4>
+                        <h4 className='text-6xl font-extrabold'><CountUp end={35} duration={2} />+</h4>
                         <p className='text-2xl font-semibold'>Years Of <br /> Experience</p>
                     </div>
                 </div>

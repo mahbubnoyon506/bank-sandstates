@@ -14,6 +14,7 @@ import FlagCircleIcon from '@mui/icons-material/FlagCircle';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import CarouselMangement from './CarouselMangement';
+import CountUp from 'react-countup';
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -192,7 +193,7 @@ const HowITWork = () => {
                 <div className="funfactArea">
                     <div className="fact_01">
                         <h2 className=''>
-                            2.5<i style={{ fontStyle: "normal" }}>k</i>
+                            <CountUp end={2.5} duration={1} decimals={1} /><i style={{ fontStyle: "normal" }}>k</i>
                         </h2>
                         <p>
                             Power of choices when nothing what
@@ -201,7 +202,7 @@ const HowITWork = () => {
                     </div>
                     <div className="fact_01 py-5 lg:py-0">
                         <h2>
-                            138<i style={{ fontStyle: "normal" }}>+</i>
+                            <CountUp end={138} duration={3} /><i style={{ fontStyle: "normal" }}>+</i>
                         </h2>
                         <p>
                             Power of choices when nothing what
@@ -210,7 +211,7 @@ const HowITWork = () => {
                     </div>
                     <div className="fact_01">
                         <h2>
-                            9.8<i style={{ fontStyle: "normal" }}>%</i>
+                            <CountUp end={9.8} duration={3} /><i style={{ fontStyle: "normal" }}>%</i>
                         </h2>
                         <p>
                             Power of choices when nothing what
@@ -282,15 +283,14 @@ const HowITWork = () => {
                             </div>
                         </div>
 
-                        <div class="w-full pt-10">
+                        <div class="pdAcc pt-10">
                             <div class="subTitle">
                                 <span class="bleft"></span>Why Choose Us
                             </div>
                             <h2 class="secTitle px-2 text-sm md:text-2xl lg:text-4xl">
                                 Get Every <span>Answer</span>
                             </h2>
-
-                            <div className='p-2 w-full '>
+                            <div className='p-2'>
                                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                         <Typography>Best Sources of Help and Advice for Your Business</Typography>
@@ -377,7 +377,7 @@ const HowITWork = () => {
                     </div>
                     <div class="md:grid grid-cols-4 gap-5 md:px-20 p-5 pr-0">
                         <div class="">
-                            <div class="team_01 text-center">
+                            <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
                                         src="https://i.ibb.co/hR8XcJf/manager01.jpg"
@@ -406,7 +406,7 @@ const HowITWork = () => {
                             </div>
                         </div>
                         <div class="">
-                            <div class="team_01 text-center">
+                            <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
                                         src="https://i.ibb.co/QnkWNTK/manager02.jpg"
@@ -435,7 +435,7 @@ const HowITWork = () => {
                             </div>
                         </div>
                         <div class="">
-                            <div class="team_01 text-center">
+                            <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
                                         src="https://i.ibb.co/47tQQQn/manager03.jpg"
@@ -524,7 +524,7 @@ const HowITWork = () => {
 
 
             <section class="chooseSection ">
-                <div class="md:grid grid-cols-2 gap-5 md:px-20 px-5">
+                <div class="lg:grid grid-cols-2 gap-5 md:px-20 px-5">
                     <div class="">
                         <div class="subTitle">
                             <span class="bleft"></span>Why Choose Us
@@ -542,7 +542,7 @@ const HowITWork = () => {
                         </a>
                     </div>
                     <div class="">
-                        <div class="md:grid grid-cols-2 gap-5">
+                        <div class="md:grid grid-cols-2 gap-5 py-5">
                             <div class="">
                                 <div class="icon_box_05">
                                     <div class="ib_box">
@@ -614,7 +614,7 @@ const HowITWork = () => {
                     <div class="testimonial-sec mx-0 md:mx-20">
                         <div class="">
                             <div class="cta">
-                                <div class="md:flex justify-between items-center">
+                                <div class="lg:flex justify-between items-center">
                                     <div class="">
                                         <div class="icon_box_06">
                                             <div class="ib_box">
@@ -627,7 +627,7 @@ const HowITWork = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="text-center px-10 py-5 md:py-0">
+                                    <div class="text-center px-10 py-5 lg:py-0">
                                         <div class="orcta">
                                             <p>or</p>
                                         </div>
