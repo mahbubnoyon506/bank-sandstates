@@ -10,14 +10,14 @@ const Footer = () => {
         <div style={{ backgroundImage: `url(${background})` }}>
             <div className=' p-2 md:p-7 lg:p-10 pt-10'>
 
-                <footer className='md:flex pl-3  justify-between w-full'>
+                <footer className='md:flex pl-3  justify-between items-center w-full'>
                     <div>
                         <p className='text-lg mt-4 lg:text-4xl text-base-100 font-bold mb-3'>Sign up for latest news and <br /> insights from <span className='text-primary'>Quera.</span></p>
                     </div>
                     <div className='md:flex'>
-                        <input type="text" placeholder="Type here" class="input  max-w-xs -full " />
+                        <input type="text" placeholder="Type here" class="input rounded-full max-w-xs -full " />
                         <div className='md:ml-[-50px] md:mt-0 mt-2'>
-                            <input className='btn btn-primary -full -py-2' type="submit" value="Subscribe" />
+                            <input className='btn btn-primary -full -py-2 rounded-full' type="submit" value="Subscribe" />
                         </div>
                     </div>
                 </footer>
