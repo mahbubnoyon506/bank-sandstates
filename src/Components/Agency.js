@@ -112,7 +112,7 @@ const Agency = () => {
                                             <p>  {service.description}</p>
 
                                         </div>
-                                        <Link to='/about'  className='text-lg text-primary pt-7 font-semibold'>Read More <ArrowForwardIcon /></Link>
+                                        <Link to='/about' className='text-lg text-primary pt-7 font-semibold'>Read More <ArrowForwardIcon /></Link>
                                     </div>
                                 </Card>
                             </div>

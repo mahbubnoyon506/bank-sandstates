@@ -6,7 +6,6 @@ import video from '../../assets/images/video.jpg'
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import CountUp from 'react-countup';
 
-
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
@@ -60,40 +59,40 @@ const About = () => {
 
     const members = [
         {
-            'id' : '1',
+            'id': '1',
             'name': 'Georgie Haynes',
             'designation': 'Business Expert',
             'image': '',
-            'facebook' : 'https://www.facebook.com/',
-            'twitter' : 'https://twitter.com/',
-            'linkedin' : 'https://linkedin.com/'
+            'facebook': 'https://www.facebook.com/',
+            'twitter': 'https://twitter.com/',
+            'linkedin': 'https://linkedin.com/'
         },
         {
-            'id' : '2',
+            'id': '2',
             'name': 'Lara Maleon',
             'designation': 'Managment',
             'image': '',
-            'facebook' : 'https://www.facebook.com/',
-            'twitter' : 'https://twitter.com/',
-            'linkedin' : 'https://linkedin.com/'
+            'facebook': 'https://www.facebook.com/',
+            'twitter': 'https://twitter.com/',
+            'linkedin': 'https://linkedin.com/'
         },
         {
-            'id' : '3',
+            'id': '3',
             'name': 'Adam Delaua',
             'designation': 'Founder',
             'image': '',
-            'facebook' : 'https://www.facebook.com/',
-            'twitter' : 'https://twitter.com/',
-            'linkedin' : 'https://linkedin.com/'
+            'facebook': 'https://www.facebook.com/',
+            'twitter': 'https://twitter.com/',
+            'linkedin': 'https://linkedin.com/'
         },
         {
-            'id' : '4',
+            'id': '4',
             'name': 'Jizz Merkel',
             'designation': 'Consultant',
             'image': '',
-            'facebook' : 'https://www.facebook.com/',
-            'twitter' : 'https://twitter.com/',
-            'linkedin' : 'https://linkedin.com/'
+            'facebook': 'https://www.facebook.com/',
+            'twitter': 'https://twitter.com/',
+            'linkedin': 'https://linkedin.com/'
         },
     ]
 
@@ -122,13 +121,13 @@ const About = () => {
                 <div>
                     <div><img className='w-full' src={video} alt="" /></div>
                 </div>
-                <div className='md:grid grid-cols-2 gap-5 md:mt-10 lg:mt-0'>
+                <div className='md:grid grid-cols-2 gap-5 md:mt-10 lg:mt-0 '>
                     <div className='shadow-lg p-10 my-5 md:my-0 '>
                         <p className='font-bold text-xl'>Projects With 100% Satisfaction</p>
                         <h3 className='flex text-6xl font-extrabold text-primary py-5'> <CountUp end={2.5} duration={1} decimals={1} /> k</h3>
                         <p className='text-[#74777C]'>A typical business holds many different...</p>
                     </div>
-                    <div className='shadow-lg p-10'>
+                    <div className='shadow-lg p-10 '>
                         <p className='font-bold text-xl'>Projects With 100% Satisfaction</p>
                         <h3 className='flex text-6xl font-extrabold text-primary py-5'> <CountUp end={2.5} duration={1} decimals={1} /> k</h3>
                         <p className='text-[#74777C]'>A typical business holds many different...</p>
@@ -143,7 +142,7 @@ const About = () => {
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 '>
                     {
                         members.map((member, index) =>
-                           <Members key={index} member={member} index={index}></Members>
+                            <Members key={index} member={member} index={index}></Members>
                         )
                     }
                 </div>

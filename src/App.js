@@ -7,6 +7,7 @@ import Blog from './Pages/Blogs/Blog';
 import Contact from './Pages/Contact/Contact';
 import BacktoTop from './Components/BacktoTop/BacktoTop';
 import Navbar from './Shared/Navbar';
+import NotFound from './Pages/NotFound/NotFound';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
@@ -14,12 +15,13 @@ function App() {
     <div>
       {/* <Header /> */}
       <Navbar />
-      <div className='mt-16'>
+      <div className='mt-24 lg:mt-32'>
         <Routes className="mt-5">
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
