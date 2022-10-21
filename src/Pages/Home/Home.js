@@ -9,7 +9,7 @@ import SupportiveBrands from '../../Components/SupportiveBrands';
 const Home = () => {
     return (
         <div>
-            {/* <Banner /> */}
+            <Banner />
             <SupportiveBrands />
             <Agency />
             <QualityHome />

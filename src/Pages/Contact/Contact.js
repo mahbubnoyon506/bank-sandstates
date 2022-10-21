@@ -15,8 +15,11 @@ const Contact = () => {
                     </div>
                     <div className='ml-5'>
                         <h2 className='text-2xl font-bold mb-2'>Office Address:</h2>
-                        <p className='text-[#74777C]'>3556 Hartford Way Vlg, Mount
-                            Pleasant, SC, 29466, Australia.</p>
+                        <p className='text-[#74777C] text-lg'>
+                            3556 Hartford Way Vlg, Mount
+                            <br />
+                            Pleasant, SC, 29466, Australia.
+                        </p>
                     </div>
                 </div>
                 <div className='flex items-center my-5 lg:my-0'>
@@ -25,7 +28,7 @@ const Contact = () => {
                     </div>
                     <div className='ml-5'>
                         <h2 className='text-2xl font-bold mb-2'>Call Us For Help:</h2>
-                        <p className='text-[#74777C]'>+259 2563 2562, <br /> +256 3654 2156</p>
+                        <p className='text-lg text-[#74777C]'>+259 2563 2562, <br /> +256 3654 2156</p>
                     </div>
                 </div>
                 <div className='flex items-center'>
@@ -34,7 +37,7 @@ const Contact = () => {
                     </div>
                     <div className='ml-5'>
                         <h2 className='text-2xl font-bold mb-2'>Mail info:</h2>
-                        <p className='text-[#74777C]'>example@quera.com <br /> info@example.com</p>
+                        <p className='text-lg text-[#74777C]'>example@quera.com <br /> info@example.com</p>
                     </div>
                 </div>
             </div>

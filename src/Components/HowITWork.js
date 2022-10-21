@@ -793,9 +793,11 @@ const HowITWork = () => {
                                     advisors, developers...
                                 </p>
                                 <Button>
-                                    View All News
+
                                 </Button>
-                                {/* <a href="blog1.html" class="qu_btn"></a> */}
+                                <a href="blog1.html" class="qu_btn">
+
+                                </a>
                             </div>
                         </div>
                     </div>

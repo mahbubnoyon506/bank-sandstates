@@ -6,6 +6,8 @@ import { FiInstagram, FiMenu } from 'react-icons/fi';
 import SearchIcon from '@mui/icons-material/Search';
 import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import { IoIosFlash } from 'react-icons/io';
+
 import NavImage from "../assets/images/navbar-image.png"
 
 
@@ -41,8 +43,8 @@ const Navbar = () => {
                     <div className=' px-5 basis-3/4 w-[900px] '>
                         <div className='hidden lg:block mx-auto'>
                             <div className=' flex justify-center w-100 bg-red-600 p-2 text-white'>
-                                <div className='flex text-sm  '>
-                                    <p className='py-3 px-2 '>Need Help: Providing Innovative and Easy Solutions, Call (012) 2569 2453 1215</p>
+                                <div className='flex text-sm gap-x-16'>
+                                    <p className='py-3 px-2 '><span className='inline-flex pt-1 text-lg'><IoIosFlash /></span> Need Help: Providing Innovative and Easy Solutions, Call (012) 2569 2453 1215</p>
                                     <p className='py-3 px-2 '>ENGLISH</p>
                                 </div>
                                 <div className='flex text-lg  py-3 gap-5 px-2'>
