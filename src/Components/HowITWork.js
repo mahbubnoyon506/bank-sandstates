@@ -18,6 +18,7 @@ import CountUp from 'react-countup';
 import FolderIcon from '@mui/icons-material/Folder';
 import PersonIcon from '@mui/icons-material/Person';
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import Button from '../Shared/Button';
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -791,9 +792,10 @@ const HowITWork = () => {
                                     running, it has been delivering smiles to hundreds of IT
                                     advisors, developers...
                                 </p>
-                                <a href="blog1.html" class="qu_btn">
+                                <Button>
                                     View All News
-                                </a>
+                                </Button>
+                                {/* <a href="blog1.html" class="qu_btn"></a> */}
                             </div>
                         </div>
                     </div>

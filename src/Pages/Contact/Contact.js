@@ -3,6 +3,7 @@ import PlaceIcon from '@mui/icons-material/Place';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import contactbg from '../../assets/images/16.jpg'
+import Button from '../../Shared/Button';
 
 const Contact = () => {
     return (
@@ -67,7 +68,8 @@ const Contact = () => {
                     <h2 className='text-3xl font-bold text-primary text-center'>Chat With Support</h2>
                     <p className='text-neutral text-lg font-bold text-center py-5'>Let's chat our live experts to get answer your question</p>
                     <div className='flex justify-center'>
-                        <button className='bg-gradient-to-r from-[rgba(237,28,35,0.98)] to-[#ed541ce6]   btn btn-primary rounded-full'>Live Chat</button>
+                        <Button>Live Chat</Button>
+                        {/* <button className='bg-gradient-to-r from-[rgba(237,28,35,0.5)] to-[#ed541ce6]   btn btn-primary rounded-full'>Live Chat</button> */}
                     </div>
                 </div>
             </div>
