@@ -2,10 +2,11 @@ import React from 'react'
 
 const Button = (props) => {
     return (
-        <button className='bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 
-    duration-500'>
-            {props.children}
-        </button>
+        <>
+            <button className='bg-gradient-to-r from-[rgba(237,28,35,0.9)] to-[#ed541ce6]   btn btn-primary  rounded-full'>
+                {props.children}
+            </button>
+        </>
     )
 }
 
