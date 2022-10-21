@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -55,7 +56,13 @@ export default function CarouselMangement() {
         {
           data.map((d, index) =>
             <SwiperSlide>
-              <img src={d.image} alt="" />
+              <div className="">
+                <img src={d.image} alt="" />
+                <div className="mt-[-100px] ml-2 pt-3 lg:ml-10 w-full h-[100px]">
+                  <p className="text-sm lg:text-lg lg:font-semibold text-white text-left hover:text-primary"><HorizontalRuleIcon /> Consultant</p>
+                  <h2 className="text-xl lg:text-3xl lg:font-bold text-white text-left hover:text-primary">{d.service}</h2>
+                </div>
+              </div>
             </SwiperSlide>
           )
         }

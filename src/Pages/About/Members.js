@@ -6,7 +6,7 @@ import {FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 const Members = ({member, index}) => {
     const {id, name, designation} = member;
     const [show, setShow] = useState(false);
-    console.log(show)
+
     return (
         <div className='text-center'>
             <img className='w-full' src={member1} alt="" />

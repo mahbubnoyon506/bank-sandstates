@@ -23,7 +23,7 @@ const BacktoTop = () => {
     return (
         <div>
             {
-              backtoTop &&  <button style={{ position: 'fixed', bottom: '50px', right: '50px' }} className='bg-primary z-10 rounded-full p-2 text-white' onClick={scrollUp}><VerticalAlignTopIcon /></button>
+              backtoTop &&  <button  className='fixed bottom-6 right-6 md:right-10 md:bottom-10 bg-primary z-10 rounded-full p-2 text-white' onClick={scrollUp}><VerticalAlignTopIcon /></button>
             }
             
         </div>

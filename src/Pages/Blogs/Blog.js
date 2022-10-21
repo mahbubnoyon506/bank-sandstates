@@ -81,7 +81,7 @@ const Blog = () => {
                             <div className='border shadow-md m-5 md:m-0 mx-5 md:mx-0'>
                                 <img className='' src={post.thumbnail} alt="" />
                                 <p className='text-[#74777C] px-5 p-5'> <FolderIcon /> {post.category} | <PersonIcon /> {post.author} </p>
-                                <h2 className='font-medium text-xl px-5'>{post.title}</h2>
+                                <h2 className='font-medium text-xl px-5 hover:text-primary'>{post.title}</h2>
                                 <p className='px-5'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quisquam voluptas unde nulla quas voluptatibus eos, itaque minus rem! Consectetur ullam, aut expedita tenetur consequatur corrupti natus quibusdam nemo repudiandae sequi saepe repellat, ad officiis. Quas ducimus quis deserunt repudiandae ad voluptate consequuntur?</p>
                                 <button className='mb-5 ml-5 btn btn-link no-underline shadow-md rounded-full mt-5 hover:bg-primary hover:text-base-100 hover:no-underline'>Read More</button>
                             </div>
@@ -114,7 +114,7 @@ const Blog = () => {
                                 <div key={index} className='flex lg:flex items-center p-5 md:p-2 border-b-2'>
                                     <img className='w-[25vw] md:w-[10vw] lg:w-[8vw]' src={post.thumbnail} alt="" />
                                     <div className='ml-3 md:ml-2'>
-                                        <p className='font-bold md:font-semibold lg:font-bold mt-3 md:mt-0'> {post.title}</p>
+                                        <p className='font-bold md:font-semibold lg:font-bold mt-3 md:mt-0 hover:text-primary'> {post.title}</p>
                                         <p className=' text-[#74777C]'> <CalendarMonthIcon />{post.date} </p>
                                     </div>
                                 </div>

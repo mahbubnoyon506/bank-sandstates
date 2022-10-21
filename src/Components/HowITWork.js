@@ -7,7 +7,7 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
-import AssignmentIcon from '@mui/icons-material/Assignment';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import AssistantIcon from '@mui/icons-material/Assistant';
 import FlagCircleIcon from '@mui/icons-material/FlagCircle';
@@ -17,7 +17,9 @@ import CarouselMangement from './CarouselMangement';
 import CountUp from 'react-countup';
 import FolderIcon from '@mui/icons-material/Folder';
 import PersonIcon from '@mui/icons-material/Person';
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaHands, FaLinkedinIn, FaPhoneAlt, FaRegLightbulb, FaTwitter } from 'react-icons/fa';
+import { GiProgression } from "react-icons/gi";
+import { MdSupportAgent } from "react-icons/md";
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -232,7 +234,7 @@ const HowITWork = () => {
                     <div className="lg:grid grid-cols-2 gap-x-5 md:px-10">
                         <div className="">
                             <div className="appointment_form">
-                                <p>Do it right now!</p>
+                                <p className='text-primary mb-1'>Do it right now!</p>
                                 <h3 className='mt-5'>Make an Appointment</h3>
                                 <form action="#" className="w-full" id="contact_form">
                                     <div className='md:grid grid-cols-2 gap-3'>
@@ -558,10 +560,8 @@ const HowITWork = () => {
                         <div class="md:grid grid-cols-2 gap-5 py-5">
                             <div class="">
                                 <div class="icon_box_05">
-                                    <div class="ib_box">
-                                        <div class="pin1"></div>
-                                        <AssignmentIcon />
-                                        <div class="pin2"></div>
+                                    <div class="ib_box flex justify-center items-center hover:bg-gradient-to-r from-[#ED1C24] to-[#ED521C]">
+                                        <GiProgression />
                                     </div>
                                     <h3>Improvement</h3>
                                     <p>
@@ -572,10 +572,8 @@ const HowITWork = () => {
                             </div>
                             <div class="">
                                 <div class="icon_box_05">
-                                    <div class="ib_box">
-                                        <div class="pin1"></div>
-                                        <TipsAndUpdatesIcon />
-                                        <div class="pin2"></div>
+                                    <div class="ib_box flex justify-center items-center hover:bg-gradient-to-r from-[#ED1C24] to-[#ED521C]">
+                                        <FaRegLightbulb />
                                     </div>
                                     <h3>Idea Generate</h3>
                                     <p>
@@ -586,10 +584,8 @@ const HowITWork = () => {
                             </div>
                             <div class="">
                                 <div class="icon_box_05">
-                                    <div class="ib_box">
-                                        <div class="pin1"></div>
-                                        <AssistantIcon />
-                                        <div class="pin2"></div>
+                                    <div class="ib_box flex justify-center items-center hover:bg-gradient-to-r from-[#ED1C24] to-[#ED521C]">
+                                        <MdSupportAgent />
                                     </div>
                                     <h3>Consultancy</h3>
                                     <p>
@@ -600,10 +596,8 @@ const HowITWork = () => {
                             </div>
                             <div class="">
                                 <div class="icon_box_05">
-                                    <div class="ib_box">
-                                        <div class="pin1"></div>
-                                        <FlagCircleIcon />
-                                        <div class="pin2"></div>
+                                    <div class="ib_box flex justify-center items-center hover:bg-gradient-to-r from-[#ED1C24] to-[#ED521C]">
+                                        <FaHands />
                                     </div>
                                     <h3>Success Business</h3>
                                     <p>
@@ -746,7 +740,7 @@ const HowITWork = () => {
                                                     <a href="blog1.html">David Smith</a>
                                                 </span>
                                             </div>
-                                            <h3>
+                                            <h3 className='hover:text-primary'>
                                                 <a href="single-blog.html">
                                                     ITAM joins the financial, inventory...
                                                 </a>
@@ -773,7 +767,7 @@ const HowITWork = () => {
                                                     <a href="blog1.html">David Smith</a>
                                                 </span>
                                             </div>
-                                            <h3>
+                                            <h3 className='hover:text-primary'>
                                                 <a href="single-blog.html">
                                                     How To Scale a Dropshipping Business...
                                                 </a>
