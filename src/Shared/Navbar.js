@@ -15,6 +15,7 @@ const Navbar = () => {
         { name: "CONTACT", link: "/contact" },
     ];
     let [open, setOpen] = useState(false);
+    const [show, setShow] = useState(false)
 
     return (
         <div>
@@ -40,9 +41,13 @@ const Navbar = () => {
                         {/* <Button>
                             Get Started
                         </Button> */}
-                        <div class="grid-cols-1 md:grid-cols-2 inline-grid">
-                            <span className='text-left md:text-center mb-3 lg:mb-0 my-auto hover:text-red-600 cursor-pointer'><SearchIcon /></span>
-                            <Link to='#' class="btn btn-sm btn-primary rounded-full ">Contact Us</Link>
+                        <div class="grid-cols-1 md:grid-cols-2 inline-grid ml-2 my-auto">
+                                <span onClick={() => setShow(!show)} className='text-left md:text-center mb-3 lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
+                                {
+                                    show && 
+                                <div className='flex justify-center items-center absolute left-20 bottom-20 md:top-[100px] md:right-[0px] lg:top-[95px] lg:left-[45vw]'> <input type="text" placeholder="Type here" class="input w-full max-w-xs rounded-full p-5 bg-slate-100 md:bg-base-100 " /> <button className='w-10 h-10 rounded-full bg-primary text-white ml-[-45px] lg:ml-[-45px] hover:bg-black'><SearchIcon className=' ' /></button>  </div>
+                                }
+                            <Link to='#' class="btn btn-sm btn-primary rounded-full mt-5 md:mt-0 ">Contact Us</Link>
                         </div>
                     </ul>
                 </div>
@@ -52,3 +57,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
