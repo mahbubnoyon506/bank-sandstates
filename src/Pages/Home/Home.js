@@ -9,11 +9,11 @@ import SupportiveBrands from '../../Components/SupportiveBrands';
 const Home = () => {
     return (
         <div>
-            <Banner/>
-            <SupportiveBrands/>
-            <Agency/>
-            <QualityHome/>
-            <HowITWork/>
+            <Banner />
+            <SupportiveBrands />
+            <Agency />
+            <QualityHome />
+            <HowITWork />
         </div>
     );
 };

@@ -20,6 +20,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import { FaFacebookF, FaHands, FaLinkedinIn, FaPhoneAlt, FaRegLightbulb, FaTwitter } from 'react-icons/fa';
 import { GiProgression } from "react-icons/gi";
 import { MdSupportAgent } from "react-icons/md";
+import Button from '../Shared/Button';
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -286,7 +287,6 @@ const HowITWork = () => {
                                         <div className='text-center md:text-left'>
                                             <button type="submit" class="qu_btn mx-auto w-sm text-center">Get A Quote </button>
                                         </div>
-
 
                                         <div class="con_message"></div>
                                     </div>
@@ -790,8 +790,11 @@ const HowITWork = () => {
                                     running, it has been delivering smiles to hundreds of IT
                                     advisors, developers...
                                 </p>
+                                <Button>
+
+                                </Button>
                                 <a href="blog1.html" class="qu_btn">
-                                    View All News
+
                                 </a>
                             </div>
                         </div>
