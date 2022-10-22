@@ -121,13 +121,13 @@ const About = () => {
                 <div>
                     <div><img className='w-full' src={video} alt="" /></div>
                 </div>
-                <div className='md:grid grid-cols-2 gap-5 md:mt-10 lg:mt-0'>
+                <div className='md:grid grid-cols-2 gap-5 md:mt-10 lg:mt-0 '>
                     <div className='shadow-lg p-10 my-5 md:my-0 '>
                         <p className='font-bold text-xl'>Projects With 100% Satisfaction</p>
                         <h3 className='flex text-6xl font-extrabold text-primary py-5'> <CountUp end={2.5} duration={1} decimals={1} /> k</h3>
                         <p className='text-[#74777C]'>A typical business holds many different...</p>
                     </div>
-                    <div className='shadow-lg p-10'>
+                    <div className='shadow-lg p-10 '>
                         <p className='font-bold text-xl'>Projects With 100% Satisfaction</p>
                         <h3 className='flex text-6xl font-extrabold text-primary py-5'> <CountUp end={2.5} duration={1} decimals={1} /> k</h3>
                         <p className='text-[#74777C]'>A typical business holds many different...</p>

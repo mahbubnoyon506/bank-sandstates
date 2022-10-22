@@ -3,6 +3,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import background from '../assets/images/footer-bg.jpg'
 import image_1 from '../assets/images/1.jpg'
 import { AiFillPhone } from "react-icons/ai"
+import Button from './Button';
 
 const Footer = () => {
     const date = new Date().getFullYear()
@@ -17,7 +18,7 @@ const Footer = () => {
                     <div className='md:flex'>
                         <input type="text" placeholder="Type here" class="input rounded-full max-w-xs -full " />
                         <div className='md:ml-[-50px] md:mt-0 mt-2'>
-                            <input className='btn btn-primary -full -py-2 rounded-full' type="submit" value="Subscribe" />
+                            <input className='btn bg-gradient-to-r from-[#ED1C24] to-[#ED521C] rounded-full border-0  hover:bg-gradient-to-l from-[#ED521C] to-[#ED1C24] ' type="submit" value="Subscribe" />
                         </div>
                     </div>
                 </footer>

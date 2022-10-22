@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import bgShadow from '../assets/images/text-bg-folio.png'

@@ -20,6 +20,7 @@ const Navbar = () => {
         { name: "CONTACT", link: "/contact" },
     ];
     let [open, setOpen] = useState(false);
+    const [show, setShow] = useState(false)
 
     return (
         <div className=''
@@ -40,19 +41,24 @@ const Navbar = () => {
                         <ion-icon name={open ? 'close' : 'menu'}><FiMenu /></ion-icon>
                     </div>
 
-                    <div className=' px-5 basis-3/4 w-[900px] '>
-                        <div className='hidden lg:block mx-auto'>
-                            <div className=' flex justify-center w-100 bg-red-600 p-2 text-white'>
-                                <div className='flex text-sm gap-x-16'>
-                                    <p className='py-3 px-2 '><span className='inline-flex pt-1 text-lg'><IoIosFlash /></span> Need Help: Providing Innovative and Easy Solutions, Call (012) 2569 2453 1215</p>
-                                    <p className='py-3 px-2 '>ENGLISH</p>
-                                </div>
-                                <div className='flex text-lg  py-3 gap-5 px-2'>
-                                    <a className='hover:text-black' href=""><FaFacebookF /></a>
-                                    <a className='hover:text-black' href=""><AiOutlineTwitter /></a>
-                                    <a className='hover:text-black' href=""> <FiInstagram /></a>
-                                </div>
-                            </div>
+                    <ul className={`md:flex md:items-center md:pb-0 pb-8  absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[60px]' : 'top-[-480px]'}`}>
+                        {
+                            Links.map((link) => (
+                                <li key={link.name} className='md:ml-8 text-xl md:my-0 mt-7 mb-5 '>
+                                    <a href={link.link} className='text-sm text-gray-900 hover:text-red-600 font-semibold duration-500'>{link.name}</a>
+                                </li>
+                            ))
+                        }
+                        {/* <Button>
+                            Get Started
+                        </Button> */}
+                        <div class="grid-cols-1 md:grid-cols-2 inline-grid ml-2 my-auto">
+                            <span onClick={() => setShow(!show)} className='text-left md:text-center mb-3 lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
+                            {
+                                show &&
+                                <div className='flex justify-center items-center absolute left-20 bottom-20 md:top-[100px] md:right-[0px] lg:top-[95px] lg:left-[45vw]'> <input type="text" placeholder="Type here" class="input w-full max-w-xs rounded-full p-5 bg-slate-100 md:bg-base-100 " /> <button className='w-10 h-10 rounded-full bg-primary text-white ml-[-45px] lg:ml-[-45px] hover:bg-black'><SearchIcon className=' ' /></button>  </div>
+                            }
+                            <Link to='#' class="btn btn-sm btn-primary rounded-full mt-5 md:mt-0 ">Contact Us</Link>
                         </div>
 
 
@@ -70,11 +76,13 @@ const Navbar = () => {
                                 <Link to='#' class="btn btn-sm btn-primary bg-gradient-to-r from-[rgba(237,28,35,0.98)] to-[#ed541ce6]  rounded-full ">Contact Us</Link>
                             </div>
                         </ul>
-                    </div>
-                </div >
+                </div>
             </div >
+        </div >
         </div >
     );
 };
 
 export default Navbar;
+
+
