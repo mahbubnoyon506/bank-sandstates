@@ -9,7 +9,9 @@ const Contact = () => {
     return (
         <div>
             <div className='lg:grid grid-cols-3 gap-10 p-5 lg:p-20 bg-[#FFEDEE]'>
-                <div className='flex items-center' data-aos="fade-right">
+                <div className='flex items-center'
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic">
                     <div className='border-2 border-[#FFD1D3] rounded-full p-3 hover:border-primary'>
                         <div className='w-[50px] h-[50px] bg-base-100 rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-primary'><PlaceIcon /></div>
                     </div>
@@ -31,7 +33,9 @@ const Contact = () => {
                         <p className='lg:text-lg text-[#74777C]'>+259 2563 2562, <br /> +256 3654 2156</p>
                     </div>
                 </div>
-                <div className='flex items-center' data-aos="fade-left">
+                <div className='flex items-center'
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic">
                     <div className='border-2 border-[#FFD1D3] rounded-full p-3 hover:border-primary'>
                         <div className='w-[50px] h-[50px] bg-base-100 rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-primary'><EmailIcon /></div>
                     </div>
@@ -42,9 +46,9 @@ const Contact = () => {
                 </div>
             </div>
             <div className='lg:grid grid-cols-3 gap-10 px-5 py-10 lg:p-20 bg-base-100'>
-                <div className='col-span-2 md:pr-10 sm:mb-5 md:mb-0' data-aos="fade-right">
+                <div className='col-span-2 md:pr-10 sm:mb-5 md:mb-0'>
                     <p className='text-primary font-bold text-lg'>Your email address will not be published*</p>
-                    <h2 className='text-3xl lg:text-5xl text-neutral font-extrabold my-3'>Send Us a Message</h2>
+                    <h2 className='text-3xl lg:text-5xl text-neutral font-extrabold my-3' data-aos="zoom-in">Send Us a Message</h2>
                     <form className='mb-10 lg:mb-0' action="">
                         <div className='my-10 lg:flex items-center'>
                             <input type="text" placeholder="Your Name" class="input w-full rounded-full p-7 shadow-md mr-5 mb-5 lg:mb-0" />
@@ -67,7 +71,7 @@ const Contact = () => {
                         </div>
                     </form>
                 </div>
-                <div className='p-5 pb-[50px] pt-[550px] md:pt-[800px] lg:pt-[350px]' style={{ backgroundImage: `url(${contactbg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }} data-aos="fade-left">
+                <div className='p-5 pb-[50px] pt-[550px] md:pt-[800px] lg:pt-[350px]' style={{ backgroundImage: `url(${contactbg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }} data-aos="zoom-in">
                     <h2 className='text-3xl font-bold text-primary text-center'>Chat With Support</h2>
                     <p className='text-neutral text-lg font-bold text-center py-5'>Let's chat our live experts to get answer your question</p>
                     <div className='flex justify-center'>
