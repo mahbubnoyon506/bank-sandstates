@@ -20,7 +20,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import { FaFacebookF, FaHands, FaLinkedinIn, FaPhoneAlt, FaRegLightbulb, FaTwitter } from 'react-icons/fa';
 import Button from '../Shared/Button';
 import { GiProgression } from "react-icons/gi";
-import { MdSupportAgent } from "react-icons/md";
+import { MdCall, MdSupportAgent } from "react-icons/md";
+import { IoCallSharp } from "react-icons/io";
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -391,6 +392,7 @@ const HowITWork = () => {
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
+                                        className='mx-auto'
                                         src="https://i.ibb.co/hR8XcJf/manager01.jpg"
                                         // style={{ width: "93%" }}
                                         alt=""
@@ -420,6 +422,7 @@ const HowITWork = () => {
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
+                                        className='mx-auto'
                                         src="https://i.ibb.co/QnkWNTK/manager02.jpg"
                                         // style={{ width: "93%" }}
                                         alt=""
@@ -449,6 +452,7 @@ const HowITWork = () => {
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
+                                        className='mx-auto'
                                         src="https://i.ibb.co/47tQQQn/manager03.jpg"
                                         // style={{ width: "93%" }}
                                         alt=""
@@ -478,6 +482,7 @@ const HowITWork = () => {
                             <div class="team_01 text-center">
                                 <div class="tm_thumb">
                                     <img
+                                        className='mx-auto'
                                         src="https://i.ibb.co/1QVtsL7/manager04.jpg"
                                         // style={{ width: "93%" }}
                                         alt=""
@@ -508,7 +513,11 @@ const HowITWork = () => {
                         <div class="col-span-2">
                             <div class="support">
                                 <div class="spIcon flex items-center mb-2">
-                                    <i class="twi-phone"></i>
+                                    <i class="  text-center">
+                                        <span className='flex  text-lg justify-center mt-6 '>
+                                            <MdCall />
+                                        </span>
+                                    </i>
                                     <img className='md:ml-[-20px]' src="https://i.ibb.co/vXgYBS6/phn1.jpg" alt="" />
                                 </div>
                                 <p>
@@ -521,7 +530,7 @@ const HowITWork = () => {
                         <div class="sm:pl-10 md:pl-0 sm:mt-5 md:pt-0">
                             <div class="icon_box_04">
                                 <div class="ib_box p-4 pt-0">
-                                    <PermPhoneMsgIcon />
+                                    <MdCall />
                                 </div>
                                 <p>Have any Questions?</p>
                                 <h3>2569 25 21589</h3>
@@ -787,11 +796,8 @@ const HowITWork = () => {
                                     advisors, developers...
                                 </p>
                                 <Button>
-
+                                    View All News
                                 </Button>
-                                <a href="blog1.html" class="qu_btn">
-
-                                </a>
                             </div>
                         </div>
                     </div>

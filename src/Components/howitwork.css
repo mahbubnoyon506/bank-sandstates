@@ -620,7 +620,7 @@
 }
 
 .twi-phone:before {
-    content: "\ecf8";
+    /* content: "\ecf8"; */
 }
 
 .spIcon img {
@@ -1218,9 +1218,13 @@ a {
     } */
     .secTitle {
         font-size: 35px;
-        line-height: 48px;
+        /* line-height: 48px; */
         font-weight: 500;
+        margin: 0px;
     }
+
+
+
 
     .funfactArea {
         position: relative;

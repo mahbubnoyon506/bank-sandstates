@@ -15,7 +15,7 @@ function App() {
     <div>
       {/* <Header /> */}
       <Navbar />
-      <div className='mt-16'>
+      <div className='mt-24 lg:mt-32'>
         <Routes className="mt-5">
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
