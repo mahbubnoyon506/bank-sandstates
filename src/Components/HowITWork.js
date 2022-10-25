@@ -308,16 +308,13 @@ const HowITWork = () => {
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography >
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
+                                            You’re not on your own when setting up or running a business in the UK offier a wealth of information and expertise if you need help from filling in your tax forms to recruiting people or setting up your business
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
                                 <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                                     <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
+                                        <Typography>Offices are helpful on recruitment and employing people</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
@@ -330,7 +327,7 @@ const HowITWork = () => {
                                 </Accordion>
                                 <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                                     <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
+                                        <Typography>Services including a legal helpline with disabilities</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
@@ -343,7 +340,11 @@ const HowITWork = () => {
                                 </Accordion>
                                 <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                                     <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
+                                        <Typography
+                                           sx="
+                                            font-weight: bold,
+                                           "
+                                        >How do I Booked an Appointment?</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
@@ -656,7 +657,7 @@ const HowITWork = () => {
                         </div>
                     </div>
                     <div class="p-5">
-                        <div class=" text-center">
+                        <div class=" text-center mb-[-80px] md:mb-0">
                             <div class="subTitle">
                                 <span class="bleft"></span>Testimonial
                                 <span class="bright"></span>

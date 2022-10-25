@@ -100,10 +100,10 @@ const About = () => {
     return (
         <div className='p-5 md:p-10 lg:p-20 bg-base-100'>
             <div className='lg:grid grid-cols-2 gap-10 '>
-                <div>
+                <div data-aos="fade-up-right">
                     <div><img src={secImage} alt="" /></div>
                 </div>
-                <div className='my-auto p-5'>
+                <div className='my-auto p-5' data-aos="fade-up-left">
                     <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Welcome To Our Company</p>
                     <h2 className='text-3xl lg:text-5xl font-bold py-5 leading-normal'>Build Your Business With Right Way</h2>
                     <p className='text-[#74777C]'>
@@ -118,7 +118,10 @@ const About = () => {
                 </div>
             </div>
             <div className='lg:grid grid-cols-2 gap-5 py-20'>
-                <div>
+                <div className='text-center'
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div><img className='w-full' src={video} alt="" /></div>
                 </div>
                 <div className='md:grid grid-cols-2 gap-5 md:mt-10 lg:mt-0 '>
@@ -149,7 +152,7 @@ const About = () => {
             </div>
             <div>
                 <div className='lg:grid grid-cols-2 gap-10 bg-base-100 py-10 p-5'>
-                    <div className='my-auto mb-10 lg:mb-0'>
+                    <div className='my-auto mb-10 lg:mb-0' data-aos="fade-up-right">
                         <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Why Choose Us</p>
                         <h2 className='text-3xl lg:text-5xl font-bold py-5 leading-normal'>Get Every Answer</h2>
                         <div>
@@ -195,7 +198,7 @@ const About = () => {
                         </div>
                     </div>
                     <div>
-                        <div><img src={discuss} alt="" /></div>
+                        <div data-aos="fade-up-left"><img src={discuss} alt="" /></div>
                     </div>
                 </div>
             </div>

@@ -9,40 +9,40 @@ const Contact = () => {
     return (
         <div>
             <div className='lg:grid grid-cols-3 gap-10 p-5 lg:p-20 bg-[#FFEDEE]'>
-                <div className='flex items-center'>
+                <div className='flex items-center' data-aos="fade-right">
                     <div className='border-2 border-[#FFD1D3] rounded-full p-3 hover:border-primary'>
                         <div className='w-[50px] h-[50px] bg-base-100 rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-primary'><PlaceIcon /></div>
                     </div>
                     <div className='ml-5'>
-                        <h2 className='text-2xl font-bold mb-2'>Office Address:</h2>
-                        <p className='text-[#74777C] text-lg'>
+                        <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-2'>Office Address:</h2>
+                        <p className='text-[#74777C] lg:text-lg'>
                             3556 Hartford Way Vlg, Mount
                             <br />
                             Pleasant, SC, 29466, Australia.
                         </p>
                     </div>
                 </div>
-                <div className='flex items-center my-5 lg:my-0'>
+                <div className='flex items-center my-5 lg:my-0' data-aos="zoom-in">
                     <div className='border-2 border-[#FFD1D3] rounded-full p-3 hover:border-primary'>
                         <div className='w-[50px] h-[50px] bg-base-100 rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-primary'><LocalPhoneIcon /></div>
                     </div>
-                    <div className='ml-5'>
-                        <h2 className='text-2xl font-bold mb-2'>Call Us For Help:</h2>
-                        <p className='text-lg text-[#74777C]'>+259 2563 2562, <br /> +256 3654 2156</p>
+                    <div className='ml-5' >
+                        <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-2'>Call Us For Help:</h2>
+                        <p className='lg:text-lg text-[#74777C]'>+259 2563 2562, <br /> +256 3654 2156</p>
                     </div>
                 </div>
-                <div className='flex items-center'>
+                <div className='flex items-center' data-aos="fade-left">
                     <div className='border-2 border-[#FFD1D3] rounded-full p-3 hover:border-primary'>
                         <div className='w-[50px] h-[50px] bg-base-100 rounded-full flex items-center justify-center text-primary hover:text-white hover:bg-primary'><EmailIcon /></div>
                     </div>
                     <div className='ml-5'>
-                        <h2 className='text-2xl font-bold mb-2'>Mail info:</h2>
-                        <p className='text-lg text-[#74777C]'>example@quera.com <br /> info@example.com</p>
+                        <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-2'>Mail info:</h2>
+                        <p className='lg:text-lg text-[#74777C]'>example@quera.com <br /> info@example.com</p>
                     </div>
                 </div>
             </div>
             <div className='lg:grid grid-cols-3 gap-10 px-5 py-10 lg:p-20 bg-base-100'>
-                <div className='col-span-2 md:pr-10 sm:mb-5 md:mb-0'>
+                <div className='col-span-2 md:pr-10 sm:mb-5 md:mb-0' data-aos="fade-right">
                     <p className='text-primary font-bold text-lg'>Your email address will not be published*</p>
                     <h2 className='text-3xl lg:text-5xl text-neutral font-extrabold my-3'>Send Us a Message</h2>
                     <form className='mb-10 lg:mb-0' action="">
@@ -67,7 +67,7 @@ const Contact = () => {
                         </div>
                     </form>
                 </div>
-                <div className='p-5 pb-[50px] pt-[550px] md:pt-[800px] lg:pt-[350px]' style={{ backgroundImage: `url(${contactbg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
+                <div className='p-5 pb-[50px] pt-[550px] md:pt-[800px] lg:pt-[350px]' style={{ backgroundImage: `url(${contactbg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }} data-aos="fade-left">
                     <h2 className='text-3xl font-bold text-primary text-center'>Chat With Support</h2>
                     <p className='text-neutral text-lg font-bold text-center py-5'>Let's chat our live experts to get answer your question</p>
                     <div className='flex justify-center'>
