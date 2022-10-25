@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import qualityBg from '../assets/images/qualitysec-bg.jpg'
 import person from '../assets/images/quality.png'
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import FlareIcon from '@mui/icons-material/Flare';
 import CountUp from 'react-countup';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const QualityHome = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+    })
+
     return (
         <div className='md:flex flex-row items-center pt-20 p-5 pb-0' style={{ backgroundImage: `url(${qualityBg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
             <div className='basis-1/2 md:pl-20 z-10'>
@@ -15,14 +24,14 @@ const QualityHome = () => {
                     The argument in favor of using filler text goes something like this: If you use real content in the design process, anytime you reach a review point you'll end up reviewing and negotiating the content itself and not the design.</p>
                 <div className='md:flex justify-between items-center pb-20'>
                     <div>
-                        <div className='flex items-center py-5'>
+                        <div data-aos="fade-right" className='flex items-center py-5'>
                             <div className='text-primary pr-5'><FlareIcon /></div>
                             <div>
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
                                 <p className='text-[#74777C]'>Organisations in the UK offier a wealth of <br /> information and expertise</p>
                             </div>
                         </div>
-                        <div className='flex items-center'>
+                        <div data-aos="fade-right" className='flex items-center'>
                             <div className='text-primary pr-5'><FlareIcon /></div>
                             <div>
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
@@ -30,7 +39,7 @@ const QualityHome = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] mt-5 mb-[-50px]'>
+                    <div data-aos="fade-left" className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] mt-5 mb-[-50px]'>
                         <h4 className='text-6xl font-extrabold'><CountUp end={35} duration={2} />+</h4>
                         <p className='text-2xl font-semibold'>Years Of <br /> Experience</p>
                     </div>

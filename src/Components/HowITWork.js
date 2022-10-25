@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./howitwork.css";
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -18,9 +18,12 @@ import CountUp from 'react-countup';
 import FolderIcon from '@mui/icons-material/Folder';
 import PersonIcon from '@mui/icons-material/Person';
 import { FaFacebookF, FaHands, FaLinkedinIn, FaPhoneAlt, FaRegLightbulb, FaTwitter } from 'react-icons/fa';
-import { GiProgression } from "react-icons/gi";
-import { MdSupportAgent } from "react-icons/md";
 import Button from '../Shared/Button';
+import { GiProgression } from "react-icons/gi";
+import { MdCall, MdSupportAgent } from "react-icons/md";
+import { IoCallSharp } from "react-icons/io";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 //Accordion MUI
 const Accordion = styled((props) => (
@@ -69,6 +72,14 @@ const HowITWork = () => {
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
     };
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+
+    })
+
     return (
         <div>
 
@@ -78,7 +89,7 @@ const HowITWork = () => {
 
             <div className="processSection01">
                 <div className="">
-                    <div className="">
+                    <div data-aos="fade-up" className="">
                         <div className="text-center">
                             <div className="subTitle">
                                 <span className="bleft"></span>
@@ -93,7 +104,8 @@ const HowITWork = () => {
                     </div>
 
                     <div className="md:grid grid-cols-4">
-                        <div className=" text-center">
+
+                        <div data-aos="fade-right" className=" text-center">
                             <div className="icon_box_03">
                                 <div className="ib_box hover:bg-primary">
                                     <i className="icon-local_1 ">
@@ -118,7 +130,7 @@ const HowITWork = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className=" text-center">
+                        <div data-aos="fade-up" className=" text-center">
                             <div className="icon_box_03">
                                 <div className="ib_box hover:bg-primary">
                                     <i className="icon-local_1">
@@ -142,7 +154,7 @@ const HowITWork = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className=" text-center">
+                        <div data-aos="fade-up" className=" text-center">
                             <div className="icon_box_03">
                                 <div className="ib_box hover:bg-primary">
                                     <i className="icon-local_1">
@@ -166,7 +178,7 @@ const HowITWork = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className=" text-center">
+                        <div data-aos="fade-left" className=" text-center">
                             <div className="icon_box_03">
                                 <div className="ib_box hover:bg-primary">
                                     <i className="icon-local_1">
@@ -201,7 +213,7 @@ const HowITWork = () => {
 
             <div className="appoinmentSection01">
                 <div className="funfactArea">
-                    <div className="fact_01">
+                    <div data-aos="fade-up-right" className="fact_01">
                         <h2 className='md:text-center lg:text-left'>
                             <CountUp end={2.5} duration={1} decimals={1} /><i style={{ fontStyle: "normal" }}>k</i>
                         </h2>
@@ -210,7 +222,7 @@ const HowITWork = () => {
                             <br /> we like best principle
                         </p>
                     </div>
-                    <div className="fact_01 py-10 lg:py-0">
+                    <div data-aos="zoom-in" className="fact_01 py-10 lg:py-0">
                         <h2 className='md:text-center lg:text-left'>
                             <CountUp end={138} duration={3} /><i style={{ fontStyle: "normal" }}>+</i>
                         </h2>
@@ -219,7 +231,7 @@ const HowITWork = () => {
                             <br /> we like best principle
                         </p>
                     </div>
-                    <div className="fact_01">
+                    <div data-aos="fade-up-left" className="fact_01">
                         <h2 className='md:text-center lg:text-left'>
                             <CountUp end={9.8} duration={3} /><i style={{ fontStyle: "normal" }}>%</i>
                         </h2>
@@ -234,7 +246,7 @@ const HowITWork = () => {
                 <div className="">
                     <div className="lg:grid grid-cols-2 gap-x-5 md:px-10">
                         <div className="">
-                            <div className="appointment_form">
+                            <div data-aos="fade-right" className="appointment_form">
                                 <p className='text-primary mb-1'>Do it right now!</p>
                                 <h3 className='mt-5'>Make an Appointment</h3>
                                 <form action="#" className="w-full" id="contact_form">
@@ -294,7 +306,7 @@ const HowITWork = () => {
                             </div>
                         </div>
 
-                        <div class="pdAcc pt-10">
+                        <div data-aos="fade-left" class="pdAcc pt-10">
                             <div class="subTitle">
                                 <span class="bleft"></span>Why Choose Us
                             </div>
@@ -308,16 +320,13 @@ const HowITWork = () => {
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography >
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
+                                            You’re not on your own when setting up or running a business in the UK offier a wealth of information and expertise if you need help from filling in your tax forms to recruiting people or setting up your business
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
                                 <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                                     <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
+                                        <Typography>Offices are helpful on recruitment and employing people</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
@@ -330,7 +339,7 @@ const HowITWork = () => {
                                 </Accordion>
                                 <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                                     <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
+                                        <Typography>Services including a legal helpline with disabilities</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
@@ -343,7 +352,11 @@ const HowITWork = () => {
                                 </Accordion>
                                 <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                                     <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
+                                        <Typography
+                                           sx="
+                                            font-weight: bold,
+                                           "
+                                        >How do I Booked an Appointment?</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
@@ -381,13 +394,15 @@ const HowITWork = () => {
                                 <span class="bleft"></span>Our Memebers
                                 <span class="bright"></span>
                             </div>
-                            <h2 class="secTitle">
+                            <h2 data-aos="zoom-in" class="secTitle">
                                 Expert <span>Teams</span>
                             </h2>
                         </div>
                     </div>
                     <div class="md:grid grid-cols-4 gap-5 md:px-20 p-5 pr-0">
-                        <div class="">
+
+
+                        <div data-aos="fade-right" class="">
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
@@ -400,7 +415,11 @@ const HowITWork = () => {
 
                                         {
                                             show &&
-                                            <div className='flex justify-center items-center mt-[-20px]'>
+                                            <div data-aos="fade-up"
+                                                data-aos-offset="200"
+                                                data-aos-duration="1000"
+
+                                                className='flex justify-center items-center mt-[-20px] transition-all duration-500'>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href=""> <FaTwitter /> </a>
@@ -417,7 +436,8 @@ const HowITWork = () => {
                                 <p>Business Expert</p>
                             </div>
                         </div>
-                        <div class="">
+
+                        <div data-aos="fade-up" class="">
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
@@ -430,7 +450,12 @@ const HowITWork = () => {
 
                                         {
                                             show2 &&
-                                            <div className='flex justify-center items-center mt-[-20px]'>
+                                            <div
+                                                data-aos="fade-up"
+                                                data-aos-offset="200"
+                                                data-aos-duration="1000"
+
+                                                className='flex justify-center items-center mt-[-20px]'>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href=""> <FaTwitter /> </a>
@@ -447,7 +472,7 @@ const HowITWork = () => {
                                 <p>Managment</p>
                             </div>
                         </div>
-                        <div class="">
+                        <div data-aos="fade-up" class="">
                             <div class="team_01 text-center mb-5 md:mb-0">
                                 <div class="tm_thumb">
                                     <img
@@ -460,7 +485,12 @@ const HowITWork = () => {
 
                                         {
                                             show3 &&
-                                            <div className='flex justify-center items-center mt-[-20px]'>
+                                            <div
+                                                data-aos="fade-up"
+                                                data-aos-offset="200"
+                                                data-aos-duration="1000"
+
+                                                className='flex justify-center items-center mt-[-20px]'>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href=""> <FaTwitter /> </a>
@@ -477,7 +507,7 @@ const HowITWork = () => {
                                 <p>Founder</p>
                             </div>
                         </div>
-                        <div class="">
+                        <div data-aos="fade-left" class="">
                             <div class="team_01 text-center">
                                 <div class="tm_thumb">
                                     <img
@@ -490,7 +520,12 @@ const HowITWork = () => {
 
                                         {
                                             show4 &&
-                                            <div className='flex justify-center items-center mt-[-20px]'>
+                                            <div
+                                                data-aos="fade-up"
+                                                data-aos-offset="200"
+                                                data-aos-duration="1000"
+
+                                                className='flex justify-center items-center mt-[-20px]'>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral  hover:text-white hover:bg-primary' href=""> <FaTwitter /> </a>
@@ -512,7 +547,11 @@ const HowITWork = () => {
                         <div class="col-span-2">
                             <div class="support">
                                 <div class="spIcon flex items-center mb-2">
-                                    <i class="twi-phone"></i>
+                                    <i class="  text-center">
+                                        <span className='flex  text-lg justify-center mt-6 '>
+                                            <MdCall />
+                                        </span>
+                                    </i>
                                     <img className='md:ml-[-20px]' src="https://i.ibb.co/vXgYBS6/phn1.jpg" alt="" />
                                 </div>
                                 <p>
@@ -622,7 +661,7 @@ const HowITWork = () => {
                         <div class="">
                             <div class="cta">
                                 <div class="lg:flex justify-between items-center">
-                                    <div class="">
+                                    <div data-aos="fade-right" class="">
                                         <div class="icon_box_06">
                                             <div class="ib_box">
                                                 <HandshakeIcon />
@@ -634,12 +673,12 @@ const HowITWork = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="text-center px-10 py-5 lg:py-0">
+                                    <div data-aos="zoom-in" class="text-center px-10 py-5 lg:py-0">
                                         <div class="orcta">
                                             <p>or</p>
                                         </div>
                                     </div>
-                                    <div class=" text-right">
+                                    <div data-aos="fade-left" class=" text-right">
                                         <div class="icon_box_06">
                                             <div class="ib_box">
                                                 <CrisisAlertIcon />
@@ -656,7 +695,7 @@ const HowITWork = () => {
                         </div>
                     </div>
                     <div class="p-5">
-                        <div class=" text-center">
+                        <div class=" text-center mb-[-80px] md:mb-0">
                             <div class="subTitle">
                                 <span class="bleft"></span>Testimonial
                                 <span class="bright"></span>
@@ -671,7 +710,7 @@ const HowITWork = () => {
                             className="lg:grid grid-cols-3 testimonialslider01"
                             style={{ gap: "1.5rem" }}
                         >
-                            <div class="testiItem01">
+                            <div data-aos="fade-right" class="testiItem01">
                                 <img src="https://i.ibb.co/thWggTM/quote.png" alt="" />
                                 <p class="quotation">
                                     Grow tactical "outside the box" thinking whereas principle
@@ -684,7 +723,7 @@ const HowITWork = () => {
                                     <span>CEO & Founder</span>
                                 </div>
                             </div>
-                            <div class="testiItem01">
+                            <div data-aos="zoom-in" class="testiItem01">
                                 <img src="https://i.ibb.co/thWggTM/quote.png" alt="" />
                                 <p class="quotation">
                                     Grow tactical "outside the box" thinking whereas principle
@@ -697,7 +736,7 @@ const HowITWork = () => {
                                     <span>Founder</span>
                                 </div>
                             </div>
-                            <div class="testiItem01">
+                            <div data-aos="fade-left" class="testiItem01">
                                 <img src="https://i.ibb.co/thWggTM/quote.png" alt="" />
                                 <p class="quotation">
                                     Grow tactical "outside the box" thinking whereas principle
@@ -723,7 +762,7 @@ const HowITWork = () => {
                     <div class="lg:grid grid-cols-3 gap-5">
                         <div class="col-span-2 noPaddingRight">
                             <div class="md:grid grid-cols-2 gap-5">
-                                <div class="">
+                                <div data-aos="fade-up" class="">
                                     <div class="blogItem01">
                                         <div class="blogThumb">
                                             <img src="https://i.ibb.co/VmBXR9Q/vt1.jpg" alt="" />
@@ -748,7 +787,7 @@ const HowITWork = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="">
+                                <div data-aos="zoom-in" class="">
                                     <div class="blogItem01">
                                         <div class="blogThumb">
                                             <img src="https://i.ibb.co/z8ZstW8/vt2.jpg" alt="" />
@@ -777,7 +816,7 @@ const HowITWork = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="">
+                        <div data-aos="fade-up" class="">
                             <div class="ctaBcon">
                                 <div class="subTitle">
                                     <span class="bleft"></span>News Feed

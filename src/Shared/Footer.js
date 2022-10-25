@@ -49,10 +49,10 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <span class="mb-5 text-xl text-white font-semibold  capitalize ">Latest Posts</span>
+                        <span class="mb-10 lg:mb-5 text-xl text-white font-semibold  capitalize ">Latest Posts</span>
 
                         <div className='flex mt-5'>
-                            <img className='w-16 h-14 ' src={image_1} alt="" />
+                            <img className='w-20 h-20' src='https://themewar.com/html/quera/assets/images/blog/t1.jpg' alt="" />
                             <a class="ml-2">
                                 <span className=' text-sm text-gray-500 '>10 June, 2021</span>
                                 <br />
@@ -63,8 +63,8 @@ const Footer = () => {
                             </a>
                         </div>
 
-                        <div className='flex  mt-2 '>
-                            <img className='w-16 h-14 ' src={image_1} alt="" />
+                        <div className='flex mt-5 lg:mt-2 mb-5 md:mb-0'>
+                            <img className='w-20 h-20 ' src='https://themewar.com/html/quera/assets/images/blog/t2.jpg' alt="" />
                             <a class="ml-2">
                                 <span className=' text-sm text-gray-500 '>10 June, 2021</span>
                                 <br />
@@ -79,15 +79,16 @@ const Footer = () => {
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Post Gallery</h3>
                         <div className='flex flex-cols-2 gap-4'>
                             <div className=''>
-
-                                <img className='w-16 h-14 mb-2' src={image_1} alt="" />
-                                <img className='w-16 h-14 ' src={image_1} alt="" />
-
+                                <img className='w-20 h-20 mb-2' src='https://themewar.com/html/quera/assets/images/blog/g1.jpg' alt="" />
+                                <img className='w-20 h-20 ' src='https://themewar.com/html/quera/assets/images/blog/g2.jpg' alt="" />
                             </div>
                             <div>
-
-                                <img className='w-16 h-14 mb-2' src={image_1} alt="" />
-                                <img className='w-16 h-14 ' src={image_1} alt="" />
+                                <img className='w-20 h-20 mb-2' src='https://themewar.com/html/quera/assets/images/blog/g3.jpg' alt="" />
+                                <img className='w-20 h-20 ' src='https://themewar.com/html/quera/assets/images/blog/g4.jpg' alt="" />
+                            </div>
+                            <div>
+                                <img className='w-20 h-20 mb-2' src='https://themewar.com/html/quera/assets/images/blog/g5.jpg' alt="" />
+                                <img className='w-20 h-20 ' src='https://themewar.com/html/quera/assets/images/blog/g6.jpg' alt="" />
                             </div>
                         </div>
                     </div>

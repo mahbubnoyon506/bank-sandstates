@@ -5,8 +5,9 @@ import logo from '../assets/images/logo.png'
 import { FiInstagram, FiMenu } from 'react-icons/fi';
 import SearchIcon from '@mui/icons-material/Search';
 import { FaFacebookF } from 'react-icons/fa';
-import { AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineDown, AiOutlineTwitter } from 'react-icons/ai';
 import { IoIosFlash } from 'react-icons/io';
+import { TbWorld } from 'react-icons/tb';
 
 import NavImage from "../assets/images/navbar-image.png"
 
@@ -21,50 +22,174 @@ const Navbar = () => {
     ];
     let [open, setOpen] = useState(false);
     const [show, setShow] = useState(false)
+    const [navShow, setNavShow] = useState(false)
+
+    // const onMouseEnter = () => {
+    //     if (window.innerWidth < 467) {
+
+    //     }
+    // }
+
 
     return (
-        <div className=''
-
-        >
+        <div className=''>
             <div className=' shadow-md z-50 w-full fixed top-0 left-0'>
 
-                <div className=' md:flex lg-flex items-center justify-between bg-white  '
+                <div className=' md:flex lg-flex  justify-between items-center bg-white  '
                     style={{ backgroundImage: `url(${NavImage})`, backgroundPosition: 'center', backgroundSize: 'cover', }}
                 >
-                    <div className='relative lg:flex-basis-1/4 py-5'>
+                    <div className='relative lg:flex-basis-1/4 py-5 '>
                         <Link to='/' class="">
                             <img className='w-34 pl-5 lg:w-25' src={logo} alt="" />
                         </Link>
                     </div>
 
-                    <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+                    <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-9 cursor-pointer md:hidden'>
                         <ion-icon name={open ? 'close' : 'menu'}><FiMenu /></ion-icon>
                     </div>
 
                     <div className=' px-5 basis-3/4 w-[900px] '>
                         <div className='hidden lg:block mx-auto'>
-                            <div className=' flex justify-center w-100 bg-red-600 p-2 text-white'>
+                            <div className=' flex items-center justify-center w-100 bg-red-600 p-2 text-white'>
                                 <div className='flex text-sm gap-x-16'>
                                     <p className='py-3 px-2 '><span className='inline-flex pt-1 text-lg'><IoIosFlash /></span> Need Help: Providing Innovative and Easy Solutions, Call (012) 2569 2453 1215</p>
-                                    <p className='py-3 px-2 '>ENGLISH</p>
+                                    <p className='cursor-pointer hover:text-gray-800 transition-all duration-500 py-3 px-2 flex items-center text-white '>
+                                        <span><TbWorld /></span>
+                                        <span className='mx-2'> ENGLISH</span>
+                                        <span><AiOutlineDown /></span>
+                                    </p>
                                 </div>
-                                <div className='flex text-lg  py-3 gap-5 px-2'>
+                                <hr className='horizontal hor w-[10px] h-2 rotate-90 my-auto' />
+                                <div className=' flex text-lg  py-3 gap-5 px-2'>
                                     <a className='hover:text-black' href=""><FaFacebookF /></a>
                                     <a className='hover:text-black' href=""><AiOutlineTwitter /></a>
                                     <a className='hover:text-black' href=""> <FiInstagram /></a>
                                 </div>
                             </div>
                         </div>
-                        <ul className={`md:flex justify-between md:items-center lg:py-5 md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[60px]' : 'top-[-480px]'}`}>
-                            <div className='md:flex md:justify-between md:items-center'>
+                        <ul className={`md:flex justify-between md:items-center lg:py-0 md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[80px]' : 'top-[-480px]'}`}>
+                            {/* <div className='md:flex md:justify-between md:items-center'>
                                 {
                                     Links.map((link) => (
-                                        <li key={link.name} className='md:ml-8 text-xl md:my-0 mt-7 mb-5 '>
-                                            <a href={link.link} className='text-sm text-gray-900 hover:text-red-600 font-semibold duration-500'>{link.name}</a>
+                                        <li key={link.name} className='md:ml-8 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <a href={link.link} className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>{link.name}</a>
                                         </li>
                                     ))
                                 }
+                            </div> */}
+
+
+                            {/* ********************************** */}
+                            {/* tailwind dropdown menu start */}
+                            {/* ********************************** */}
+
+                            <div className="md:flex md:justify-between md:items-center">
+
+                                <li className={`relative group md:ml-8 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                    <Link to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+                                        Home</Link>
+
+                                    <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
+
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">HOME Two</Link>
+                                        </li>
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">HOME Two</Link>
+                                        </li>
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">HOME Two</Link>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li className={`relative group md:ml-8 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                    <Link to="/about" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+                                        About</Link>
+
+                                    <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
+
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About One</Link>
+                                        </li>
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About Two</Link>
+                                        </li>
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About Three</Link>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+
+                                {/* <li className={`relative group md:ml-8 text-xl md:my-0  py-4 transition-all duration-500 ease-in`}>
+                                    <Link to="/" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
+                                        About</Link>
+                                    <ul className='relative lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden group-hover:block transition-all duration-300'>
+
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
+                                        </li>
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 02</Link>
+                                        </li>
+                                        <li onMouseOver={() => setNavShow(!navShow)} className='bg-red-700 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 0#</Link>
+
+                                            {navShow && <ul onMouseOver={() => setNavShow(!navShow)} className='bg-red-400 absolute w-52 bottom-90 left-full'>
+                                                <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                                    <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
+                                                </li>
+                                                <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                                    <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
+                                                </li>
+                                            </ul>
+
+                                            }
+                                        </li>
+                                    </ul>
+                                </li> */}
+
+
+
+                                <li className={`relative group md:ml-8 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                    <Link to="/blogs" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+                                        Blogs</Link>
+
+                                    <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
+
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Blogs 01</Link>
+                                        </li>
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Blogs 02</Link>
+                                        </li>
+                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Blogs 03</Link>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+
+                                <li className='md:ml-8 md:my-0  py-4 transition-all duration-500 ease-in '>
+                                    <Link to="/contact" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
+                                        CONTACT</Link>
+                                </li>
+
                             </div>
+
+
+
+
+                            {/* ********************************** */}
+                            {/* tailwind dropdown menu end */}
+                            {/* ********************************** */}
+
+
+
+
                             <div class="grid-cols-1 md:grid-cols-2 inline-grid">
                                 <span onClick={() => setShow(!show)} className='text-left md:text-center mb-5 lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
                                 {
