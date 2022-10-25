@@ -8,7 +8,7 @@ const Members = ({ member, index }) => {
     const [show, setShow] = useState(false);
 
     return (
-        <div data-aos="flip-left"
+        <div className='text-center' data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
         >
             <img className='w-full' src={member1} alt="" />
@@ -23,7 +23,9 @@ const Members = ({ member, index }) => {
                     </div>
                 }
             </div>
-            <button onClick={() => setShow((!show && id))} className='btn btn-link rounded-t-full text-primary mt-[-50px] bg-base-100 hover:bg-base-100'><AddIcon /></button>
+            <div className='flex justify-center items-center'>
+                <button onClick={() => setShow((!show && id))} className='btn btn-link rounded-t-full text-primary mt-[-30px] bg-base-100 hover:bg-base-100'><AddIcon /></button>
+            </div>
             <h2 className='text-2xl text-bold hover:text-primary'>{name}</h2>
             <p className='text-primary'>{designation}</p>
         </div>
