@@ -62,7 +62,7 @@ const About = () => {
             'id': '1',
             'name': 'Georgie Haynes',
             'designation': 'Business Expert',
-            'image': '',
+            'image': 'https://themewar.com/html/quera/assets/images/team/1.jpg',
             'facebook': 'https://www.facebook.com/',
             'twitter': 'https://twitter.com/',
             'linkedin': 'https://linkedin.com/'
@@ -71,7 +71,7 @@ const About = () => {
             'id': '2',
             'name': 'Lara Maleon',
             'designation': 'Managment',
-            'image': '',
+            'image': 'https://themewar.com/html/quera/assets/images/team/2.jpg',
             'facebook': 'https://www.facebook.com/',
             'twitter': 'https://twitter.com/',
             'linkedin': 'https://linkedin.com/'
@@ -80,7 +80,7 @@ const About = () => {
             'id': '3',
             'name': 'Adam Delaua',
             'designation': 'Founder',
-            'image': '',
+            'image': 'https://themewar.com/html/quera/assets/images/team/3.jpg',
             'facebook': 'https://www.facebook.com/',
             'twitter': 'https://twitter.com/',
             'linkedin': 'https://linkedin.com/'
@@ -89,7 +89,7 @@ const About = () => {
             'id': '4',
             'name': 'Jizz Merkel',
             'designation': 'Consultant',
-            'image': '',
+            'image': 'https://themewar.com/html/quera/assets/images/team/4.jpg',
             'facebook': 'https://www.facebook.com/',
             'twitter': 'https://twitter.com/',
             'linkedin': 'https://linkedin.com/'
