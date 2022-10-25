@@ -8,12 +8,19 @@ import Contact from './Pages/Contact/Contact';
 import BacktoTop from './Components/BacktoTop/BacktoTop';
 import Navbar from './Shared/Navbar';
 import NotFound from './Pages/NotFound/NotFound';
+import { useEffect } from 'react';
+import Aos from 'aos';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2500,
+    });
+  }, []);
   return (
     <div>
-      {/* <Header /> */}
+
       <Navbar />
       <div className='mt-24 lg:mt-32'>
         <Routes className="mt-5">

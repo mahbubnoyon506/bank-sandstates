@@ -1268,4 +1268,8 @@ a {
     .orcta p {
         transform: rotate(-90deg)
     }
+    .cta {
+        padding: 20px 25px;
+        margin: 0px 0 0px;
+    }
 }
