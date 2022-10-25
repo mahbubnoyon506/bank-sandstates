@@ -530,7 +530,7 @@ const HowITWork = () => {
                         <div class="sm:pl-10 md:pl-0 sm:mt-5 md:pt-0">
                             <div class="icon_box_04">
                                 <div class="ib_box p-4 pt-0">
-                                    <MdCall />
+                                    <PermPhoneMsgIcon />
                                 </div>
                                 <p>Have any Questions?</p>
                                 <h3>2569 25 21589</h3>
