@@ -25,32 +25,32 @@ const Agency = () => {
     const services = [
 
         {
-            'image': 'MdScreenSearchDesktop',
+            'image': 'https://i.ibb.co/8PLh9tj/analysis.png',
             'title': 'Market Research',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': '',
+            'image': 'https://i.ibb.co/xm0J1bg/business-and-finance.png',
             'title': 'Startup Business',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': '',
+            'image': 'https://i.ibb.co/SyHKTV0/growth.png',
             'title': 'Business Growth',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': '',
+            'image': 'https://i.ibb.co/YcqHWyR/mentor.png',
             'title': 'Insurance Task',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': '',
+            'image': 'https://i.ibb.co/7KPPH5Q/advisor.png',
             'title': 'Consultancy',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': '',
+            'image': 'https://i.ibb.co/Y0yBFXm/advice.png',
             'title': 'Financial Advices',
             'description': 'A typical business holds many different assets called capital, including office...'
         }
@@ -77,8 +77,9 @@ const Agency = () => {
                                         ></div>
 
                                         <div className=''>
-                                            <div className='border-2 border-primary rounded-full w-[80px] h-[80px] flex justify-center items-center mb-5'>
-                                                <AcUnitIcon className='text-primary text-center' />
+                                            <div className='border-2 border-primary rounded-full w-[100px] h-[100px] flex justify-center items-center mb-5'>
+                                                {/* <AcUnitIcon className='text-primary text-center' /> */}
+                                                <img className='w-50 h-50 p-5' src={service.image} alt="" />
                                             </div>
                                             <div >
                                                 <Typography className=' hover:text-red-600' gutterBottom variant="h5" component="div">
@@ -100,7 +101,7 @@ const Agency = () => {
                 </div>
                 <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center mt-10'>
                     {
-                        services.slice(1, 5).map((service, index) =>
+                        services.slice(2, 6).map((service, index) =>
                             <div data-aos="fade-up" className='' >
                                 <Card key={index} className='sm:mb-2 sm:flex justify-center py-12 px-8 relative bg-no-repeat bg-cente  hover:bg-[#202124]  mx-auto hover:z-20 hover:text-white' >
                                     <div className='absolute inset-0 opacity-40 '
@@ -108,8 +109,8 @@ const Agency = () => {
                                     ></div>
 
                                     <div className=''>
-                                        <div className='border-2 border-primary rounded-full w-[80px] h-[80px] flex justify-center items-center mb-5'>
-                                            <AcUnitIcon className='text-primary text-center' />
+                                        <div className='border-2 border-primary rounded-full w-[100px] h-[100px] flex justify-center items-center mb-5'>
+                                            <img className='w-50 h-50 p-5' src={service.image} alt="" />
                                         </div>
                                         <div >
                                             <Typography className=' hover:text-red-600' gutterBottom variant="h5" component="div">

@@ -28,16 +28,20 @@ const QualityHome = () => {
                 <div className='md:flex justify-between items-center pb-20'>
                     <div>
                         <div data-aos="fade-up" className='flex items-center py-5'>
-                            <div className='text-primary pr-5'><FlareIcon /></div>
+                            <div className='w-[80px] h-[80px] mr-5'>
+                                <img className='' src="https://i.ibb.co/xm0J1bg/business-and-finance.png" alt="" />
+                            </div>
                             <div >
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
                                 <p className='text-[#74777C]'>Organisations in the UK offier a wealth of <br /> information and expertise</p>
                             </div>
                         </div>
                         <div data-aos="fade-up" className='flex items-center'>
-                            <div className='text-primary pr-5'><FlareIcon /></div>
+                            <div className='w-[80px] h-[80px] mr-5'>
+                                <img className='' src="https://i.ibb.co/7KPPH5Q/advisor.png" alt="" />
+                            </div>
                             <div>
-                                <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
+                                <h3 className='text-accent text-2xl font-semibold py-2'>Business Consultant</h3>
                                 <p className='text-[#74777C]'>Organisations in the UK offier a wealth of <br /> information and expertise</p>
                             </div>
                         </div>
