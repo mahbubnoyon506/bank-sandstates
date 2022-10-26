@@ -80,8 +80,7 @@ const Blog = () => {
                             posts.map((post, index) =>
                                 <div
                                     className='border shadow-md m-5 md:m-0 mx-5 md:mx-0'
-                                    data-aos="flip-left"
-                                    data-aos-easing="ease-out-cubic">
+                                    data-aos="zoom-in">
                                     <img className='' src={post.thumbnail} alt="" />
                                     <p className='text-[#74777C] px-5 p-5'> <FolderIcon /> {post.category} | <PersonIcon /> {post.author} </p>
                                     <h2 className='font-medium text-xl px-5 hover:text-primary mb-5'>{post.title}</h2>
