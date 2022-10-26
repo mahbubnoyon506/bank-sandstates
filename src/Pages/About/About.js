@@ -166,6 +166,7 @@ const About = () => {
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
+
                             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                                 <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                                     <Typography>Collapsible Group Item #2</Typography>

@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import background from '../assets/images/footer-bg.jpg'
 import image_1 from '../assets/images/1.jpg'
 import { AiFillPhone } from "react-icons/ai"
 import Button from './Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+
+    })
+
     const date = new Date().getFullYear()
     return (
         <div style={{ backgroundImage: `url(${background})` }}>
@@ -28,7 +37,7 @@ const Footer = () => {
                 {/*  */}
 
                 <footer class=" px-5 text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div>
+                    <div data-aos="fade-up">
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Do you have questions? <br /> Call or visit us.</h3>
                         <a href="+569 2316 2156" className=' flex gap-2 text-[20px] font-bold'>
                             <AiFillPhone className='text-red-500 text-2xl' />
@@ -38,7 +47,7 @@ const Footer = () => {
                         <br />
                         <a href='contact@example.com' class="text-whie hover:text-red-500 hover:underline transition-all">contact@example.com</a>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" >
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Usefull Links</h3>
                         <div className='text-xs '>
                             <a class=" hover:text-red-600 transition-all duration-300 text-[#6c6c6c] flex mt-1 cursor-pointer">Our Company</a>
@@ -48,7 +57,7 @@ const Footer = () => {
                             <a class=" hover:text-red-600 transition-all duration-300 text-[#6c6c6c] flex mt-1 cursor-pointer">Privacy Policy</a>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up">
                         <span class="mb-5 text-xl text-white font-semibold  capitalize ">Latest Posts</span>
 
                         <div className='flex mt-5'>
@@ -75,7 +84,7 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div>
+                    <div data-aos="fade-up">
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Post Gallery</h3>
                         <div className='flex flex-cols-2 gap-4'>
                             <div className=''>

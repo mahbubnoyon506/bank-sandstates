@@ -24,14 +24,14 @@ const QualityHome = () => {
                     The argument in favor of using filler text goes something like this: If you use real content in the design process, anytime you reach a review point you'll end up reviewing and negotiating the content itself and not the design.</p>
                 <div className='md:flex justify-between items-center pb-20'>
                     <div>
-                        <div data-aos="fade-right" className='flex items-center py-5'>
+                        <div data-aos="fade-up" className='flex items-center py-5'>
                             <div className='text-primary pr-5'><FlareIcon /></div>
-                            <div>
+                            <div >
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
                                 <p className='text-[#74777C]'>Organisations in the UK offier a wealth of <br /> information and expertise</p>
                             </div>
                         </div>
-                        <div data-aos="fade-right" className='flex items-center'>
+                        <div data-aos="fade-up" className='flex items-center'>
                             <div className='text-primary pr-5'><FlareIcon /></div>
                             <div>
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
@@ -39,7 +39,7 @@ const QualityHome = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] mt-5 mb-[-50px]'>
+                    <div data-aos="fade-up" className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] mt-5 mb-[-50px]'>
                         <h4 className='text-6xl font-extrabold'><CountUp end={35} duration={2} />+</h4>
                         <p className='text-2xl font-semibold'>Years Of <br /> Experience</p>
                     </div>

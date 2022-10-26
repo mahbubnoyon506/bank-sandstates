@@ -48,7 +48,7 @@ const Navbar = () => {
                         <ion-icon name={open ? 'close' : 'menu'}><FiMenu /></ion-icon>
                     </div>
 
-                    <div className=' px-5 basis-3/4 w-[900px] '>
+                    <div className=' px-0 basis-3/4 w-[900px] '>
                         <div className='hidden lg:block mx-auto'>
                             <div className=' flex items-center justify-center w-100 bg-red-600 p-2 text-white'>
                                 <div className='flex text-sm gap-x-16'>
@@ -191,10 +191,15 @@ const Navbar = () => {
 
 
                             <div class="grid-cols-1 md:grid-cols-2 inline-grid">
-                                <span onClick={() => setShow(!show)} className='text-left md:text-center mb-5 lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
+                                <span onClick={() => setShow(!show)} className='text-left hidden md:block  md:text-center  lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
                                 {
                                     show &&
-                                    <div className='flex justify-center items-center absolute left-20 bottom-20 md:top-[130px] md:right-[-15vw] lg:top-[170px] lg:left-[50vw]'> <input type="text" placeholder="Type here" class="input w-full max-w-xs rounded-full p-5 bg-slate-200 focus:outline-0 " /> <button className='w-10 h-10 rounded-full bg-primary text-white ml-[-45px] lg:ml-[-45px] hover:bg-black'><SearchIcon className=' ' /></button>  </div>
+                                    <div className="">
+                                        <div className=' lg:flex  justify-center items-center absolute left-20 bottom-20 md:top-[130px] md:right-[-15vw] lg:top-[170px] lg:left-[50vw]'>
+                                            <input type="text" placeholder="Type here" class="input w-full max-w-xs rounded-full p-5 bg-slate-200 focus:outline-0 " />
+                                            <button className='w-10 h-10  rounded-full bg-primary text-white ml-[-45px] lg:ml-[-45px] hover:bg-black'><SearchIcon className='' /></button>
+                                        </div>
+                                    </div>
                                 }
                                 <Link to='#' class="btn btn-sm btn-primary bg-gradient-to-r from-[rgba(237,28,35,0.98)] to-[#ed541ce6] rounded-full ">Contact Us</Link>
                             </div>
