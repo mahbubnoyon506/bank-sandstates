@@ -74,7 +74,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <ul className={` lg:pl-4 md:flex justify-start md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 gap-64 transition-all duration-500 ease-in ${open ? 'top-[80px]' : 'top-[-480px]'}`}>
+                        <ul className={` lg:pl-4 md:flex justify-start md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:gap-60 transition-all duration-500 ease-in ${open ? 'top-[80px]' : 'top-[-480px]'}`}>
                             <div className='md:flex md:justify-between md:items-center '>
                                 {
                                     Links.map((link) => (
