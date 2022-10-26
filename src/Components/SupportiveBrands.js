@@ -28,8 +28,10 @@ const SupportiveBrands = () => {
 
     return (
         <div className='bg-primary'>
-            <div className='px-5 md:px-20 py-20 lg:flex flex-row justify-between items-center'>
-                <p data-aos="fade-right" className='basis-1/4 text-2xl font-bold text-base-100 lg:text-left text-center pr-2'>Our Supportive Brands</p>
+            <div className='px-5 md:px-10 py-20 lg:flex flex-row justify-between items-center'>
+
+                <p data-aos="fade-up" className='basis-1/4 text-2xl font-bold text-base-100 lg:text-left text-center pr-2'>Our Supportive Brands</p>
+
                 <div className='basis-1/2 py-5 sm:mx-20 md:mx-0'>
                     <Marquee speed={70} gradient={false}>
                         {
@@ -41,8 +43,11 @@ const SupportiveBrands = () => {
                         }
                     </Marquee>
                 </div>
-                <div data-aos="fade-left" className='basis-1/4'>
-                    <Link to='/contact' className='w-full btn bg-base-100 rounded-full text-primary border-0 hover:text-white'>Join With Us</Link>
+
+                <div className='basis-1/4 text-center'>
+                    <div data-aos="fade-up px-5">
+                        <Link to='/contact' className='w-full lg:w-32 btn bg-base-100 rounded-full text-primary border-0 hover:text-white'>Join With Us</Link>
+                    </div>
                 </div>
             </div>
         </div>
