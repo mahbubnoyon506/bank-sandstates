@@ -34,8 +34,6 @@ const QualityHome = () => {
                         </div>
                         <div data-aos="fade-up" className='flex items-center'>
                             <div className='text-primary pr-5'><FlareIcon /></div>
-                            <div className='text-primary pr-5'><FlareIcon /></div>
-                            <li className='icon-local_7-1'></li>
                             <div>
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
                                 <p className='text-[#74777C]'>Organisations in the UK offier a wealth of <br /> information and expertise</p>
