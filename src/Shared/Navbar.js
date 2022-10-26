@@ -50,10 +50,11 @@ const Navbar = () => {
 
                     <div className=' px-0 basis-3/4 w-[900px] '>
                         <div className='hidden lg:block mx-auto'>
-                            <div className=' flex items-center justify-center w-100 bg-red-600 p-2 text-white'>
+
+                            <div className=' flex items-start justify-start w-100 bg-red-600 p-2 text-white'>
                                 <div className='flex text-sm gap-x-16'>
 
-                                    <p className='py-3 px-2 flex items-center'>
+                                    <p className='py-3 px-6 flex items-center'>
                                         <span className='inline-flex pt-1 text-lg'>
                                             <span className='pt-1'><IoIosFlash /></span>
                                         </span> Need Help: Providing Innovative and Easy Solutions, Call (012) 2569 2453 1215</p>
@@ -72,12 +73,13 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        <ul className={`md:flex justify-between md:items-center lg:py-0 md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[80px]' : 'top-[-480px]'}`}>
-                            <div className='md:flex md:justify-between md:items-center'>
+
+                        <ul className={` lg:pl-4 md:flex justify-start md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:gap-60 transition-all duration-500 ease-in ${open ? 'top-[80px]' : 'top-[-480px]'}`}>
+                            <div className='md:flex md:justify-between md:items-center '>
                                 {
                                     Links.map((link) => (
-                                        <li key={link.name} className='md:ml-8 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <a href={link.link} className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>{link.name}</a>
+                                        <li key={link.name} className='md:ml-3 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link to={link.link} className='md:text-sm lg:text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>{link.name}</Link>
                                         </li>
                                     ))
                                 }
@@ -195,7 +197,7 @@ const Navbar = () => {
 
 
 
-                            <div class="grid-cols-1 md:grid-cols-2 inline-grid">
+                            <div class="grid-cols-1 md:grid-cols-2 inline-grid pr-5">
                                 <span onClick={() => setShow(!show)} className='text-left hidden md:block  md:text-center  lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
                                 {
                                     show &&
