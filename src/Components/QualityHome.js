@@ -7,6 +7,8 @@ import CountUp from 'react-countup';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './QualityHome.css'
+import CardBG from '../assets/images/logo.png'
+import zIndex from '@mui/material/styles/zIndex';
 
 
 const QualityHome = () => {
@@ -40,8 +42,8 @@ const QualityHome = () => {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" className='px-10 py-5 text-base-100 bg-gradient-to-r from-[#ED1C24] to-[#ED521C] md:mr-[-150px] mt-5 mb-[-50px]'>
-                        <h4 className='text-6xl font-extrabold'><CountUp end={35} duration={2} />+</h4>
+                    <div data-aos="fade-up" className='px-10 w-64 py-5 text-base-100 bg-gradient-to-r from-[rgba(237,28,35,0.9)] to-[rgba(237,84,28,0.9)] md:mr-[-150px] mt-5 mb-[-50px]'>
+                        <h4 className='z-20 text-6xl font-extrabold'><CountUp end={35} duration={2} />+</h4>
                         <p className='text-2xl font-semibold'>Years Of <br /> Experience</p>
                     </div>
                 </div>
