@@ -15,7 +15,7 @@
     color: #ed1b24;
     /* margin: 0 0 24px; */
     margin-top: 24px;
-    padding: 10px;
+    padding: 0px;
 }
 
 .subTitle span {
@@ -34,7 +34,7 @@
 }
 
 .secTitle {
-    font-size: 60px;
+    font-size: 50px;
     font-family: poppins, sans-serif;
     font-weight: 700;
     line-height: 65px;
@@ -219,7 +219,7 @@
     height: 60px;
     outline: none;
     background: #fff;
-    padding: 0 15px 0 52px;
+    padding: 0 15px 0 40px;
     border: none;
     border-radius: 50px;
     font-size: 14px;
@@ -1268,6 +1268,7 @@ a {
     .orcta p {
         transform: rotate(-90deg)
     }
+
     .cta {
         padding: 20px 25px;
         margin: 0px 0 0px;
