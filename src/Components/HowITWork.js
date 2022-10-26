@@ -109,7 +109,7 @@ const HowITWork = () => {
                         </div>
                     </div>
 
-                    <div className="md:grid grid-cols-4">
+                    <div className="md:grid grid-cols-4 gap-4 px-10 md:px-24">
 
                         <div data-aos="fade-up" className=" text-center">
                             <div className="icon_box_03">
@@ -422,9 +422,9 @@ const HowITWork = () => {
                     <div class="md:grid grid-cols-4 gap-5 md:px-20 p-5 pr-0">
 
 
-                        <div class="">
+                        <div data-aos="fade-up" class="">
                             <div class="team_01 text-center mb-5 md:mb-0">
-                                <div data-aos="fade-up" class="tm_thumb">
+                                <div class="tm_thumb">
                                     <img
                                         className='mx-auto'
                                         src="https://i.ibb.co/hR8XcJf/manager01.jpg"
@@ -438,7 +438,6 @@ const HowITWork = () => {
                                             <div data-aos="fade-up"
                                                 data-aos-offset="200"
                                                 data-aos-duration="1000"
-
                                                 className='flex justify-center items-center mt-[-20px] transition-all duration-500'>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaFacebookF /> </a>
                                                 <a className='w-[30px] h-[30px] rounded-full bg-base-100 flex items-center justify-center text-neutral mr-2 hover:text-white hover:bg-primary' href=""> <FaLinkedinIn /> </a>

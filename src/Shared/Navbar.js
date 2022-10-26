@@ -52,7 +52,12 @@ const Navbar = () => {
                         <div className='hidden lg:block mx-auto'>
                             <div className=' flex items-center justify-center w-100 bg-red-600 p-2 text-white'>
                                 <div className='flex text-sm gap-x-16'>
-                                    <p className='py-3 px-2 '><span className='inline-flex pt-1 text-lg'><IoIosFlash /></span> Need Help: Providing Innovative and Easy Solutions, Call (012) 2569 2453 1215</p>
+
+                                    <p className='py-3 px-2 flex items-center'>
+                                        <span className='inline-flex pt-1 text-lg'>
+                                            <span className='pt-1'><IoIosFlash /></span>
+                                        </span> Need Help: Providing Innovative and Easy Solutions, Call (012) 2569 2453 1215</p>
+
                                     <p className='cursor-pointer hover:text-gray-800 transition-all duration-500 py-3 px-2 flex items-center text-white '>
                                         <span><TbWorld /></span>
                                         <span className='mx-2'> ENGLISH</span>
@@ -68,7 +73,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <ul className={`md:flex justify-between md:items-center lg:py-0 md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-[80px]' : 'top-[-480px]'}`}>
-                            {/* <div className='md:flex md:justify-between md:items-center'>
+                            <div className='md:flex md:justify-between md:items-center'>
                                 {
                                     Links.map((link) => (
                                         <li key={link.name} className='md:ml-8 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
@@ -76,14 +81,14 @@ const Navbar = () => {
                                         </li>
                                     ))
                                 }
-                            </div> */}
+                            </div>
 
 
                             {/* ********************************** */}
                             {/* tailwind dropdown menu start */}
                             {/* ********************************** */}
 
-                            <div className="md:flex md:justify-between md:items-center">
+                            {/*   <div className="md:flex md:justify-between md:items-center">
 
                                 <li className={`relative group md:ml-8 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
                                     <Link to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
@@ -123,33 +128,33 @@ const Navbar = () => {
                                 </li>
 
 
-                                {/* <li className={`relative group md:ml-8 text-xl md:my-0  py-4 transition-all duration-500 ease-in`}>
-                                    <Link to="/" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
-                                        About</Link>
-                                    <ul className='relative lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden group-hover:block transition-all duration-300'>
+                                //  <li className={`relative group md:ml-8 text-xl md:my-0  py-4 transition-all duration-500 ease-in`}>
+                                //     <Link to="/" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
+                                //         About</Link>
+                                //     <ul className='relative lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden group-hover:block transition-all duration-300'>
 
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
-                                        </li>
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 02</Link>
-                                        </li>
-                                        <li onMouseOver={() => setNavShow(!navShow)} className='bg-red-700 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 0#</Link>
+                                //         <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                //             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
+                                //         </li>
+                                //         <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                //             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 02</Link>
+                                //         </li>
+                                //         <li onMouseOver={() => setNavShow(!navShow)} className='bg-red-700 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                //             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 0#</Link>
 
-                                            {navShow && <ul onMouseOver={() => setNavShow(!navShow)} className='bg-red-400 absolute w-52 bottom-90 left-full'>
-                                                <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                                    <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
-                                                </li>
-                                                <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                                    <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
-                                                </li>
-                                            </ul>
+                                //             {navShow && <ul onMouseOver={() => setNavShow(!navShow)} className='bg-red-400 absolute w-52 bottom-90 left-full'>
+                                //                 <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                //                     <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
+                                //                 </li>
+                                //                 <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                //                     <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400' to="/">About 01</Link>
+                                //                 </li>
+                                //             </ul>
 
-                                            }
-                                        </li>
-                                    </ul>
-                                </li> */}
+                                //             }
+                                //         </li>
+                                //     </ul>
+                                // </li> 
 
 
 
@@ -178,7 +183,7 @@ const Navbar = () => {
                                         CONTACT</Link>
                                 </li>
 
-                            </div>
+                            </div> */}
 
 
 

@@ -31,24 +31,29 @@ const Agency = () => {
         },
         {
             'image': '',
-            'title': 'Market Research',
+            'title': 'Startup Business',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
             'image': '',
-            'title': 'Market Research',
+            'title': 'Business Growth',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
             'image': '',
-            'title': 'Market Research',
+            'title': 'Insurance Task',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
             'image': '',
-            'title': 'Market Research',
+            'title': 'Consultancy',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
+        {
+            'image': '',
+            'title': 'Financial Advices',
+            'description': 'A typical business holds many different assets called capital, including office...'
+        }
     ]
 
 
@@ -79,7 +84,9 @@ const Agency = () => {
                                             ></div>
 
                                             <div className=''>
-                                                <AcUnitIcon className='text-primary text-center' />
+                                                <div className='border-2 border-primary rounded-full w-[60px] h-[60px] flex justify-center items-center'>
+                                                    <AcUnitIcon className='text-primary text-center' />
+                                                </div>
                                                 <div >
                                                     <Typography className='pt-4 pb-3 hover:text-red-600' gutterBottom variant="h5" component="div">
                                                         {service.title}
@@ -113,7 +120,9 @@ const Agency = () => {
                                     ></div>
 
                                     <div className=''>
-                                        <AcUnitIcon className='text-primary text-center' />
+                                        <div className='border-2 border-primary rounded-full w-[60px] h-[60px] flex justify-center items-center'>
+                                            <AcUnitIcon className='text-primary text-center' />
+                                        </div>
                                         <div >
                                             <Typography className='pt-4 pb-3 hover:text-red-600' gutterBottom variant="h5" component="div">
                                                 {service.title}

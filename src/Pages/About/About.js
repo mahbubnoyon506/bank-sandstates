@@ -62,7 +62,7 @@ const About = () => {
             'id': '1',
             'name': 'Georgie Haynes',
             'designation': 'Business Expert',
-            'image': '',
+            'image': 'https://themewar.com/html/quera/assets/images/team/1.jpg',
             'facebook': 'https://www.facebook.com/',
             'twitter': 'https://twitter.com/',
             'linkedin': 'https://linkedin.com/'
@@ -71,7 +71,7 @@ const About = () => {
             'id': '2',
             'name': 'Lara Maleon',
             'designation': 'Managment',
-            'image': '',
+            'image': 'https://themewar.com/html/quera/assets/images/team/2.jpg',
             'facebook': 'https://www.facebook.com/',
             'twitter': 'https://twitter.com/',
             'linkedin': 'https://linkedin.com/'
@@ -80,7 +80,7 @@ const About = () => {
             'id': '3',
             'name': 'Adam Delaua',
             'designation': 'Founder',
-            'image': '',
+            'image': 'https://themewar.com/html/quera/assets/images/team/3.jpg',
             'facebook': 'https://www.facebook.com/',
             'twitter': 'https://twitter.com/',
             'linkedin': 'https://linkedin.com/'
@@ -89,7 +89,7 @@ const About = () => {
             'id': '4',
             'name': 'Jizz Merkel',
             'designation': 'Consultant',
-            'image': '',
+            'image': 'https://themewar.com/html/quera/assets/images/team/4.jpg',
             'facebook': 'https://www.facebook.com/',
             'twitter': 'https://twitter.com/',
             'linkedin': 'https://linkedin.com/'
@@ -100,15 +100,15 @@ const About = () => {
     return (
         <div className='p-5 md:p-10 lg:p-20 bg-base-100'>
             <div className='lg:grid grid-cols-2 gap-10 '>
-                <div>
+                <div data-aos="zoom-in">
                     <div><img src={secImage} alt="" /></div>
                 </div>
                 <div className='my-auto p-5'>
-                    <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Welcome To Our Company</p>
-                    <h2 className='text-3xl lg:text-5xl font-bold py-5 leading-normal'>Build Your Business With Right Way</h2>
-                    <p className='text-[#74777C]'>
+                    <p className='text-primary font-medium text-xl' data-aos="fade-left" data-aos-duration="1500"> <HorizontalRuleIcon />Welcome To Our Company</p>
+                    <h2 className='text-3xl lg:text-5xl font-bold py-5 leading-normal' data-aos="fade-left" data-aos-duration="2500">Build Your Business With Right Way</h2>
+                    <p className='text-[#74777C]' data-aos="fade-left" data-aos-duration="4000">
                         Accounting departments are usually responsible for keeping track of all purchase orders that have been placed for stock (products to be sold by the business) and all other assets and services.</p>
-                    <div className='flex items-center py-5'>
+                    <div className='flex items-center py-5' data-aos="fade-left" data-aos-duration="5500">
                         <img src={support} alt="" />
                         <div className='ml-2'>
                             <p className='text-primary font-medium text-xl'> Need help? Contact Us</p>
@@ -118,7 +118,10 @@ const About = () => {
                 </div>
             </div>
             <div className='lg:grid grid-cols-2 gap-5 py-20'>
-                <div>
+                <div className='text-center'
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div><img className='w-full' src={video} alt="" /></div>
                 </div>
                 <div className='md:grid grid-cols-2 gap-5 md:mt-10 lg:mt-0 '>
@@ -137,7 +140,7 @@ const About = () => {
             <div>
                 <div>
                     <p className='text-primary font-medium text-xl text-center'> <HorizontalRuleIcon />Our Members<HorizontalRuleIcon /></p>
-                    <h2 className='text-3xl lg:text-6xl font-extrabold py-5 leading-normal text-center'>Expert <span className='text-primary'>Team</span> </h2>
+                    <h2 className='text-3xl lg:text-6xl font-extrabold py-5 leading-normal text-center' data-aos="zoom-in">Expert <span className='text-primary'>Team</span> </h2>
                 </div>
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 '>
                     {
@@ -150,10 +153,10 @@ const About = () => {
             <div>
                 <div className='lg:grid grid-cols-2 gap-10 bg-base-100 py-10 p-5'>
                     <div className='my-auto mb-10 lg:mb-0'>
-                        <p className='text-primary font-medium text-xl'> <HorizontalRuleIcon />Why Choose Us</p>
-                        <h2 className='text-3xl lg:text-5xl font-bold py-5 leading-normal'>Get Every Answer</h2>
+                        <p className='text-primary font-medium text-xl' data-aos="zoom-in"> <HorizontalRuleIcon />Why Choose Us</p>
+                        <h2 className='text-3xl lg:text-5xl font-bold py-5 leading-normal' data-aos="zoom-in">Get Every Answer</h2>
                         <div>
-                            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} data-aos="fade-right" data-aos-duration="1500">
                                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                     <Typography>Collapsible Group Item #1</Typography>
                                 </AccordionSummary>
@@ -167,7 +170,7 @@ const About = () => {
                                 </AccordionDetails>
                             </Accordion>
 
-                            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} data-aos="fade-right" data-aos-duration="3000">
                                 <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                                     <Typography>Collapsible Group Item #2</Typography>
                                 </AccordionSummary>
@@ -180,7 +183,7 @@ const About = () => {
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
-                            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} data-aos="fade-right" data-aos-duration="6000">
                                 <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                                     <Typography>Collapsible Group Item #3</Typography>
                                 </AccordionSummary>
@@ -196,7 +199,7 @@ const About = () => {
                         </div>
                     </div>
                     <div>
-                        <div><img src={discuss} alt="" /></div>
+                        <div data-aos="zoom-in"><img src={discuss} alt="" /></div>
                     </div>
                 </div>
             </div>
