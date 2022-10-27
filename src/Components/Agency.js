@@ -25,32 +25,32 @@ const Agency = () => {
     const services = [
 
         {
-            'image': 'https://i.ibb.co/8PLh9tj/analysis.png',
+            'image': 'https://i.ibb.co/PZ9cLnT/analysis.png',
             'title': 'Market Research',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': 'https://i.ibb.co/xm0J1bg/business-and-finance.png',
+            'image': 'https://i.ibb.co/HrT88BT/business-and-finance.png',
             'title': 'Startup Business',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': 'https://i.ibb.co/SyHKTV0/growth.png',
+            'image': 'https://i.ibb.co/wwQc9Tc/growth.png',
             'title': 'Business Growth',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': 'https://i.ibb.co/YcqHWyR/mentor.png',
+            'image': 'https://i.ibb.co/XLgZffV/mentor.png',
             'title': 'Insurance Task',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': 'https://i.ibb.co/7KPPH5Q/advisor.png',
+            'image': 'https://i.ibb.co/tBzp5Tb/advisor.png',
             'title': 'Consultancy',
             'description': 'A typical business holds many different assets called capital, including office...'
         },
         {
-            'image': 'https://i.ibb.co/Y0yBFXm/advice.png',
+            'image': 'https://i.ibb.co/TBf937Q/advice.png',
             'title': 'Financial Advices',
             'description': 'A typical business holds many different assets called capital, including office...'
         }

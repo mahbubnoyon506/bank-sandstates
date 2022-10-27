@@ -29,7 +29,7 @@ const QualityHome = () => {
                     <div>
                         <div data-aos="fade-up" className='flex items-center py-5'>
                             <div className='w-[80px] h-[80px] mr-5'>
-                                <img className='' src="https://i.ibb.co/xm0J1bg/business-and-finance.png" alt="" />
+                                <img className='' src="https://i.ibb.co/HrT88BT/business-and-finance.png" alt="" />
                             </div>
                             <div >
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
@@ -38,7 +38,7 @@ const QualityHome = () => {
                         </div>
                         <div data-aos="fade-up" className='flex items-center'>
                             <div className='w-[80px] h-[80px] mr-5'>
-                                <img className='' src="https://i.ibb.co/7KPPH5Q/advisor.png" alt="" />
+                                <img className='' src="https://i.ibb.co/tBzp5Tb/advisor.png" alt="" />
                             </div>
                             <div>
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Business Consultant</h3>
