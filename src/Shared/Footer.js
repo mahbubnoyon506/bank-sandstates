@@ -6,6 +6,7 @@ import { AiFillPhone } from "react-icons/ai"
 import Button from './Button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     useEffect(() => {
@@ -114,8 +115,8 @@ const Footer = () => {
                     <div class="grid grid-flow-col gap-4 ">
                         <a className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Privacy</a>
                         <a className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Terms</a>
-                        <a className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Cntact</a>
-                        <a className='cursor-pointer hover:text-red-700 transition-all duration-300 '>About</a>
+                        <Link to='/contact' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Contact</Link>
+                        <Link to='/about' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>About</Link>
 
                     </div>
                 </div>

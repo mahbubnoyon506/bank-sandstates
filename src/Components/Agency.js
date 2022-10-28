@@ -78,8 +78,8 @@ const Agency = () => {
 
                                         <div className=''>
                                             <div className='border-2 border-primary rounded-full w-[100px] h-[100px] flex justify-center items-center mb-5'>
-                                                {/* <AcUnitIcon className='text-primary text-center' /> */}
-                                                <img className='w-50 h-50 p-5' src={service.image} alt="" />
+                                                <AcUnitIcon className='text-primary text-center' />
+                                                {/* <img className='w-50 h-50 p-5' src={service.image} alt="" /> */}
                                             </div>
                                             <div >
                                                 <Typography className=' hover:text-red-600' gutterBottom variant="h5" component="div">
@@ -110,7 +110,7 @@ const Agency = () => {
 
                                     <div className=''>
                                         <div className='border-2 border-primary rounded-full w-[100px] h-[100px] flex justify-center items-center mb-5'>
-                                            <img className='w-50 h-50 p-5' src={service.image} alt="" />
+                                            <AcUnitIcon className='text-primary text-center' />
                                         </div>
                                         <div >
                                             <Typography className=' hover:text-red-600' gutterBottom variant="h5" component="div">
