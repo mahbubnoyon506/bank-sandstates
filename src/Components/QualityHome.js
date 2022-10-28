@@ -7,8 +7,7 @@ import CountUp from 'react-countup';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './QualityHome.css'
-import CardBG from '../assets/images/logo.png'
-import zIndex from '@mui/material/styles/zIndex';
+import {RiHandCoinFill } from "react-icons/ri";
 
 
 const QualityHome = () => {
@@ -28,8 +27,8 @@ const QualityHome = () => {
                 <div className='md:flex justify-between items-center pb-20'>
                     <div>
                         <div data-aos="fade-up" className='flex items-center py-5'>
-                            <div className='w-[80px] h-[80px] mr-5'>
-                                <img className='' src="https://i.ibb.co/HrT88BT/business-and-finance.png" alt="" />
+                            <div className='mr-5 flex justify-center items-center'>
+                                <FlareIcon className='text-primary'/>
                             </div>
                             <div >
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Finance Consultant</h3>
@@ -37,8 +36,8 @@ const QualityHome = () => {
                             </div>
                         </div>
                         <div data-aos="fade-up" className='flex items-center'>
-                            <div className='w-[80px] h-[80px] mr-5'>
-                                <img className='' src="https://i.ibb.co/tBzp5Tb/advisor.png" alt="" />
+                            <div className='mr-5 flex justify-center items-center'>
+                                <RiHandCoinFill className='text-2xl text-primary'/>
                             </div>
                             <div>
                                 <h3 className='text-accent text-2xl font-semibold py-2'>Business Consultant</h3>
