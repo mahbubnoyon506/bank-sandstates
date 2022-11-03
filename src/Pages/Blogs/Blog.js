@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -6,8 +6,23 @@ import FolderIcon from '@mui/icons-material/Folder';
 import PersonIcon from '@mui/icons-material/Person';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import Loader from '../../Components/Loader/Loader';
+import Footer from '../../Shared/Footer';
 
 const Blog = () => {
+
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [])
+
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+          setLoading(false)
+        }, [1000])
+      }, [])
     const posts = [
         {
             'category': 'Marketing',
@@ -71,6 +86,8 @@ const Blog = () => {
         }
     ]
     return (
+        <>
+        {loading && <Loader/>}
         <div className='p-5 lg:p-20 bg-base-100'>
             {/* posts */}
             <div className='md:grid grid-cols-3 gap-10'>
@@ -137,6 +154,7 @@ const Blog = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

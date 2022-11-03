@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import logo from '../assets/images/logo.png'
@@ -10,10 +10,19 @@ import { IoIosFlash } from 'react-icons/io';
 import { TbWorld } from 'react-icons/tb';
 
 import NavImage from "../assets/images/navbar-image.png"
+import Loader from '../Components/Loader/Loader';
 
 
 
 const Navbar = () => {
+    const [loading, setLoading] = useState(false)
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+          setLoading(false)
+        }, [1000])
+      }, [])
+
     let Links = [
         { name: "HOME", link: "/" },
         { name: "ABOUT", link: "/about" },
@@ -75,10 +84,10 @@ const Navbar = () => {
                         </div>
 
                         <ul className={` lg:pl-4 md:flex justify-start md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:gap-60 transition-all duration-500 ease-in ${open ? 'top-[80px]' : 'top-[-480px]'}`}>
-                            <div className='md:flex md:justify-between md:items-center '>
+                            <div className='md:flex md:justify-between md:items-center'>
                                 {
                                     Links.map((link) => (
-                                        <li key={link.name} className='md:ml-3 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                        <li onClick={() => setOpen(!open)} key={link.name} className='md:ml-3 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
                                             <Link to={link.link} className='md:text-sm lg:text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>{link.name}</Link>
                                         </li>
                                     ))
@@ -197,8 +206,8 @@ const Navbar = () => {
 
 
 
-                            <div class="grid-cols-1 md:grid-cols-2 inline-grid pr-5">
-                                <div>
+                            <div class=" md:grid-cols-2 inline-grid w-[20vw] mr-5">
+                                <div className='my-auto'>
                                     <span onClick={() => setShow(!show)} className='text-left hidden md:block  md:text-center  lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
                                     {
                                         show &&
@@ -211,7 +220,7 @@ const Navbar = () => {
                                     }
                                 </div>
 
-                                <Link to='#' class="btn btn-sm btn-primary bg-gradient-to-r from-[rgba(237,28,35,0.98)] to-[#ed541ce6] rounded-full ">Contact Us</Link>
+                                <Link onClick={() => setOpen(!open)} to='/contact' class="btn btn-sm btn-primary bg-gradient-to-r from-[rgba(237,28,35,0.98)] to-[#ed541ce6] rounded-full ">Contact Us</Link>
                             </div>
                         </ul>
                     </div>

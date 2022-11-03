@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PlaceIcon from '@mui/icons-material/Place';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import contactbg from '../../assets/images/16.jpg'
 import Button from '../../Shared/Button';
+import Loader from '../../Components/Loader/Loader';
+import Footer from '../../Shared/Footer';
 
 const Contact = () => {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [])
+
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+          setLoading(false)
+        }, [1000])
+      }, [])
     return (
         <div>
+            {loading && <Loader/>}
             <div className='lg:grid grid-cols-3 gap-10 p-5 lg:p-20 bg-[#FFEDEE]'>
                 <div className='flex items-center'
                     data-aos="flip-left"

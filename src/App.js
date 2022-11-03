@@ -8,32 +8,45 @@ import Contact from './Pages/Contact/Contact';
 import BacktoTop from './Components/BacktoTop/BacktoTop';
 import Navbar from './Shared/Navbar';
 import NotFound from './Pages/NotFound/NotFound';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Aos from 'aos';
+import Loader from './Components/Loader/Loader';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
+  const [loading, setLoading] = useState(false)
   useEffect(() => {
     Aos.init({
       duration: 2500,
     });
   }, []);
-  return (
-    <div>
 
-      <Navbar />
-      <div className='mt-24 lg:mt-32'>
-        <Routes className="mt-5">
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blogs" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
-      <Footer />
-      <BacktoTop />
-    </div>
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, [1000])
+  }, [])
+
+  return (
+    <>
+      {
+        loading ? <Loader></Loader> :
+          <div className='mt-24 lg:mt-32'>
+            <Navbar />
+            <Routes className="mt-5">
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/blogs" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/loader" element={<Loader />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <BacktoTop />
+            <Footer />
+          </div>
+      }
+    </>
   );
 }
 
