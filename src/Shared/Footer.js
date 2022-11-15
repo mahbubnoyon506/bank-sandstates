@@ -23,7 +23,7 @@ const Footer = () => {
 
                 <footer className='md:flex pl-3  justify-between items-center w-full'>
                     <div>
-                        <p className='text-lg mt-4 lg:text-4xl text-base-100 font-bold mb-3'>Sign up for latest news and <br /> insights from <span className='text-primary'>Quera.</span></p>
+                        <p className='text-lg mt-4 lg:text-4xl text-base-100 font-bold mb-3'>Sign up for latest<span className='text-primary'> News</span></p>
                     </div>
                     <div className='md:flex'>
                         <input type="text" placeholder="Type here" class="input rounded-full max-w-xs -full " />
@@ -37,32 +37,33 @@ const Footer = () => {
 
                 {/*  */}
 
-                <footer class=" px-5 text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <footer class=" px-5 text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div data-aos="fade-up">
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Do you have questions? <br /> Call or visit us.</h3>
-                        <a href="+569 2316 2156" className=' flex gap-2 text-[20px] font-bold'>
+                        <a href="callto:+44(0)7782455837" className=' flex gap-2 text-[20px] font-bold'>
                             <AiFillPhone className='text-red-500 text-2xl' />
-                            <span class=""> <span className='text-red-500'>+569 2316 2156</span> </span>
+                            <span class=""> <span className='text-red-500'>+44(0)7782455837</span> </span>
                         </a>
-                        <a href='_#' class="text-[#6c6c6c]  pb-2 font-[16px] font-bold mb-[18px]">2659 Dancing Street, New York,<br /> NY 25630, USA</a>
+                        <a href='_#' class="text-[#6c6c6c]  pb-2 font-[16px] font-bold mb-[18px]">2 Barnfield Crescent, Exeter, Devon <br /> United Kingdom, EX1 1QT
+                        </a>
                         <br />
-                        <a href='contact@example.com' class="text-whie hover:text-red-500 hover:underline transition-all">contact@example.com</a>
+                        <a href='mailto:support@banksandestates.com' class="text-whie hover:text-red-500 hover:underline transition-all">support@banksandestates.com</a>
                     </div>
                     <div data-aos="fade-up" >
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Usefull Links</h3>
                         <div className='text-xs '>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-[#6c6c6c] flex mt-1 cursor-pointer">Our Company</a>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-[#6c6c6c] flex mt-1 cursor-pointer">About Us</a>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-[#6c6c6c] flex mt-1 cursor-pointer">Latest News</a>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-[#6c6c6c] flex mt-1 cursor-pointer">Contact Us</a>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-[#6c6c6c] flex mt-1 cursor-pointer">Privacy Policy</a>
+                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Our Company</a>
+                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">About Us</a>
+                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Latest News</a>
+                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Contact Us</a>
+                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Privacy Policy</a>
                         </div>
                     </div>
                     <div data-aos="fade-up">
                         <span class="mb-10 lg:mb-5 text-xl text-white font-semibold  capitalize ">Latest Posts</span>
 
                         <div className='flex mt-5'>
-                            <img className='w-20 h-20' src='https://themewar.com/html/quera/assets/images/blog/t1.jpg' alt="" />
+                            <img className='w-20 h-20 mr-2' src='https://themewar.com/html/quera/assets/images/blog/t1.jpg' alt="" />
                             <a class="ml-2">
                                 <span className=' text-sm text-gray-500 '>10 June, 2021</span>
                                 <br />
@@ -74,7 +75,7 @@ const Footer = () => {
                         </div>
 
                         <div className='flex mt-5 lg:mt-2 mb-5 md:mb-0'>
-                            <img className='w-20 h-20 ' src='https://themewar.com/html/quera/assets/images/blog/t2.jpg' alt="" />
+                            <img className='w-20 h-20 mr-2' src='https://themewar.com/html/quera/assets/images/blog/t2.jpg' alt="" />
                             <a class="ml-2">
                                 <span className=' text-sm text-gray-500 '>10 June, 2021</span>
                                 <br />
@@ -85,7 +86,7 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div data-aos="fade-up">
+                    {/* <div data-aos="fade-up">
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Post Gallery</h3>
                         <div className='flex flex-cols-2 gap-4'>
                             <div className=''>
@@ -101,7 +102,7 @@ const Footer = () => {
                                 <img className='w-20 h-20 ' src='https://themewar.com/html/quera/assets/images/blog/g6.jpg' alt="" />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </footer>
             </div>
             {/* <footer class=" footer w-full px-10 py-4 bg-black text-white "> */}
