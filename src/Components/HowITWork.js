@@ -334,8 +334,26 @@ const HowITWork = () => {
                             <h2 class="secTitle px-2 text-sm md:text-2xl lg:text-4xl">
                                 Get Every <span>Answer</span>
                             </h2>
-                            <div className='p-2'>
-                                <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                            <div className='px-2'>
+                                <div>
+                                    <h3 className='text-accent text-2xl font-semibold py-2'>Build your own portfolio</h3>
+                                    <p className='text-[#74777C]'>Take advantage of flexible, easy-to-use tools with <br /> Self-Directed Investing</p>
+                                </div>
+                                <div>
+                                    <h3 className='text-accent text-2xl font-semibold py-2'>Get a professionally managed portfolio</h3>
+                                    <p className='text-[#74777C]'>Investment professionals design and manage <br /> a portfolio aligned to your goals with Banks Estates Investing</p>
+                                </div>
+                                <div>
+                                    <h3 className='text-accent text-2xl font-semibold py-2'>Work with a dedicated advisor</h3>
+                                    <p className='text-[#74777C]'>Get one-on-one guidance and develop a comprehensive <br /> strategy with banks Estates Wealth Management</p>
+                                </div>
+                                <div>
+                                    <h3 className='text-accent text-2xl font-semibold py-2'>Preferred Rewards</h3>
+                                    <p className='text-[#74777C]'>Your Banks estates deposits and Merrill investing balances <br /> get you more with Preferred Rewards</p>
+                                </div>
+
+
+                                {/* <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                         <Typography>Best Sources of Help and Advice for Your Business</Typography>
                                     </AccordionSummary>
@@ -386,7 +404,7 @@ const HowITWork = () => {
                                             sit amet blandit leo lobortis eget.
                                         </Typography>
                                     </AccordionDetails>
-                                </Accordion>
+                                </Accordion> */}
                             </div>
 
 

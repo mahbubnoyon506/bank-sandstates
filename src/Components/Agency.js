@@ -26,41 +26,45 @@ const Agency = () => {
 
         {
             'image': 'https://i.ibb.co/PZ9cLnT/analysis.png',
-            'title': 'Market Research',
-            'description': 'A typical business holds many different assets called capital, including office...'
+            'title': 'Loan',
+            'description': "In need of a Personal Credit Line ,Personal Loan,Study loan business loan, temporary loan increase?"
         },
         {
             'image': 'https://i.ibb.co/HrT88BT/business-and-finance.png',
-            'title': 'Startup Business',
-            'description': 'A typical business holds many different assets called capital, including office...'
+            'title': 'Insurance',
+            'description': "Enjoy your trip – Fuss free, knowing you are covered!",
+            "description2" : "Need help with paying off, reducing your balance or making your payments in the event of death, disability or job loss?"
         },
         {
             'image': 'https://i.ibb.co/wwQc9Tc/growth.png',
-            'title': 'Business Growth',
-            'description': 'A typical business holds many different assets called capital, including office...'
+            'title': 'Mortgages',
+            'description': "Buying you new home or next property?",
+            "description2" : "Need to renew your mortgage?"
         },
         {
             'image': 'https://i.ibb.co/XLgZffV/mentor.png',
-            'title': 'Insurance Task',
-            'description': 'A typical business holds many different assets called capital, including office...'
+            'title': 'Fore closure',
+            'description': ""
         },
-        {
-            'image': 'https://i.ibb.co/tBzp5Tb/advisor.png',
-            'title': 'Consultancy',
-            'description': 'A typical business holds many different assets called capital, including office...'
-        },
-        {
-            'image': 'https://i.ibb.co/TBf937Q/advice.png',
-            'title': 'Financial Advices',
-            'description': 'A typical business holds many different assets called capital, including office...'
-        }
+        // {
+        //     'image': 'https://i.ibb.co/tBzp5Tb/advisor.png',
+        //     'title': 'Consultancy',
+        //     'description': 'A typical business holds many different assets called capital, including office...'
+        // },
+        // {
+        //     'image': 'https://i.ibb.co/TBf937Q/advice.png',
+        //     'title': 'Financial Advices',
+        //     'description': 'A typical business holds many different assets called capital, including office...'
+        // }
     ]
 
 
     return (
         <div className='px-5 md:px-10 lg:px-20 py-10 lg:py-20' style={{ backgroundImage: `url(${AgencyBg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', }}>
             <div className=''>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
+                
+
+                {/* <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                     <div className='bg-auto p-3 lg:p-16 bg-[#F3F3F3]' style={{ backgroundImage: `url(${AgencySubBG})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', zIndex: "1", }}>
                         <div className='px-7 py-10 sm:mb-2 z-20' >
                             <h2 data-aos="fade-right" className='text-3xl md:text-3xl lg:text-5xl  font-bold leading-normal pb-10'>We Make Your <br /> Agency <span className='text-primary'>Full <br /> Bright</span> </h2>
@@ -79,7 +83,6 @@ const Agency = () => {
                                         <div className=''>
                                             <div className='border-2 border-primary rounded-full w-[100px] h-[100px] flex justify-center items-center mb-5'>
                                                 <AcUnitIcon className='text-primary text-center' />
-                                                {/* <img className='w-50 h-50 p-5' src={service.image} alt="" /> */}
                                             </div>
                                             <div >
                                                 <Typography className=' hover:text-red-600' gutterBottom variant="h5" component="div">
@@ -98,10 +101,11 @@ const Agency = () => {
 
                     </div>
 
-                </div>
+                </div> */}
+
                 <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center mt-10'>
                     {
-                        services.slice(2, 6).map((service, index) =>
+                        services.map((service, index) =>
                             <div data-aos="fade-up" className='' >
                                 <Card key={index} className='sm:mb-2 sm:flex justify-center py-12 px-8 relative bg-no-repeat bg-cente  hover:bg-[#202124]  mx-auto hover:z-20 hover:text-white' >
                                     <div className='absolute inset-0 opacity-40 '
@@ -118,6 +122,7 @@ const Agency = () => {
                                             </Typography>
 
                                             <p className='py-3'>  {service.description}</p>
+                                            <p className=''>  {service.description2}</p>
 
                                         </div>
                                         <Link to='/about' className='text-lg text-primary pt-7 font-semibold'>Read More <ArrowForwardIcon /></Link>
