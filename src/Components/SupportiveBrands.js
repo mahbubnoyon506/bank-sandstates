@@ -44,14 +44,14 @@ const SupportiveBrands = () => {
         <div className='bg-primary'>
             <div className='px-5 md:px-10 py-20 lg:flex flex-row justify-center items-center'>
 
-                <p data-aos="fade-up" className='basis-1/4 text-4xl font-bold text-base-100 lg:text-left text-center'>Our partners</p>
+                <p data-aos="fade-up" className='basis-1/4 text-4xl font-bold text-base-100 lg:text-center text-center pr-2'>Our partners</p>
 
                 <div className='basis-1/2 py-5 sm:mx-20 md:mx-0'>
                     <Marquee speed={70} gradient={false}>
                         {
                             Logos.map((brand, index) =>
                                 <>
-                                    <img className="mx-5 w-[120px]" src={brand.logo} alt="" />
+                                    <img className="mx-5 w-[110px] rounded-lg" src={brand.logo} alt="" />
                                 </>
                             )
                         }

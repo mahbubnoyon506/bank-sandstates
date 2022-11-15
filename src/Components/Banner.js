@@ -75,7 +75,7 @@ const Banner = () => {
                       <p className="text-lg lg:text-[24px] tracking-wider my-5 lg:w-3/4 font-semibold md:text-left lg:text-left text-center">{item.message}</p>
                       <h2 className="text-3xl lg:text-6xl md:text-5xl lg:w-3/4 align-middle  md:text-left lg:text-left text-center font-bold ">{item.title}</h2>
                       <p className="text-sm lg:text-md my-5 lg:w-3/4 font-semibold md:text-left lg:text-left text-center">{item.description}</p>
-                      <p className="text-sm lg:text-md my-5 lg:w-3/4 font-semibold md:text-left lg:text-left text-center">To serve you better, we will partner you with one of our committed and highly vetted professionals</p>
+                      <p className="text-sm lg:text-md      lg:w-3/4 font-semibold md:text-left lg:text-left text-center">To serve you better, we will partner you with one of our committed and highly vetted professionals</p>
                       <p className="text-sm lg:text-md my-5 lg:w-3/4 font-semibold md:text-left lg:text-left text-center">Success banking that begins with YOU!</p>
 
 
