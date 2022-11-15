@@ -79,7 +79,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <ul className={`  md:flex justify-start md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:gap-30 transition-all duration-500 ease-in ${open ? 'top-[80px]' : 'top-[-480px]'}`}>
+                        <ul className={`  md:flex justify-start md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:gap-30 transition-all duration-500 ease-in ${open ? 'top-[100px]' : 'top-[-480px]'}`}>
                             {/* <div className='md:flex md:justify-between md:items-center'>
                                 {
                                     Links.map((link) => (
@@ -97,12 +97,12 @@ const Navbar = () => {
 
                             <div className="md:flex md:justify-between md:items-center">
 
-                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
                                     <Link to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
                                         HOME
                                     </Link>
                                 </li>
-                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
                                     <Link to="/about" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
                                         SERVICES</Link>
 
@@ -126,7 +126,7 @@ const Navbar = () => {
                                 </li>
 
 
-                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
                                     <Link to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
                                         PERSONAL</Link>
 
@@ -146,15 +146,16 @@ const Navbar = () => {
                                 </li>
 
 
-                                <li className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
+                                <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
                                     <Link to="/" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
                                         CORPORATE </Link>
                                 </li>
-                                <li className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
+                                <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
                                     <Link to="/blogs" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
-                                        NEWS   </Link>
+                                        NEWS
+                                    </Link>
                                 </li>
-                                <li className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
+                                <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
                                     <Link to="/contact" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
                                         CONTACT </Link>
                                 </li>
