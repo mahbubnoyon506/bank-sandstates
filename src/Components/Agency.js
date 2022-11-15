@@ -32,13 +32,13 @@ const Agency = () => {
         {
             'image': 'https://i.ibb.co/HrT88BT/business-and-finance.png',
             'title': 'Insurance',
-            'description': "Enjoy your trip – Fuss free, knowing you are covered!",
+            'description': "Enjoy your trip – Fuss free, knowing you are covered! Need help with paying off, reducing your balance or making your payments in the event of death, disability or job loss?",
             "description2" : "Need help with paying off, reducing your balance or making your payments in the event of death, disability or job loss?"
         },
         {
             'image': 'https://i.ibb.co/wwQc9Tc/growth.png',
             'title': 'Mortgages',
-            'description': "Buying you new home or next property?",
+            'description': "Buying you new home or next property? Need to renew your mortgage?",
             "description2" : "Need to renew your mortgage?"
         },
         {
@@ -121,8 +121,8 @@ const Agency = () => {
                                                 {service.title}
                                             </Typography>
 
-                                            <p className='py-3'>  {service.description}</p>
-                                            <p className=''>  {service.description2}</p>
+                                            <p className='py-3'>  {service.description.slice(0, 80) + '...'}</p>
+                                            {/* <p className=''>  {service.description2}</p> */}
 
                                         </div>
                                         <Link to='/about' className='text-lg text-primary pt-7 font-semibold'>Read More <ArrowForwardIcon /></Link>
