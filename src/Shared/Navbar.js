@@ -66,7 +66,6 @@ const Navbar = () => {
                                     <p className='py-3 px-0 flex items-center'>
                                         <span className='inline-flex pt-1 text-lg'>
                                             <span className='pt-1'><IoIosFlash /></span>
-                                            {/* </span> Need Help: Providing Innovative and Easy Solutions, Call (012) 2569 2453 1215</p> */}
                                         </span> 2 Barnfield Crescent, Exeter, Devon, United Kingdom, EX1 1QT +44 (0) 7782455837
                                     </p>
 
@@ -79,7 +78,11 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <ul className={`  md:flex justify-start md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:gap-30 transition-all duration-500 ease-in ${open ? 'top-[100px]' : 'top-[-480px]'}`}>
+                        {/* ************** */}
+                        {/* Navbar menu  */}
+                        {/* ************** */}
+
+                        <ul className={`  md:flex  justify-between lg:pr-5 md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:gap-30 transition-all duration-500 ease-in ${open ? 'top-[100px]' : 'top-[-480px]'}`}>
                             {/* <div className='md:flex md:justify-between md:items-center'>
                                 {
                                     Links.map((link) => (
@@ -95,15 +98,16 @@ const Navbar = () => {
                             {/* tailwind dropdown menu start */}
                             {/* ********************************** */}
 
-                            <div className="md:flex md:justify-between md:items-center">
+                            <div className="md:flex md:justify-between">
 
-                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
-                                    <Link to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                    <Link onClick={() => setOpen(!open)} to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
                                         HOME
                                     </Link>
                                 </li>
-                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
-                                    <Link to="/about" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+
+                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                    <Link to="" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
                                         SERVICES</Link>
 
                                     <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
@@ -157,7 +161,8 @@ const Navbar = () => {
                                 </li>
                                 <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
                                     <Link to="/contact" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
-                                        CONTACT </Link>
+                                        CONTACT
+                                    </Link>
                                 </li>
 
                             </div>
