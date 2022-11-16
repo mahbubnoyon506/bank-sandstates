@@ -104,7 +104,7 @@ const HowITWork = () => {
                             </div>
 
                             <h2 className="secTitle ">
-                                How We <span>Works</span>
+                                How We <span>Work</span>
                             </h2>
                         </div>
                     </div>
@@ -153,7 +153,7 @@ const HowITWork = () => {
                                     </i>
                                     <span>02</span>
                                 </div>
-                                <h3>Idea Create</h3>
+                                <h3>Create Idea</h3>
                                 <p>
                                     Fessionally fabricate strategic platform without corporate
                                     before fully tested
@@ -313,7 +313,7 @@ const HowITWork = () => {
                                         <textarea
                                             className="required textarea w-sm"
                                             name="con_message"
-                                            placeholder="Describe Your Plan"
+                                            placeholder="Your Message"
                                         ></textarea>
                                     </div>
                                     <div class="input-field ">
@@ -336,19 +336,19 @@ const HowITWork = () => {
                             </h2>
                             <div className='px-2'>
                                 <div>
-                                    <h3 className='text-accent text-2xl font-semibold py-2'>Build your own portfolio</h3>
+                                    <h3 className='text-accent text-2xl font-semibold pt-2'>Build your own portfolio</h3>
                                     <p className='text-[#74777C]'>Take advantage of flexible, easy-to-use tools with <br /> Self-Directed Investing</p>
                                 </div>
                                 <div>
-                                    <h3 className='text-accent text-2xl font-semibold py-2'>Get a professionally managed portfolio</h3>
+                                    <h3 className='text-accent text-2xl font-semibold pt-3'>Get a professionally managed portfolio</h3>
                                     <p className='text-[#74777C]'>Investment professionals design and manage <br /> a portfolio aligned to your goals with Banks Estates Investing</p>
                                 </div>
                                 <div>
-                                    <h3 className='text-accent text-2xl font-semibold py-2'>Work with a dedicated advisor</h3>
+                                    <h3 className='text-accent text-2xl font-semibold pt-3'>Work with a dedicated advisor</h3>
                                     <p className='text-[#74777C]'>Get one-on-one guidance and develop a comprehensive <br /> strategy with banks Estates Wealth Management</p>
                                 </div>
                                 <div>
-                                    <h3 className='text-accent text-2xl font-semibold py-2'>Preferred Rewards</h3>
+                                    <h3 className='text-accent text-2xl font-semibold pt-3'>Preferred Rewards</h3>
                                     <p className='text-[#74777C]'>Your Banks estates deposits and Merrill investing balances <br /> get you more with Preferred Rewards</p>
                                 </div>
 
