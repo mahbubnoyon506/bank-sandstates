@@ -109,7 +109,7 @@ const Footer = () => {
             <footer class=" flex flex-col md:flex-row lg:fles-row lg:justify-between md:justify-between lg:px-16 md:px-16 gap-4 justify-center bg-black py-5 text-white">
 
                 <div class="items-center md:items-start lg:items-start grid-flow-col text-center">
-                    <p>&copy; {date} Quera. All Rights Reserved.</p>
+                    <p>&copy; {date} <a href="https://banksandstate.netlify.app/">Bank-Sande-States</a>. All Rights Reserved.</p>
                 </div>
 
                 <div class="flex justify-center md:place-self-center md:justify-self-end">

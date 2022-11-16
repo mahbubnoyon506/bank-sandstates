@@ -61,10 +61,8 @@ const Banner = () => {
         {
           banner.map((item, index) =>
             <SwiperSlide key={index}>
-
-              <div style={{ width: '100%' }}>
-
-                <div className="  relative w-full h-screen ">
+              <div className="" style={{ width: '100%' }}>
+                <div className="  relative w-full h-screen">
 
                   <div className="relative bg-gray-700/.09 w-full h-full ">
                     <img className="w-full  mix-blend-multiply bg-base-200  h-full opacity-95 " src={item.image} alt="" />
