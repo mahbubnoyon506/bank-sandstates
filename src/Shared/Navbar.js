@@ -204,7 +204,7 @@ const Navbar = () => {
 
 
 
-                            <div class="lg:grid-cols-2 inline-grid">
+                            <div class=" lg:grid-cols-2 inline-grid">
                                 <div className='my-auto'>
                                     <span onClick={() => setShow(!show)} className='text-left hidden md:block  md:text-center  lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
                                     {

@@ -44,7 +44,7 @@ const Agency = () => {
         {
             'image': 'https://i.ibb.co/XLgZffV/mentor.png',
             'title': 'Fore closure',
-            'description': ""
+            'description': "A typical business holds many different assets called capital, including office..."
         },
         // {
         //     'image': 'https://i.ibb.co/tBzp5Tb/advisor.png',
