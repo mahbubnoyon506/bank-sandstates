@@ -49,7 +49,7 @@ const Navbar = () => {
 
                     <div className='relative lg:flex-basis-1/4 lg:py-2 '>
                         <Link to='/' class="">
-                            <img className=' ml-5 lg:ml-20 w-32 h-28 lg:w-28 rounded-lg' src={banksandestatesLogo} alt="" />
+                            <img className=' ml-8 lg:ml-20 w-32 h-28 lg:w-28 rounded-lg' src={banksandestatesLogo} alt="" />
                         </Link>
                     </div>
 
@@ -116,7 +116,7 @@ const Navbar = () => {
                                             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Loan</Link>
                                         </li>
                                         <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Insurance</Link>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/travelInsurance">Insurance</Link>
                                         </li>
 
                                         <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
@@ -154,11 +154,38 @@ const Navbar = () => {
                                     <Link to="/corporate" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
                                         CORPORATE </Link>
                                 </li>
-                                <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
-                                    <Link to="/blogs" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
+
+                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
+                                    <Link to="" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
                                         NEWS
                                     </Link>
+
+                                    <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-3 bg-white w-56 hidden  group-hover:block '>
+
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Digital Assets</Link>
+                                        </li>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Covid</Link>
+                                        </li>
+
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Property Investments</Link>
+                                        </li>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Share index</Link>
+                                        </li>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Insurance</Link>
+                                        </li>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Others</Link>
+                                        </li>
+                                    </ul>
+
                                 </li>
+
+
                                 <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
                                     <Link to="/contact" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
                                         CONTACT

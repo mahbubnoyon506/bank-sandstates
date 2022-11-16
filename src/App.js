@@ -14,6 +14,8 @@ import Loader from './Components/Loader/Loader';
 import Corporate from './Pages/Corporate/Corporate';
 import Personal from './Pages/Personal/Personal';
 import Mortgase from './Pages/Mortgase/Mortgase';
+import TravelInsurance from './Components/TravelInsurance';
+import AboutUs from './Pages/About/AboutUs';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
@@ -46,7 +48,13 @@ function App() {
               <Route path="/corporate" element={<Corporate />} />
               <Route path="/personal" element={<Personal />} />
               <Route path="/mortgase" element={<Mortgase />} />
+
+
+              <Route path="/travelInsurance" element={<TravelInsurance />} />
+              <Route path="/aboutUs" element={<AboutUs />} />
               <Route path="*" element={<NotFound />} />
+
+
             </Routes>
             <BacktoTop />
             <Footer />

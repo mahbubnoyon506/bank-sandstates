@@ -117,7 +117,7 @@ const Footer = () => {
                         <a className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Privacy</a>
                         <a className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Terms</a>
                         <Link to='/contact' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Contact</Link>
-                        <Link to='/about' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>About</Link>
+                        <Link to='/aboutUs' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>About</Link>
 
                     </div>
                 </div>

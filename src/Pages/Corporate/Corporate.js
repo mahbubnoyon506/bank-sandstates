@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../../Shared/Button';
 import CircleIcon from '@mui/icons-material/Circle';
 import { FaCircle } from 'react-icons/fa';
 
 const Corporate = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div className='p-5 lg:p-20 bg-white'>
             <h1 className='text-4xl font-bold pb-10'>Corporate</h1>

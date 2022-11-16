@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaCircle } from 'react-icons/fa';
 import Button from '../../Shared/Button';
 
 const Personal = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div className='p-5 lg:p-20 bg-white'>
             <h1 className='text-4xl font-bold'>Personal</h1>
