@@ -120,7 +120,7 @@ const Navbar = () => {
                                         </li>
 
                                         <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Mortagages</Link>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/mortgase">Mortagages</Link>
                                         </li>
                                         <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
                                             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Fore closure</Link>
@@ -131,7 +131,7 @@ const Navbar = () => {
 
 
                                 <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
-                                    <Link to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+                                    <Link to="/personal" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
                                         PERSONAL</Link>
 
                                     {/* <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
@@ -151,7 +151,7 @@ const Navbar = () => {
 
 
                                 <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
-                                    <Link to="/" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
+                                    <Link to="/corporate" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
                                         CORPORATE </Link>
                                 </li>
                                 <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>

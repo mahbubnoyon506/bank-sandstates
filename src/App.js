@@ -11,6 +11,9 @@ import NotFound from './Pages/NotFound/NotFound';
 import { useEffect, useState } from 'react';
 import Aos from 'aos';
 import Loader from './Components/Loader/Loader';
+import Corporate from './Pages/Corporate/Corporate';
+import Personal from './Pages/Personal/Personal';
+import Mortgase from './Pages/Mortgase/Mortgase';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
@@ -40,6 +43,9 @@ function App() {
               <Route path="/blogs" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/loader" element={<Loader />} />
+              <Route path="/corporate" element={<Corporate />} />
+              <Route path="/personal" element={<Personal />} />
+              <Route path="/mortgase" element={<Mortgase />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <BacktoTop />
