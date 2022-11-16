@@ -11,6 +11,8 @@ import NotFound from './Pages/NotFound/NotFound';
 import { useEffect, useState } from 'react';
 import Aos from 'aos';
 import Loader from './Components/Loader/Loader';
+import TravelInsurance from './Components/TravelInsurance';
+import AboutUs from './Pages/About/AboutUs';
 <link href="/dist/output.css" rel="stylesheet" />
 
 function App() {
@@ -40,7 +42,13 @@ function App() {
               <Route path="/blogs" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/loader" element={<Loader />} />
+
+
+              <Route path="/travelInsurance" element={<TravelInsurance />} />
+              <Route path="/aboutUs" element={<AboutUs />} />
               <Route path="*" element={<NotFound />} />
+
+
             </Routes>
             <BacktoTop />
             <Footer />

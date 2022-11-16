@@ -116,7 +116,7 @@ const Navbar = () => {
                                             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Loan</Link>
                                         </li>
                                         <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Insurance</Link>
+                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/travelInsurance">Insurance</Link>
                                         </li>
 
                                         <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>

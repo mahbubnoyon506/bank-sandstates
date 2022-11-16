@@ -14,8 +14,8 @@ const Home = () => {
 
     return (
         <div className=''>
-            <Banner />
-            <SupportiveBrands />
+            {/* <Banner />
+            <SupportiveBrands /> */}
             <Agency />
             <QualityHome />
             <HowITWork />
