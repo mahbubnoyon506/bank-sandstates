@@ -44,16 +44,16 @@ const Navbar = () => {
         <div className=''>
             <div className=' shadow-md z-50 w-full fixed top-0 left-0'>
 
-                <div className=' md:flex lg-flex  justify-between items-center bg-white  '
+                <div className=' md:flex lg:flex  justify-between items-center bg-white  '
                     style={{ backgroundImage: `url(${NavImage})`, backgroundPosition: 'center', backgroundSize: 'cover', }}>
 
-                    <div className='relative lg:flex-basis-1/4 py-2 '>
+                    <div className='relative lg:flex-basis-1/4 lg:py-2 '>
                         <Link to='/' class="">
-                            <img style={{ width: "100px" }} className=' ml-10 lg:ml-20 rounded-lg' src={banksandestatesLogo} alt="" />
+                            <img className=' ml-5 lg:ml-20 w-32 h-28 lg:w-28 rounded-lg' src={banksandestatesLogo} alt="" />
                         </Link>
                     </div>
 
-                    <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-9 cursor-pointer md:hidden'>
+                    <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-9 cursor-pointer lg:hidden'>
                         <ion-icon name={open ? 'close' : 'menu'}><FiMenu /></ion-icon>
                     </div>
 
@@ -82,7 +82,7 @@ const Navbar = () => {
                         {/* Navbar menu  */}
                         {/* ************** */}
 
-                        <ul className={`  md:flex  justify-between lg:pr-5 md:items-center lg:py-0  md:pb-0 pb-8 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 lg:gap-30 transition-all duration-500 ease-in ${open ? 'top-[100px]' : 'top-[-480px]'}`}>
+                        <ul className={`  lg:flex  justify-between lg:pr-5 lg:items-center lg:py-0  lg:pb-0 pb-8 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 lg:gap-30 transition-all duration-500 ease-in ${open ? 'top-[100px]' : 'top-[-480px]'}`}>
                             {/* <div className='md:flex md:justify-between md:items-center'>
                                 {
                                     Links.map((link) => (
@@ -98,7 +98,7 @@ const Navbar = () => {
                             {/* tailwind dropdown menu start */}
                             {/* ********************************** */}
 
-                            <div className="md:flex md:justify-between">
+                            <div className="lg:flex lg:justify-between">
 
                                 <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
                                     <Link onClick={() => setOpen(!open)} to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
@@ -112,17 +112,17 @@ const Navbar = () => {
 
                                     <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
 
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
                                             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Loan</Link>
                                         </li>
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
                                             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Insurance</Link>
                                         </li>
 
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
                                             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Mortagages</Link>
                                         </li>
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
                                             <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Fore closure</Link>
                                         </li>
                                     </ul>
@@ -177,15 +177,15 @@ const Navbar = () => {
 
 
 
-                            <div class=" md:grid-cols-2 inline-grid">
+                            <div class=" lg:grid-cols-3 inline-grid">
                                 <div className='my-auto'>
                                     <span onClick={() => setShow(!show)} className='text-left hidden md:block  md:text-center  lg:mb-0 my-auto hover:text-red-600 cursor-pointer mr-[-50px]'><SearchIcon /></span>
                                     {
                                         show &&
                                         <div className="hidden md:block ">
                                             <div className=' lg:flex  justify-center items-center absolute left-20 bottom-20 md:top-[130px] md:right-[-15vw] lg:top-[170px] lg:left-[50vw]'>
-                                                <input type="text" placeholder="Type here" class="input max-w-xs rounded-full p-5 bg-slate-200 focus:outline-0 " />
-                                                <button className='w-10 h-10  rounded-full bg-primary text-white ml-[-45px] lg:ml-[-45px] hover:bg-black'><SearchIcon className='' /></button>
+                                                <input type="text" placeholder="Type here" class="input max-w-xs rounded-full py-5 bg-slate-200 focus:outline-0 " />
+                                                <button className='col-span-2 w-10 h-10  rounded-full bg-primary text-white ml-[-45px] lg:ml-[-45px] hover:bg-black'><SearchIcon className='' /></button>
                                             </div>
                                         </div>
                                     }
