@@ -150,6 +150,10 @@ body {
   display: none;
 }
 
+.swiper-pagination-bullet-active{
+  background: #FFF !important;
+}
+
 @media only screen and (max-width:576px) {
   .swiper-button-next {
     display: none;

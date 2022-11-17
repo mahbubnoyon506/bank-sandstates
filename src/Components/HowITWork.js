@@ -352,59 +352,6 @@ const HowITWork = () => {
                                     <p className='text-[#74777C]'>Your Banks estates deposits and Merrill investing balances <br /> get you more with Preferred Rewards</p>
                                 </div>
 
-
-                                {/* <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        <Typography >
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
-                                        </Typography>
-                                    </AccordionDetails>
-                                </Accordion>
-                                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                                    <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        <Typography>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
-                                        </Typography>
-                                    </AccordionDetails>
-                                </Accordion>
-                                <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                                    <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        <Typography>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
-                                        </Typography>
-                                    </AccordionDetails>
-                                </Accordion>
-                                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                                    <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        <Typography>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
-                                        </Typography>
-                                    </AccordionDetails>
-                                </Accordion> */}
                             </div>
 
 
