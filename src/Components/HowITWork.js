@@ -527,7 +527,7 @@ const HowITWork = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="md:grid grid-cols-3 gap-10 py-10">
+                    {/* <div class="md:grid grid-cols-3 gap-10 py-10">
                         <div class="col-span-2">
                             <div class="support">
                                 <div class="spIcon flex items-center mb-2">
@@ -554,14 +554,14 @@ const HowITWork = () => {
                                 <h3>2569 25 21589</h3>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             {/* Team section ends */}
             {/* Feature section starts */}
 
 
-            <section class="chooseSection ">
+            {/* <section class="chooseSection ">
                 <div class="lg:grid grid-cols-2 gap-5 md:px-20 px-5">
                     <div class="">
                         <div class="subTitle">
@@ -632,14 +632,14 @@ const HowITWork = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             {/* Feature section ends */}
 
             {/* Feedback section starts */}
 
-            <section class="testimonialSection01">
+            {/* <section class="testimonialSection01">
                 <div class="">
                     <div class="testimonial-sec mx-0 md:mx-20">
                         <div class="">
@@ -736,12 +736,12 @@ const HowITWork = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Feedback section endss */}
             {/* Blog section starts */}
 
-            <section class="blogSectiont01">
+            {/* <section class="blogSectiont01">
                 <div class="md:px-20">
                     <div class="lg:grid grid-cols-3 gap-5">
                         <div class="col-span-2 noPaddingRight">
@@ -820,7 +820,7 @@ const HowITWork = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
         </div>
     );
