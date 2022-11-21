@@ -218,7 +218,7 @@ const HowITWork = () => {
 
 
             <div className="appoinmentSection01">
-                <div className="funfactArea">
+                {/* <div className="funfactArea">
                     <div data-aos="zoom-in" className="fact_01">
                         <h2 className='md:text-center lg:text-left'>
                             <CountUp end={2.5} duration={1} decimals={1} /><i style={{ fontStyle: "normal" }}>k</i>
@@ -246,7 +246,7 @@ const HowITWork = () => {
                             <br /> we like best principle
                         </p>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Whay choose us starts */}
                 <div className="">
@@ -363,15 +363,15 @@ const HowITWork = () => {
 
 
             {/* Portfolio starts */}
-            <div class="portfolioSection01">
+            {/* <div class="portfolioSection01">
                 <CarouselMangement />
-            </div>
+            </div> */}
             {/* Portfolio ends */}
 
 
 
             {/* Team section starts */}
-            <section class="teamSection01">
+            {/* <section class="teamSection01">
                 <div class="">
                     <div class="">
                         <div class="text-center">
@@ -527,7 +527,7 @@ const HowITWork = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div class="md:grid grid-cols-3 gap-10 py-10">
+                    <div class="md:grid grid-cols-3 gap-10 py-10">
                         <div class="col-span-2">
                             <div class="support">
                                 <div class="spIcon flex items-center mb-2">
@@ -554,9 +554,9 @@ const HowITWork = () => {
                                 <h3>2569 25 21589</h3>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
-            </section>
+            </section> */}
             {/* Team section ends */}
             {/* Feature section starts */}
 

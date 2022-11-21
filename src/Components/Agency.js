@@ -27,35 +27,29 @@ const Agency = () => {
         {
             'image': 'https://i.ibb.co/PZ9cLnT/analysis.png',
             'title': 'Loan',
+            'url' : 'loan',
             'description': "In need of a Personal Credit Line ,Personal Loan,Study loan business loan, temporary loan increase?"
         },
         {
             'image': 'https://i.ibb.co/HrT88BT/business-and-finance.png',
             'title': 'Insurance',
+            'url' : 'insurance',
             'description': "Enjoy your trip – Fuss free, knowing you are covered! Need help with paying off, reducing your balance or making your payments in the event of death, disability or job loss?",
             "description2" : "Need help with paying off, reducing your balance or making your payments in the event of death, disability or job loss?"
         },
         {
             'image': 'https://i.ibb.co/wwQc9Tc/growth.png',
             'title': 'Mortgages',
+            'url' : 'mortgage',
             'description': "Buying you new home or next property? Need to renew your mortgage?",
             "description2" : "Need to renew your mortgage?"
         },
         {
             'image': 'https://i.ibb.co/XLgZffV/mentor.png',
             'title': 'Fore closure',
+            'url' : 'closure',
             'description': "A typical business holds many different assets called capital, including office..."
-        },
-        // {
-        //     'image': 'https://i.ibb.co/tBzp5Tb/advisor.png',
-        //     'title': 'Consultancy',
-        //     'description': 'A typical business holds many different assets called capital, including office...'
-        // },
-        // {
-        //     'image': 'https://i.ibb.co/TBf937Q/advice.png',
-        //     'title': 'Financial Advices',
-        //     'description': 'A typical business holds many different assets called capital, including office...'
-        // }
+        }
     ]
 
 
@@ -125,14 +119,14 @@ const Agency = () => {
                                             {/* <p className=''>  {service.description2}</p> */}
 
                                         </div>
-                                        <Link to='/about' className='text-lg text-primary pt-7 font-semibold'>Read More <ArrowForwardIcon /></Link>
+                                        <Link to={`/${service.url}`} className='text-lg text-primary pt-7 font-semibold'>Read More <ArrowForwardIcon /></Link>
                                     </div>
                                 </Card>
                             </div>
                         )
                     }
                 </div>
-                <p className='text-lg text-center pt-12'>You can also find our <Link to='#' className='text-primary underline hover:no-underline'> Consultant Service to contact for the consulting</Link></p>
+                <p className='text-lg text-center pt-12'>You can also find our <Link to='/contact' className='text-primary underline hover:no-underline'> Consultant Service to contact for the consulting</Link></p>
             </div >
         </div>
     );

@@ -8,20 +8,20 @@ const Personal = () => {
         window.scrollTo(0, 0);
     }, [])
     return (
-        <div className='p-5 lg:p-20 bg-white'>
+        <div className='p-5 lg:p-20 bg-white pt-16'>
             <h1 className='text-4xl font-bold'>Personal</h1>
             <div>
                 <h3 className='text-xl font-bold pt-8 pb-4'>Personal Loans</h3>
                 <p>3.5% APR Representative on loans between £7,500 and £25,000 over 1 to 5 years. Other loan amounts and terms are available at different rates. Our loans start at £1,000.</p>
                 <h3 className='text-xl font-bold pt-8 pb-4'>You can apply for a loan if</h3>
                 <ul>
-                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'20px'}}/>You’re aged 18 or over and live in the UK (excluding the Channel Islands and the Isle of Man)</li>
-                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'20px'}}/>You’re in paid employment or have a regular income</li>
-                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'20px'}}/>You’re not a full–time student</li>
-                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'20px'}}/>You haven’t had a request for credit declined in the past month</li>
-                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'20px'}}/>You don’t have a history of bad credit, such as bankruptcy or CCJs</li>
-                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'20px'}}/>You are not applying for any of these reasons</li>
-                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'20px'}}/>Lending and rate are subject to our assessment of your circumstances.</li>
+                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'15px'}}/>You’re aged 18 or over and live in the UK (excluding the Channel Islands and the Isle of Man)</li>
+                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'15px'}}/>You’re in paid employment or have a regular income</li>
+                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'15px'}}/>You’re not a full–time student</li>
+                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'15px'}}/>You haven’t had a request for credit declined in the past month</li>
+                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'15px'}}/>You don’t have a history of bad credit, such as bankruptcy or CCJs</li>
+                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'15px'}}/>You are not applying for any of these reasons</li>
+                    <li className='flex items-center'> <CircleIcon className='pr-2' style={{fontSize:'15px'}}/>Lending and rate are subject to our assessment of your circumstances.</li>
                 </ul>
                 <h3 className='text-xl font-bold pt-8'>Why choose BE?</h3>
                 <h4 className='font-bold pt-4 pb-2'>Take a repayment holiday</h4>
