@@ -3,10 +3,13 @@ import EmailIcon from '@mui/icons-material/Email';
 import background from '../assets/images/footer-bg.jpg'
 import image_1 from '../assets/images/1.jpg'
 import { AiFillPhone } from "react-icons/ai"
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import Button from './Button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
     useEffect(() => {
@@ -52,14 +55,25 @@ const Footer = () => {
                     <div data-aos="fade-up" >
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Usefull Links</h3>
                         <div className='text-xs '>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Our Company</a>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">About Us</a>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Latest News</a>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Contact Us</a>
-                            <a class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Privacy Policy</a>
+                            <Link to='others' class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Our Company</Link>
+                            <Link to='/aboutUs' class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">About Us</Link>
+                            <Link to='/contact' class=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Contact Us</Link>
+                            <Link to='#' className=" hover:text-red-600 transition-all duration-300 text-base  text-[#6c6c6c] flex mt-1 cursor-pointer">Privacy Policy</Link>
                         </div>
                     </div>
-                    <div data-aos="fade-up">
+                    <div data-aos="fade-up" >
+                        <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Usefull Links</h3>
+                        <p>Connect with us with any social media platform.</p>
+                        <div className='text-xs flex'>
+                            <a href="#" className=' hover:text-red-600 transition-all duration-300 text-base  text-white flex mt-1 cursor-pointer mr-2'  rel="noopener noreferrer"><FacebookRoundedIcon className='text-2xl'/></a>
+                            <a href="#" className=' hover:text-red-600 transition-all duration-300 text-base  text-white flex mt-1 cursor-pointer mr-2'  rel="noopener noreferrer"><TwitterIcon className='text-2xl'/></a>
+                            <a href="#" className=' hover:text-red-600 transition-all duration-300 text-base  text-white flex mt-1 cursor-pointer mr-2'  rel="noopener noreferrer"><FaInstagram className='text-2xl'/></a>
+                            <a href="#" className=' hover:text-red-600 transition-all duration-300 text-base  text-white flex mt-1 cursor-pointer'  rel="noopener noreferrer"><FaLinkedinIn className='text-2xl'/></a>
+                        </div>
+                    </div>
+
+
+                    {/* <div data-aos="fade-up">
                         <span class="mb-10 lg:mb-5 text-xl text-white font-semibold  capitalize ">Latest Posts</span>
 
                         <div className='flex mt-5'>
@@ -85,7 +99,7 @@ const Footer = () => {
                             </a>
                         </div>
 
-                    </div>
+                    </div> */}
                     {/* <div data-aos="fade-up">
                         <h3 class="mb-5 text-xl text-white font-semibold capitalize ">Post Gallery</h3>
                         <div className='flex flex-cols-2 gap-4'>
@@ -114,11 +128,10 @@ const Footer = () => {
 
                 <div class="flex justify-center md:place-self-center md:justify-self-end">
                     <div class="grid grid-flow-col gap-4 ">
-                        <a className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Privacy</a>
-                        <a className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Terms</a>
+                        <Link to='#' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Privacy</Link>
+                        <Link to='#' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Terms</Link>
                         <Link to='/contact' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>Contact</Link>
                         <Link to='/aboutUs' className='cursor-pointer hover:text-red-700 transition-all duration-300 '>About</Link>
-
                     </div>
                 </div>
 
