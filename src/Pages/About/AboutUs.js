@@ -8,7 +8,7 @@ const AboutUs = () => {
     }, [])
 
     return (
-        <div className='p-5 lg:p-20 bg-white'>
+        <div className='p-5 lg:p-20 bg-white pt-16'>
             <div className=''>
                 <h1 className='text-4xl font-bold pb-5'>ABOUT</h1>
                 <div className=''>

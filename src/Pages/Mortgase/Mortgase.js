@@ -6,7 +6,7 @@ const Mortgase = () => {
         window.scrollTo(0, 0);
     }, [])
     return (
-        <div className='p-5 lg:p-20 bg-white'>
+        <div className='p-5 lg:p-20 bg-white pt-16'>
             <h1 className='text-4xl font-bold'>Mortgases</h1>
             <div>
                 <h3 className='text-xl font-bold pt-8 pb-4'>Buying your first home</h3>

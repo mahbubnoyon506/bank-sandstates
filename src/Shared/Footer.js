@@ -22,7 +22,7 @@ const Footer = () => {
     const date = new Date().getFullYear()
     return (
         <div style={{ backgroundImage: `url(${background})` }}>
-            <div className=' p-2 md:p-7 lg:p-10 pt-10'>
+            <div className=' p-2 md:p-7 lg:p-10 pt-16'>
 
                 <footer className='md:flex pl-3  justify-between items-center w-full'>
                     <div>

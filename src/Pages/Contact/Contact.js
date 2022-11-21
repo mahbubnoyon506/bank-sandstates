@@ -22,7 +22,7 @@ const Contact = () => {
       }, [])
     return (
         <div>
-            <div className='lg:grid grid-cols-3 gap-10 p-5 lg:p-20 bg-[#FFEDEE] pt-10'>
+            <div className='lg:grid grid-cols-3 gap-10 p-5 lg:p-20 bg-[#FFEDEE] pt-16'>
                 <div className='flex items-center'
                     data-aos="flip-left"
                     data-aos-easing="ease-out-cubic">

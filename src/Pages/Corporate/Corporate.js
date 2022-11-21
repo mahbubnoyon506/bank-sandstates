@@ -8,7 +8,7 @@ const Corporate = () => {
         window.scrollTo(0, 0);
     }, [])
     return (
-        <div className='p-5 lg:p-20 bg-white'>
+        <div className='p-5 lg:p-20 bg-white pt-16'>
             <h1 className='text-4xl font-bold pb-10'>Corporate</h1>
             <p>BE Bank's team of professional bankers is committed to supporting commercial customers to grow and prosper. Whether you're heading a start-up or a global venture, you can rely on us to be your trusted partner in this journey. <br /> <br /> The BE Corporate and Business package offers you a convenient and holistic banking experience powered by the Bank's wide array of products, services, and expertise. Focused on providing you with a whole range of banking services centered around your business needs, from maximizing deposit returns to various types of capital and financing options, a customer of BE Bank, will have access to the expertise and acumen of a team of dedicated professionals and you will have access to a differentiated service based upon customer-centricity and trust. Our Corporate Relationship Manager will contact you on a regular basis with the objective of better understanding your business operations and assessing your banking requirements. Following a comprehensive analysis of your business cycle and requirements, the Bank will propose a customized financial solution tailored to your needs.</p>
             <h3 className='text-xl font-bold pt-8 pb-4'>BE Flex Term Deposit</h3>

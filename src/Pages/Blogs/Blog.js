@@ -88,7 +88,7 @@ const Blog = () => {
     return (
         <>
         {loading && <Loader/>}
-        <div className='p-5 lg:p-20 bg-base-100'>
+        <div className='p-5 lg:p-20 bg-base-100 pt-16'>
             {/* posts */}
             <div className='md:grid grid-cols-3 gap-10'>
                 <div className='col-span-2 '>

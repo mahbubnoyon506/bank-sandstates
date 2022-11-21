@@ -8,7 +8,7 @@ function TravelInsurance() {
         window.scrollTo(0, 0);
       }, [])
     return (
-        <div className='p-5 lg:p-20 bg-white' >
+        <div className='p-5 lg:p-20 bg-white pt-10' >
             <h1 className='text-4xl font-bold pb-5'>Travel Insurance</h1>
             <div className='grid grid-cols-1  md:grid-cols-2'>
                 <div className=''>

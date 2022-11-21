@@ -49,7 +49,7 @@ const Navbar = () => {
 
                     <div className='relative lg:flex-basis-1/4 lg:py-2 '>
                         <Link to='/' class="">
-                            <img className=' ml-8 lg:ml-20 w-32 h-28 lg:w-28 rounded-lg' src={banksandestatesLogo} alt="" />
+                            <img className='ml-4 md:ml-8 lg:ml-20 w-32 h-28 lg:w-28 rounded-lg' src={banksandestatesLogo} alt="" />
                         </Link>
                     </div>
 

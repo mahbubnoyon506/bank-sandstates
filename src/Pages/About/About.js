@@ -114,7 +114,7 @@ const About = () => {
     return (
         <>
             {loading && <Loader />}
-            <div className='p-5 md:p-10 lg:p-20 bg-base-100 pt-10'>
+            <div className='p-5 md:p-10 lg:p-20 bg-base-100 pt-16'>
                 <div className='lg:grid grid-cols-2 gap-10 '>
                     <div data-aos="zoom-in">
                         <div><img src={secImage} alt="" /></div>
