@@ -352,59 +352,6 @@ const HowITWork = () => {
                                     <p className='text-[#74777C]'>Your Banks estates deposits and Merrill investing balances <br /> get you more with Preferred Rewards</p>
                                 </div>
 
-
-                                {/* <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        <Typography >
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
-                                        </Typography>
-                                    </AccordionDetails>
-                                </Accordion>
-                                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                                    <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        <Typography>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
-                                        </Typography>
-                                    </AccordionDetails>
-                                </Accordion>
-                                <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                                    <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        <Typography>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
-                                        </Typography>
-                                    </AccordionDetails>
-                                </Accordion>
-                                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                                    <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-                                        <Typography>Best Sources of Help and Advice for Your Business</Typography>
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        <Typography>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                            sit amet blandit leo lobortis eget.
-                                        </Typography>
-                                    </AccordionDetails>
-                                </Accordion> */}
                             </div>
 
 
@@ -580,7 +527,7 @@ const HowITWork = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="md:grid grid-cols-3 gap-10 py-10">
+                    {/* <div class="md:grid grid-cols-3 gap-10 py-10">
                         <div class="col-span-2">
                             <div class="support">
                                 <div class="spIcon flex items-center mb-2">
@@ -607,14 +554,14 @@ const HowITWork = () => {
                                 <h3>2569 25 21589</h3>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             {/* Team section ends */}
             {/* Feature section starts */}
 
 
-            <section class="chooseSection ">
+            {/* <section class="chooseSection ">
                 <div class="lg:grid grid-cols-2 gap-5 md:px-20 px-5">
                     <div class="">
                         <div class="subTitle">
@@ -685,14 +632,14 @@ const HowITWork = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             {/* Feature section ends */}
 
             {/* Feedback section starts */}
 
-            <section class="testimonialSection01">
+            {/* <section class="testimonialSection01">
                 <div class="">
                     <div class="testimonial-sec mx-0 md:mx-20">
                         <div class="">
@@ -789,12 +736,12 @@ const HowITWork = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Feedback section endss */}
             {/* Blog section starts */}
 
-            <section class="blogSectiont01">
+            {/* <section class="blogSectiont01">
                 <div class="md:px-20">
                     <div class="lg:grid grid-cols-3 gap-5">
                         <div class="col-span-2 noPaddingRight">
@@ -873,7 +820,7 @@ const HowITWork = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
         </div>
     );

@@ -64,7 +64,7 @@ const Navbar = () => {
                                 <div className='flex text-sm justify-between'>
 
                                     <p className='py-3 px-0 flex items-center'>
-                                        <span className='inline-flex pt-1 text-lg'>
+                                        <span className='inline-flex pt-1 text-lg lg:text-sm'>
                                             <span className='pt-1'><IoIosFlash /></span>
                                         </span> 2 Barnfield Crescent, Exeter, Devon, United Kingdom, EX1 1QT +44 (0) 7782455837
                                     </p>
@@ -86,8 +86,8 @@ const Navbar = () => {
                             {/* <div className='md:flex md:justify-between md:items-center'>
                                 {
                                     Links.map((link) => (
-                                        <li onClick={() => setOpen(!open)} key={link.name} className='md:ml-3 text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link to={link.link} className='md:text-sm lg:text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>{link.name}</Link>
+                                        <li onClick={() => setOpen(!open)} key={link.name} className='md:ml-3 text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link to={link.link} className='md:text-sm lg:text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400'>{link.name}</Link>
                                         </li>
                                     ))
                                 }
@@ -100,98 +100,95 @@ const Navbar = () => {
 
                             <div className="lg:flex lg:justify-between">
 
-                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
-                                    <Link onClick={() => setOpen(!open)} to="/" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+                                <li className={`relative group md:ml-3 text-xl md:my-0 py-2 transition-all duration-500 ease-in`}>
+                                    <Link onClick={() => setOpen(!open)} to="/" className='text-lg lg:text-sm text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-800'>
                                         HOME
                                     </Link>
                                 </li>
 
-                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
-                                    <Link to="" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+                                <li className={`relative group md:ml-3 text-xl md:my-0 py-2 transition-all duration-500 ease-in`}>
+                                    <Link to="" className='text-lg lg:text-sm text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-800'>
                                         SERVICES</Link>
 
-                                    <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
+                                    <ul onClick={() => setOpen(!open)} className='border-b-2 border-primary lg:absolute top-[40px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
 
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Loan</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Loan</Link>
                                         </li>
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/travelInsurance">Insurance</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/travelInsurance">Insurance</Link>
                                         </li>
 
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/mortgase">Mortagages</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/mortgase">Mortagages</Link>
                                         </li>
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Fore closure</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Fore closure</Link>
                                         </li>
                                     </ul>
 
                                 </li>
 
 
-                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
-                                    <Link to="/personal" className='text-lg text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-800'>
+                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-2 transition-all duration-500 ease-in`}>
+                                    <Link to="/personal" className='text-lg lg:text-sm text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-800'>
                                         PERSONAL</Link>
 
                                     {/* <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-5 bg-white w-56 hidden  group-hover:block '>
 
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Blogs 01</Link>
+                                        <li className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Blogs 01</Link>
                                         </li>
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Blogs 02</Link>
+                                        <li className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Blogs 02</Link>
                                         </li>
-                                        <li className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Blogs 03</Link>
+                                        <li className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Blogs 03</Link>
                                         </li>
                                     </ul> */}
 
                                 </li>
-
-
-                                <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
-                                    <Link to="/corporate" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
-                                        CORPORATE </Link>
+                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-2 transition-all duration-500 ease-in`}>
+                                    <Link to="/corporate" className='text-lg lg:text-sm text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-800'>
+                                        CORPORATE</Link>
                                 </li>
 
-                                <li className={`relative group md:ml-3 text-xl md:my-0 py-4 transition-all duration-500 ease-in`}>
-                                    <Link to="" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
+
+
+
+                                <li className={`relative group md:ml-3 text-xl md:my-0 py-2 transition-all duration-500 ease-in`}>
+                                    <Link to="" className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400'>
                                         NEWS
                                     </Link>
 
-                                    <ul className='border-b-2 border-primary lg:absolute top-[60px] left-0 px-3 bg-white w-56 hidden  group-hover:block '>
+                                    <ul className='border-b-2 border-primary lg:absolute top-[40px] left-0 px-3 bg-white w-56 hidden  group-hover:block '>
 
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Digital Assets</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Digital Assets</Link>
                                         </li>
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Covid</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Covid</Link>
                                         </li>
 
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Property Investments</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Property Investments</Link>
                                         </li>
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Share index</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Share index</Link>
                                         </li>
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Insurance</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Insurance</Link>
                                         </li>
-                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-4 transition-all duration-500 ease-in '>
-                                            <Link className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-semibold transition-all duration-400' to="/">Others</Link>
+                                        <li onClick={() => setOpen(!open)} className=' text-xl md:my-0  py-2 transition-all duration-500 ease-in '>
+                                            <Link className='text-lg lg:text-sm text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[10px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-400' to="/">Others</Link>
                                         </li>
                                     </ul>
 
                                 </li>
-
-
-                                <li onClick={() => setOpen(!open)} className='md:ml-3 md:my-0  py-4 transition-all duration-500 ease-in '>
-                                    <Link to="/contact" className='text-lg text-gray-900 p-2 hover:underline translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-semibold transition-all duration-400'>
-                                        CONTACT
-                                    </Link>
+                                <li onClick={() => setOpen(!open)} className={`relative group md:ml-3 text-xl md:my-0 py-2 transition-all duration-500 ease-in`}>
+                                    <Link to="/aboutUs" className='text-lg lg:text-sm text-gray-900 p-2 group-hover:border-b-2 border-b-primary translate-x-0 hover:translate-x-3 underline-offset-[20px] hover:text-red-600 font-medium lg:font-semibold transition-all duration-800'>
+                                        ABOUT</Link>
                                 </li>
-
                             </div>
 
 
@@ -217,8 +214,9 @@ const Navbar = () => {
                                         </div>
                                     }
                                 </div>
-
-                                <Link onClick={() => setOpen(!open)} to='/contact' class="btn btn-sm btn-primary bg-gradient-to-r from-[rgba(237,28,35,0.98)] to-[#ed541ce6] rounded-full ">Contact Us</Link>
+                                <div onClick={() => setOpen(!open)}>
+                                    <Link to='/contact' class="btn btn-sm btn-primary bg-gradient-to-r from-[rgba(237,28,35,0.98)] to-[#ed541ce6] rounded-full ">Contact Us</Link>
+                                </div>
                             </div>
                         </ul>
                     </div>

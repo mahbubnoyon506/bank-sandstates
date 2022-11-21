@@ -22,7 +22,6 @@ const Contact = () => {
       }, [])
     return (
         <div>
-            {loading && <Loader/>}
             <div className='lg:grid grid-cols-3 gap-10 p-5 lg:p-20 bg-[#FFEDEE] pt-10'>
                 <div className='flex items-center'
                     data-aos="flip-left"
@@ -33,9 +32,7 @@ const Contact = () => {
                     <div className='ml-5'>
                         <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-2'>Office Address:</h2>
                         <p className='text-[#74777C] lg:text-lg'>
-                            3556 Hartford Way Vlg, Mount
-                            <br />
-                            Pleasant, SC, 29466, Australia.
+                        2 Barnfield Crescent, Exeter, Devon United Kingdom, EX1 1QT
                         </p>
                     </div>
                 </div>
@@ -45,7 +42,7 @@ const Contact = () => {
                     </div>
                     <div className='ml-5' >
                         <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-2'>Call Us For Help:</h2>
-                        <p className='lg:text-lg text-[#74777C]'>+259 2563 2562, <br /> +256 3654 2156</p>
+                        <p className='lg:text-lg text-[#74777C]'>+44(0)7782455837</p>
                     </div>
                 </div>
                 <div className='flex items-center'
@@ -56,7 +53,7 @@ const Contact = () => {
                     </div>
                     <div className='ml-5'>
                         <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-2'>Mail info:</h2>
-                        <p className='lg:text-lg text-[#74777C]'>example@quera.com <br /> info@example.com</p>
+                        <p className='lg:text-lg text-[#74777C]'>support@banksandestates.com</p>
                     </div>
                 </div>
             </div>
